@@ -1,0 +1,2085 @@
+{
+  "name": "kaiyuan-dashuli",
+  "title": "开源大梳理",
+  "version": "0.2.0",
+  "generated_at": "2026-07-11T23:48:51.773074+00:00",
+  "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
+  "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
+  "domains": [
+    "ai-agents",
+    "devops",
+    "web-frontend"
+  ],
+  "node_count": 96,
+  "edge_count": 88,
+  "nodes": [
+    {
+      "id": "act",
+      "domain": "devops",
+      "name": "act",
+      "repo": "https://github.com/nektos/act",
+      "summary": "本地运行 GitHub Actions 工作流。",
+      "tags": [
+        "ci",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "想在推送前本地验证 Actions",
+      "avoid_when": "不使用 GitHub Actions",
+      "niche": "local GHA runner"
+    },
+    {
+      "id": "aider",
+      "domain": "ai-agents",
+      "name": "Aider",
+      "repo": "https://github.com/Aider-AI/aider",
+      "summary": "终端里的 AI 结对编程，直接改 git 仓库。",
+      "tags": [
+        "agent-framework"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "命令行驱动、以 git 为中心的编码 Agent",
+      "avoid_when": "要 IDE 内嵌体验为主",
+      "niche": "CLI coding agent"
+    },
+    {
+      "id": "ansible",
+      "domain": "devops",
+      "name": "Ansible",
+      "repo": "https://github.com/ansible/ansible",
+      "summary": "无 Agent 的配置管理与自动化。",
+      "tags": [
+        "iac",
+        "devops"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "批量配置服务器、应用部署剧本",
+      "avoid_when": "主要是不可变镜像/GitOps，不需要 SSH 推送配置",
+      "niche": "config management"
+    },
+    {
+      "id": "argo-cd",
+      "domain": "devops",
+      "name": "Argo CD",
+      "repo": "https://github.com/argoproj/argo-cd",
+      "summary": "Kubernetes GitOps 持续交付。",
+      "tags": [
+        "ci",
+        "orchestration",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要用 Git 作为 K8s 期望状态源",
+      "avoid_when": "不用 Kubernetes 或不做 GitOps",
+      "niche": "gitops cd"
+    },
+    {
+      "id": "arize-phoenix",
+      "domain": "ai-agents",
+      "name": "Arize Phoenix",
+      "repo": "https://github.com/Arize-ai/phoenix",
+      "summary": "开源 AI 可观测与评估，偏 tracing/评估工作台。",
+      "tags": [
+        "observability",
+        "eval"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要开源 tracing + 评估一体化工作台",
+      "avoid_when": "只要极简日志打印",
+      "niche": "AI observability workbench"
+    },
+    {
+      "id": "astro",
+      "domain": "web-frontend",
+      "name": "Astro",
+      "repo": "https://github.com/withastro/astro",
+      "summary": "内容站点优先的多框架元框架。",
+      "tags": [
+        "meta-framework",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "内容站/文档站要少 JS 默认",
+      "avoid_when": "重交互 SPA 是主形态",
+      "niche": "content-first meta-framework"
+    },
+    {
+      "id": "autogen",
+      "domain": "ai-agents",
+      "name": "AutoGen",
+      "repo": "https://github.com/microsoft/autogen",
+      "summary": "微软系多 Agent 对话与协作框架。",
+      "tags": [
+        "agent-framework",
+        "multi-agent",
+        "orchestration"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "需要多角色 Agent 对话协作原型",
+      "avoid_when": "只要单 Agent 工具调用，不想引入多 Agent 复杂度",
+      "niche": "multi-agent conversation framework"
+    },
+    {
+      "id": "axolotl",
+      "domain": "ai-agents",
+      "name": "Axolotl",
+      "repo": "https://github.com/axolotl-ai-cloud/axolotl",
+      "summary": "大模型微调工具包，配置化训练常见。",
+      "tags": [
+        "fine-tuning"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要用现成配置跑开源模型 SFT/偏好训练",
+      "avoid_when": "只需调用托管微调 API",
+      "niche": "LLM finetune toolkit"
+    },
+    {
+      "id": "browser-use",
+      "domain": "ai-agents",
+      "name": "Browser Use",
+      "repo": "https://github.com/browser-use/browser-use",
+      "summary": "让 Agent 操作真实浏览器的自动化框架。",
+      "tags": [
+        "agent-framework"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "任务需要网页点击/填写/抓取",
+      "avoid_when": "只需 API/工具调用无浏览器",
+      "niche": "browser-using agents"
+    },
+    {
+      "id": "caddy",
+      "domain": "devops",
+      "name": "Caddy",
+      "repo": "https://github.com/caddyserver/caddy",
+      "summary": "自动 HTTPS 的 Web 服务器/反向代理。",
+      "tags": [
+        "networking",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要少配置自动证书的反向代理",
+      "avoid_when": "已有复杂 nginx/traefik 规范不可替换",
+      "niche": "auto-HTTPS server"
+    },
+    {
+      "id": "chromadb",
+      "domain": "ai-agents",
+      "name": "Chroma",
+      "repo": "https://github.com/chroma-core/chroma",
+      "summary": "开发者友好的嵌入数据库，RAG 入门常见。",
+      "tags": [
+        "vector-db",
+        "rag"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "快速原型 RAG、本地/轻量向量存储",
+      "avoid_when": "超大规模分布式检索（看 Milvus/Qdrant）",
+      "niche": "dev-friendly vector DB"
+    },
+    {
+      "id": "comfyui",
+      "domain": "ai-agents",
+      "name": "ComfyUI",
+      "repo": "https://github.com/comfyanonymous/ComfyUI",
+      "summary": "节点式生成式工作流 UI（图像等）。",
+      "tags": [
+        "ui",
+        "orchestration"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要可视化拼装生成式工作流",
+      "avoid_when": "只要文本 Agent/聊天",
+      "niche": "node-based genUI"
+    },
+    {
+      "id": "consul",
+      "domain": "devops",
+      "name": "Consul",
+      "repo": "https://github.com/hashicorp/consul",
+      "summary": "服务发现、配置与网格能力。",
+      "tags": [
+        "networking",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "微服务需要服务发现/健康检查/配置",
+      "avoid_when": "单机或平台已提供服务发现",
+      "niche": "service discovery"
+    },
+    {
+      "id": "containerd",
+      "domain": "devops",
+      "name": "containerd",
+      "repo": "https://github.com/containerd/containerd",
+      "summary": "行业标准容器运行时（CNCF）。",
+      "tags": [
+        "containers",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要底层容器运行时或定制 CRI",
+      "avoid_when": "只要 Docker 用户体验封装",
+      "niche": "container runtime"
+    },
+    {
+      "id": "continue",
+      "domain": "ai-agents",
+      "name": "Continue",
+      "repo": "https://github.com/continuedev/continue",
+      "summary": "开源 IDE 编码助手扩展，可接多模型。",
+      "tags": [
+        "ui",
+        "agent-framework"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要在 VS Code/JetBrains 里开源可控的编码助手",
+      "avoid_when": "只要无 IDE 的纯 API Agent",
+      "niche": "open IDE copilot"
+    },
+    {
+      "id": "crawl4ai",
+      "domain": "ai-agents",
+      "name": "Crawl4AI",
+      "repo": "https://github.com/unclecode/crawl4ai",
+      "summary": "面向 LLM 的网页爬取与清洗。",
+      "tags": [
+        "rag",
+        "agent-framework"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "Agent/RAG 需要干净网页语料",
+      "avoid_when": "只要单一 API 数据源",
+      "niche": "LLM-oriented crawler"
+    },
+    {
+      "id": "crewai",
+      "domain": "ai-agents",
+      "name": "CrewAI",
+      "repo": "https://github.com/crewAIInc/crewAI",
+      "summary": "角色化多 Agent「船员」协作框架，强调任务分工。",
+      "tags": [
+        "agent-framework",
+        "multi-agent"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "多角色分工完成复杂任务原型",
+      "avoid_when": "单 Agent 工具调用已足够，或要极细粒度状态控制",
+      "niche": "role-based multi-agent crews"
+    },
+    {
+      "id": "crossplane",
+      "domain": "devops",
+      "name": "Crossplane",
+      "repo": "https://github.com/crossplane/crossplane",
+      "summary": "用 K8s 控制面管理云资源。",
+      "tags": [
+        "iac",
+        "orchestration",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要把云资源也当成 K8s 声明式对象",
+      "avoid_when": "不用 Kubernetes 控制面",
+      "niche": "k8s-native IaC"
+    },
+    {
+      "id": "cypress",
+      "domain": "web-frontend",
+      "name": "Cypress",
+      "repo": "https://github.com/cypress-io/cypress",
+      "summary": "开发者友好的 E2E 测试工具。",
+      "tags": [
+        "testing",
+        "web"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "团队熟悉 Cypress 工作流与时间旅行调试",
+      "avoid_when": "需要多浏览器引擎一等支持（更看 Playwright）",
+      "niche": "e2e testing"
+    },
+    {
+      "id": "datasets-hf",
+      "domain": "ai-agents",
+      "name": "Hugging Face Datasets",
+      "repo": "https://github.com/huggingface/datasets",
+      "summary": "大规模数据集加载与处理库。",
+      "tags": [
+        "dataset"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "训练/评测需要标准数据集管道",
+      "avoid_when": "只有几个本地 JSON 样例",
+      "niche": "dataset pipeline"
+    },
+    {
+      "id": "deepeval",
+      "domain": "ai-agents",
+      "name": "DeepEval",
+      "repo": "https://github.com/confident-ai/deepeval",
+      "summary": "LLM 应用单元测试/评测框架，像 pytest 一样写用例。",
+      "tags": [
+        "eval"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要把 LLM 输出纳入 CI 回归",
+      "avoid_when": "一次性手工抽查即可",
+      "niche": "LLM unit testing"
+    },
+    {
+      "id": "docker",
+      "domain": "devops",
+      "name": "Docker",
+      "repo": "https://github.com/docker/cli",
+      "summary": "容器运行时与镜像工作流的事实入口（CLI/引擎生态）。",
+      "tags": [
+        "containers",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "需要打包运行隔离环境或构建镜像",
+      "avoid_when": "只要语言虚拟环境、不需要容器",
+      "niche": "containers"
+    },
+    {
+      "id": "dspy",
+      "domain": "ai-agents",
+      "name": "DSPy",
+      "repo": "https://github.com/stanfordnlp/dspy",
+      "summary": "斯坦福声明式提示与程序优化框架，把 prompt 当可优化参数。",
+      "tags": [
+        "prompt",
+        "orchestration"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要用数据驱动优化提示/程序而非手写死 prompt",
+      "avoid_when": "一次性脚本、不想引入优化循环",
+      "niche": "programmatic prompt optimization"
+    },
+    {
+      "id": "faiss",
+      "domain": "ai-agents",
+      "name": "Faiss",
+      "repo": "https://github.com/facebookresearch/faiss",
+      "summary": "Meta 的相似向量检索库，算法层基础件。",
+      "tags": [
+        "vector-db",
+        "rag"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要嵌入到自有服务里的检索内核",
+      "avoid_when": "想要开箱即用的带 API 的向量数据库产品",
+      "niche": "vector similarity library"
+    },
+    {
+      "id": "faster-whisper",
+      "domain": "ai-agents",
+      "name": "faster-whisper",
+      "repo": "https://github.com/SYSTRAN/faster-whisper",
+      "summary": "CTranslate2 加速的 Whisper 语音识别。",
+      "tags": [
+        "local-llm"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "本地/服务端要快的语音转写",
+      "avoid_when": "只要云端语音 API",
+      "niche": "speech-to-text"
+    },
+    {
+      "id": "flowise",
+      "domain": "ai-agents",
+      "name": "Flowise",
+      "repo": "https://github.com/FlowiseAI/Flowise",
+      "summary": "可视化 LLM 编排 UI，偏 LangChain 生态。",
+      "tags": [
+        "orchestration",
+        "ui",
+        "agent-framework"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要用拖拽快速搭 LLM 流",
+      "avoid_when": "要强类型代码一等公民控制",
+      "niche": "visual LLM builder"
+    },
+    {
+      "id": "flux2",
+      "domain": "devops",
+      "name": "Flux",
+      "repo": "https://github.com/fluxcd/flux2",
+      "summary": "GitOps 工具集（CNCF）。",
+      "tags": [
+        "ci",
+        "orchestration",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "K8s GitOps 且偏 Flux 生态",
+      "avoid_when": "已选定 Argo CD 且无双栈需求",
+      "niche": "gitops toolkit"
+    },
+    {
+      "id": "github-actions-runner",
+      "domain": "devops",
+      "name": "actions/runner",
+      "repo": "https://github.com/actions/runner",
+      "summary": "GitHub Actions 自托管 Runner。",
+      "tags": [
+        "ci",
+        "devops"
+      ],
+      "language": "C#",
+      "status": "active",
+      "use_when": "要在自有机器跑 GitHub Actions 任务",
+      "avoid_when": "完全使用 GitHub 托管 runner 且无自托管需求",
+      "niche": "CI self-hosted runner"
+    },
+    {
+      "id": "gpt-researcher",
+      "domain": "ai-agents",
+      "name": "GPT Researcher",
+      "repo": "https://github.com/assafelovic/gpt-researcher",
+      "summary": "面向深度调研的 Agent，自动搜网写报告。",
+      "tags": [
+        "agent-framework",
+        "multi-agent"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "需要长篇调研报告自动生成",
+      "avoid_when": "短问答或单次工具调用",
+      "niche": "research agent"
+    },
+    {
+      "id": "grafana",
+      "domain": "devops",
+      "name": "Grafana",
+      "repo": "https://github.com/grafana/grafana",
+      "summary": "可观测可视化与仪表盘。",
+      "tags": [
+        "observability",
+        "devops"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要把指标/日志/追踪做成看板",
+      "avoid_when": "只需命令行看瞬时指标",
+      "niche": "observability dashboards"
+    },
+    {
+      "id": "guardrails-ai",
+      "domain": "ai-agents",
+      "name": "Guardrails AI",
+      "repo": "https://github.com/guardrails-ai/guardrails",
+      "summary": "LLM 输出校验与护栏框架。",
+      "tags": [
+        "prompt"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要对输出做结构/安全/策略校验",
+      "avoid_when": "模型已可靠且只需自由文本",
+      "niche": "output guardrails"
+    },
+    {
+      "id": "haystack",
+      "domain": "ai-agents",
+      "name": "Haystack",
+      "repo": "https://github.com/deepset-ai/haystack",
+      "summary": "deepset 的 NLP/RAG 流水线框架，管道组合清晰。",
+      "tags": [
+        "rag",
+        "agent-framework"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "生产向 RAG 管道、组件可替换",
+      "avoid_when": "只要最薄的向量检索包装",
+      "niche": "RAG pipelines"
+    },
+    {
+      "id": "helm",
+      "domain": "devops",
+      "name": "Helm",
+      "repo": "https://github.com/helm/helm",
+      "summary": "Kubernetes 应用包管理器（Chart）。",
+      "tags": [
+        "orchestration",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要版本化安装/升级 K8s 应用",
+      "avoid_when": "不用 Kubernetes",
+      "niche": "k8s package manager"
+    },
+    {
+      "id": "instructor",
+      "domain": "ai-agents",
+      "name": "Instructor",
+      "repo": "https://github.com/instructor-ai/instructor",
+      "summary": "用 Pydantic 约束 LLM 结构化输出的薄库。",
+      "tags": [
+        "prompt"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "只要可靠 JSON/结构化对象，不要整套 Agent 框架",
+      "avoid_when": "需要完整多 Agent 运行时",
+      "niche": "structured output helper"
+    },
+    {
+      "id": "istio",
+      "domain": "devops",
+      "name": "Istio",
+      "repo": "https://github.com/istio/istio",
+      "summary": "功能完整的服务网格。",
+      "tags": [
+        "networking",
+        "orchestration",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "K8s 上要流量治理/mTLS/可观测网格",
+      "avoid_when": "网格复杂度不可接受、服务很少",
+      "niche": "service mesh"
+    },
+    {
+      "id": "kaiyuan-dashuli",
+      "domain": "ai-agents",
+      "name": "开源大梳理",
+      "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
+      "summary": "Agent-first 开源知识图谱入口（本仓库）；分类、关系与可机读检索，减少盲搜 GitHub。",
+      "tags": [
+        "agent-framework",
+        "mcp",
+        "ui"
+      ],
+      "language": "mixed",
+      "status": "active",
+      "use_when": "需要先定位该用哪个开源项目/栈，而不是直接关键词海搜",
+      "avoid_when": "已明确唯一上游仓库，只需读其 README",
+      "niche": "open-source atlas entrypoint"
+    },
+    {
+      "id": "kubernetes",
+      "domain": "devops",
+      "name": "Kubernetes",
+      "repo": "https://github.com/kubernetes/kubernetes",
+      "summary": "容器编排标准，调度多机工作负载。",
+      "tags": [
+        "orchestration",
+        "containers",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "多机/多服务需要编排、自愈、滚动发布",
+      "avoid_when": "单机小服务，K8s 运维成本过高",
+      "niche": "container orchestration"
+    },
+    {
+      "id": "lancedb",
+      "domain": "ai-agents",
+      "name": "LanceDB",
+      "repo": "https://github.com/lancedb/lancedb",
+      "summary": "基于 Lance 格式的嵌入式向量库，分析友好。",
+      "tags": [
+        "vector-db",
+        "rag"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "嵌入式/湖仓一体的向量与多模态检索",
+      "avoid_when": "只要经典独立向量服务",
+      "niche": "embedded multimodal vector DB"
+    },
+    {
+      "id": "langchain",
+      "domain": "ai-agents",
+      "name": "LangChain",
+      "repo": "https://github.com/langchain-ai/langchain",
+      "summary": "通用 LLM 应用编排框架，生态大、集成多，适合快速拼装链路。",
+      "tags": [
+        "agent-framework",
+        "orchestration",
+        "rag"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "需要大量现成集成、教程多、快速原型",
+      "avoid_when": "想要极简可控的核心抽象，或讨厌重依赖",
+      "niche": "general-purpose LLM app framework"
+    },
+    {
+      "id": "langfuse",
+      "domain": "ai-agents",
+      "name": "Langfuse",
+      "repo": "https://github.com/langfuse/langfuse",
+      "summary": "开源 LLM 可观测：追踪、提示管理、评分。",
+      "tags": [
+        "observability",
+        "prompt"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要追踪生产 LLM 调用与提示版本",
+      "avoid_when": "本地一次性脚本无需观测",
+      "niche": "LLM observability"
+    },
+    {
+      "id": "langgraph",
+      "domain": "ai-agents",
+      "name": "LangGraph",
+      "repo": "https://github.com/langchain-ai/langgraph",
+      "summary": "LangChain 生态的图/状态机式 Agent 编排，适合可控多步工作流。",
+      "tags": [
+        "agent-framework",
+        "orchestration"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "需要显式状态图、循环、人机审批的 Agent 流程",
+      "avoid_when": "只要简单链式 LLM 调用，不想引入图运行时",
+      "niche": "graph-based agent orchestration"
+    },
+    {
+      "id": "litellm",
+      "domain": "ai-agents",
+      "name": "LiteLLM",
+      "repo": "https://github.com/BerriAI/litellm",
+      "summary": "统一多厂商 LLM API 的代理/SDK，OpenAI 兼容接口。",
+      "tags": [
+        "llm-api",
+        "orchestration"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要一套接口打多个模型供应商并做路由/限流",
+      "avoid_when": "只用单一官方 SDK 且无路由需求",
+      "niche": "multi-provider LLM proxy"
+    },
+    {
+      "id": "llama-cpp",
+      "domain": "ai-agents",
+      "name": "llama.cpp",
+      "repo": "https://github.com/ggml-org/llama.cpp",
+      "summary": "C/C++ 本地 LLM 推理，GGUF 生态核心。",
+      "tags": [
+        "local-llm"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "CPU/消费级 GPU 本地跑量化模型、嵌入式部署",
+      "avoid_when": "需要多租户高并发 OpenAI 兼容服务集群",
+      "niche": "local ggml inference"
+    },
+    {
+      "id": "llama-index",
+      "domain": "ai-agents",
+      "name": "LlamaIndex",
+      "repo": "https://github.com/run-llama/llama_index",
+      "summary": "偏 RAG / 数据接入的 LLM 框架，文档与索引工作流强。",
+      "tags": [
+        "agent-framework",
+        "rag",
+        "orchestration"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "核心需求是文档问答、索引与检索增强",
+      "avoid_when": "主要做多 Agent 协作且不需要复杂数据连接器",
+      "niche": "data framework for LLM apps"
+    },
+    {
+      "id": "llamafactory",
+      "domain": "ai-agents",
+      "name": "LLaMA-Factory",
+      "repo": "https://github.com/hiyouga/LLaMA-Factory",
+      "summary": "统一微调/偏好优化工具箱。",
+      "tags": [
+        "fine-tuning"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要一站式配置跑开源模型微调",
+      "avoid_when": "不做训练",
+      "niche": "finetune toolkit"
+    },
+    {
+      "id": "lm-evaluation-harness",
+      "domain": "ai-agents",
+      "name": "LM Evaluation Harness",
+      "repo": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "summary": "开源模型评测基准框架。",
+      "tags": [
+        "eval"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要标准化评测基座模型能力",
+      "avoid_when": "只评业务 RAG 流水线（看 ragas）",
+      "niche": "foundation model eval"
+    },
+    {
+      "id": "mcp-python-sdk",
+      "domain": "ai-agents",
+      "name": "MCP Python SDK",
+      "repo": "https://github.com/modelcontextprotocol/python-sdk",
+      "summary": "Model Context Protocol 官方 Python SDK。",
+      "tags": [
+        "mcp"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要用 Python 实现 MCP client/server",
+      "avoid_when": "不采用 MCP，只用私有 function calling",
+      "niche": "MCP python SDK"
+    },
+    {
+      "id": "mem0",
+      "domain": "ai-agents",
+      "name": "Mem0",
+      "repo": "https://github.com/mem0ai/mem0",
+      "summary": "Agent 长期记忆层，跨会话偏好与事实存储。",
+      "tags": [
+        "agent-framework",
+        "rag"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "聊天/Agent 需要跨会话记忆",
+      "avoid_when": "无状态单次完成任务",
+      "niche": "agent memory layer"
+    },
+    {
+      "id": "metagpt",
+      "domain": "ai-agents",
+      "name": "MetaGPT",
+      "repo": "https://github.com/FoundationAgents/MetaGPT",
+      "summary": "多角色软件公司模拟的多 Agent 框架。",
+      "tags": [
+        "multi-agent",
+        "agent-framework"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "用多角色流水线生成软件方案/代码原型",
+      "avoid_when": "任务简单不需要「虚拟公司」开销",
+      "niche": "software-company multi-agent"
+    },
+    {
+      "id": "milvus",
+      "domain": "ai-agents",
+      "name": "Milvus",
+      "repo": "https://github.com/milvus-io/milvus",
+      "summary": "云原生大规模向量数据库。",
+      "tags": [
+        "vector-db",
+        "rag"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "十亿级向量、分布式检索",
+      "avoid_when": "单机小语料原型",
+      "niche": "large-scale vector DB"
+    },
+    {
+      "id": "modelcontextprotocol-servers",
+      "domain": "ai-agents",
+      "name": "Model Context Protocol Servers",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "summary": "官方/参考 MCP server 集合，给 Agent 接工具与数据源。",
+      "tags": [
+        "mcp",
+        "agent-framework"
+      ],
+      "language": "mixed",
+      "status": "active",
+      "use_when": "需要按 MCP 标准给 Agent 挂工具",
+      "avoid_when": "不使用 MCP，只要自定义 function calling",
+      "niche": "MCP reference servers"
+    },
+    {
+      "id": "n8n",
+      "domain": "ai-agents",
+      "name": "n8n",
+      "repo": "https://github.com/n8n-io/n8n",
+      "summary": "可自托管的工作流自动化，含 AI 节点。",
+      "tags": [
+        "orchestration",
+        "agent-framework"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要可视化工作流打通 SaaS/API/AI",
+      "avoid_when": "只要纯代码库、不要工作流 UI",
+      "niche": "workflow automation"
+    },
+    {
+      "id": "nextjs",
+      "domain": "web-frontend",
+      "name": "Next.js",
+      "repo": "https://github.com/vercel/next.js",
+      "summary": "React 全栈框架，SSR/App Router。",
+      "tags": [
+        "meta-framework",
+        "web",
+        "react"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "React 项目需要路由/SSR/全栈约定",
+      "avoid_when": "只要纯 CSR 且不想要框架约定",
+      "niche": "react meta-framework"
+    },
+    {
+      "id": "nginx",
+      "domain": "devops",
+      "name": "nginx",
+      "repo": "https://github.com/nginx/nginx",
+      "summary": "高性能反向代理与 Web 服务器。",
+      "tags": [
+        "networking",
+        "devops"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "反向代理、静态站、TLS 终止",
+      "avoid_when": "需要应用层服务网格的高级流量治理为主",
+      "niche": "reverse proxy"
+    },
+    {
+      "id": "nomad",
+      "domain": "devops",
+      "name": "Nomad",
+      "repo": "https://github.com/hashicorp/nomad",
+      "summary": "HashiCorp 通用工作负载调度器，比 K8s 更轻。",
+      "tags": [
+        "orchestration",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要调度容器/非容器任务又不想上满血 K8s",
+      "avoid_when": "团队标准已是 Kubernetes 且生态绑定深",
+      "niche": "workload scheduler"
+    },
+    {
+      "id": "nuxt",
+      "domain": "web-frontend",
+      "name": "Nuxt",
+      "repo": "https://github.com/nuxt/nuxt",
+      "summary": "Vue 元框架，SSR/文件系统路由。",
+      "tags": [
+        "meta-framework",
+        "web",
+        "vue"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "Vue 项目需要约定式全栈/SSR",
+      "avoid_when": "不用 Vue",
+      "niche": "vue meta-framework"
+    },
+    {
+      "id": "ollama",
+      "domain": "ai-agents",
+      "name": "Ollama",
+      "repo": "https://github.com/ollama/ollama",
+      "summary": "本地一键跑开源大模型的运行时与模型分发。",
+      "tags": [
+        "local-llm",
+        "llm-api"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "本地/内网推理、快速试用开源模型",
+      "avoid_when": "需要大规模分布式推理集群（应看 vLLM 等）",
+      "niche": "local LLM runner"
+    },
+    {
+      "id": "open-interpreter",
+      "domain": "ai-agents",
+      "name": "Open Interpreter",
+      "repo": "https://github.com/openinterpreter/open-interpreter",
+      "summary": "让 LLM 在本地执行代码的通用解释器 Agent。",
+      "tags": [
+        "agent-framework"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "需要本地代码执行型通用 Agent",
+      "avoid_when": "不能给模型本机执行权限",
+      "niche": "local code-exec agent"
+    },
+    {
+      "id": "open-webui",
+      "domain": "ai-agents",
+      "name": "Open WebUI",
+      "repo": "https://github.com/open-webui/open-webui",
+      "summary": "自托管的 ChatGPT 风格 Web UI，常配 Ollama。",
+      "tags": [
+        "ui",
+        "local-llm"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "给本地/私有模型一个好用聊天界面",
+      "avoid_when": "只要 API 不要前端",
+      "niche": "self-hosted chat UI"
+    },
+    {
+      "id": "openai-agents-python",
+      "domain": "ai-agents",
+      "name": "OpenAI Agents SDK",
+      "repo": "https://github.com/openai/openai-agents-python",
+      "summary": "OpenAI 官方轻量多 Agent/工具编排 SDK。",
+      "tags": [
+        "agent-framework",
+        "multi-agent"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "主要走 OpenAI 模型与官方 Agent 抽象",
+      "avoid_when": "必须厂商中立、避免绑定 OpenAI API 形态",
+      "niche": "openai-native agents"
+    },
+    {
+      "id": "opentelemetry-python",
+      "domain": "ai-agents",
+      "name": "OpenTelemetry Python",
+      "repo": "https://github.com/open-telemetry/opentelemetry-python",
+      "summary": "通用可观测 SDK，可埋点 LLM 应用。",
+      "tags": [
+        "observability"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要把 LLM 服务接入标准 tracing/metrics",
+      "avoid_when": "只要 LLM 专用控制台、不接通用 OTel",
+      "niche": "otel sdk"
+    },
+    {
+      "id": "outlines",
+      "domain": "ai-agents",
+      "name": "Outlines",
+      "repo": "https://github.com/dottxt-ai/outlines",
+      "summary": "结构化生成库，约束解码友好。",
+      "tags": [
+        "prompt",
+        "local-llm"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "推理侧需要强约束文法/JSON 生成",
+      "avoid_when": "只用托管 API 且供应商已提供 JSON mode",
+      "niche": "constrained decoding"
+    },
+    {
+      "id": "peft",
+      "domain": "ai-agents",
+      "name": "PEFT",
+      "repo": "https://github.com/huggingface/peft",
+      "summary": "Hugging Face 参数高效微调库（LoRA 等）。",
+      "tags": [
+        "fine-tuning"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要做 LoRA/QLoRA 等高效微调",
+      "avoid_when": "不做训练，只做推理",
+      "niche": "parameter-efficient finetuning"
+    },
+    {
+      "id": "playwright",
+      "domain": "web-frontend",
+      "name": "Playwright",
+      "repo": "https://github.com/microsoft/playwright",
+      "summary": "现代多浏览器 E2E 测试。",
+      "tags": [
+        "testing",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要可靠的端到端/多浏览器自动化",
+      "avoid_when": "只要组件单测、不测真实浏览器",
+      "niche": "e2e testing"
+    },
+    {
+      "id": "pnpm",
+      "domain": "web-frontend",
+      "name": "pnpm",
+      "repo": "https://github.com/pnpm/pnpm",
+      "summary": "节省磁盘的包管理器，对 monorepo 友好。",
+      "tags": [
+        "tooling",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要高效依赖安装与 workspace",
+      "avoid_when": "组织强制只用 npm/yarn 且无例外",
+      "niche": "package manager"
+    },
+    {
+      "id": "podman",
+      "domain": "devops",
+      "name": "Podman",
+      "repo": "https://github.com/containers/podman",
+      "summary": "无守护进程的容器引擎，Docker 兼容体验。",
+      "tags": [
+        "containers",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要 rootless/无 dockerd 的容器工作流",
+      "avoid_when": "团队标准已是 Docker Desktop 且无迁移动机",
+      "niche": "daemonless containers"
+    },
+    {
+      "id": "prometheus",
+      "domain": "devops",
+      "name": "Prometheus",
+      "repo": "https://github.com/prometheus/prometheus",
+      "summary": "指标采集与告警的云原生监控核心。",
+      "tags": [
+        "observability",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "需要时间序列指标与告警规则",
+      "avoid_when": "只要日志检索、不要指标系统",
+      "niche": "metrics monitoring"
+    },
+    {
+      "id": "pulumi",
+      "domain": "devops",
+      "name": "Pulumi",
+      "repo": "https://github.com/pulumi/pulumi",
+      "summary": "用通用语言写 IaC（TS/Python 等）。",
+      "tags": [
+        "iac",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "团队更想用熟悉语言而不是 HCL 写基础设施",
+      "avoid_when": "已深度绑定 Terraform 生态且无语言 IaC 需求",
+      "niche": "programming-language IaC"
+    },
+    {
+      "id": "pydantic-ai",
+      "domain": "ai-agents",
+      "name": "Pydantic AI",
+      "repo": "https://github.com/pydantic/pydantic-ai",
+      "summary": "Pydantic 团队的类型友好 Agent 框架，结构化输出强。",
+      "tags": [
+        "agent-framework",
+        "prompt"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要强类型、依赖注入式 Agent 与结构化结果",
+      "avoid_when": "需要巨型现成集成市场",
+      "niche": "typed python agents"
+    },
+    {
+      "id": "qdrant",
+      "domain": "ai-agents",
+      "name": "Qdrant",
+      "repo": "https://github.com/qdrant/qdrant",
+      "summary": "Rust 向量数据库，过滤与生产部署友好。",
+      "tags": [
+        "vector-db",
+        "rag"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "需要可过滤的向量检索与较稳的生产部署",
+      "avoid_when": "只要进程内玩具级向量表",
+      "niche": "filtered vector search"
+    },
+    {
+      "id": "radix-ui-primitives",
+      "domain": "web-frontend",
+      "name": "Radix Primitives",
+      "repo": "https://github.com/radix-ui/primitives",
+      "summary": "无样式无障碍头组件原语（React）。",
+      "tags": [
+        "ui-library",
+        "a11y",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要可访问的无样式组件底座",
+      "avoid_when": "只要开箱即用完整主题组件库",
+      "niche": "headless components"
+    },
+    {
+      "id": "ragas",
+      "domain": "ai-agents",
+      "name": "Ragas",
+      "repo": "https://github.com/explodinggradients/ragas",
+      "summary": "RAG 流水线评测框架。",
+      "tags": [
+        "eval",
+        "rag"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要量化 RAG 忠实度/相关性等指标",
+      "avoid_when": "还没有可跑的 RAG 流水线",
+      "niche": "RAG evaluation"
+    },
+    {
+      "id": "react",
+      "domain": "web-frontend",
+      "name": "React",
+      "repo": "https://github.com/facebook/react",
+      "summary": "组件化 UI 库，Web 前端事实标准之一。",
+      "tags": [
+        "ui-framework",
+        "web"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要构建组件化 SPA/复杂交互 UI",
+      "avoid_when": "只要静态页或极简站点无组件状态",
+      "niche": "ui library"
+    },
+    {
+      "id": "redux-toolkit",
+      "domain": "web-frontend",
+      "name": "Redux Toolkit",
+      "repo": "https://github.com/reduxjs/redux-toolkit",
+      "summary": "官方推荐的 Redux 写法与工具集。",
+      "tags": [
+        "state",
+        "react",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要可预期、可追溯的大型状态管理",
+      "avoid_when": "状态很简单，不想引入样板",
+      "niche": "predictable state"
+    },
+    {
+      "id": "remix",
+      "domain": "web-frontend",
+      "name": "Remix",
+      "repo": "https://github.com/remix-run/remix",
+      "summary": "以 Web 标准为中心的 React 框架。",
+      "tags": [
+        "meta-framework",
+        "web",
+        "react"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "重视渐进增强、嵌套路由与 Web fetch 模型",
+      "avoid_when": "只要最大众的 Next 约定与教程密度",
+      "niche": "web-standards react framework"
+    },
+    {
+      "id": "semantic-kernel",
+      "domain": "ai-agents",
+      "name": "Semantic Kernel",
+      "repo": "https://github.com/microsoft/semantic-kernel",
+      "summary": "微软 LLM 编排 SDK，插件/规划器模型，多语言。",
+      "tags": [
+        "agent-framework",
+        "orchestration"
+      ],
+      "language": "C#",
+      "status": "active",
+      "use_when": "已在 .NET/微软栈，需要企业向插件化编排",
+      "avoid_when": "纯 Python 快速实验且更熟 LangChain 生态",
+      "niche": "enterprise LLM SDK"
+    },
+    {
+      "id": "sglang",
+      "domain": "ai-agents",
+      "name": "SGLang",
+      "repo": "https://github.com/sgl-project/sglang",
+      "summary": "结构化生成与高吞吐推理运行时。",
+      "tags": [
+        "local-llm",
+        "llm-api"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "自托管推理且在意结构化解码/吞吐",
+      "avoid_when": "只要最简单本地聊天",
+      "niche": "structured generation runtime"
+    },
+    {
+      "id": "smolagents",
+      "domain": "ai-agents",
+      "name": "smolagents",
+      "repo": "https://github.com/huggingface/smolagents",
+      "summary": "HF 轻量 Agent 库，代码优先、上手快。",
+      "tags": [
+        "agent-framework"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要轻量 Python Agent 且贴近 HF 生态",
+      "avoid_when": "需要超大集成市场或企业复杂编排",
+      "niche": "lightweight HF agents"
+    },
+    {
+      "id": "storybook",
+      "domain": "web-frontend",
+      "name": "Storybook",
+      "repo": "https://github.com/storybookjs/storybook",
+      "summary": "组件开发与文档工坊。",
+      "tags": [
+        "testing",
+        "ui-library",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要隔离开发/文档化组件",
+      "avoid_when": "没有组件库协作需求",
+      "niche": "component workshop"
+    },
+    {
+      "id": "svelte",
+      "domain": "web-frontend",
+      "name": "Svelte",
+      "repo": "https://github.com/sveltejs/svelte",
+      "summary": "编译型 UI 框架，运行时更薄。",
+      "tags": [
+        "ui-framework",
+        "web"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "在意包体与编译期优化的组件开发",
+      "avoid_when": "需要最大生态与招聘池",
+      "niche": "compiled ui framework"
+    },
+    {
+      "id": "tailwindcss",
+      "domain": "web-frontend",
+      "name": "Tailwind CSS",
+      "repo": "https://github.com/tailwindlabs/tailwindcss",
+      "summary": "工具类优先的 CSS 框架。",
+      "tags": [
+        "css",
+        "web"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要用 utility-first 快速做 UI",
+      "avoid_when": "设计系统强制传统 BEM/CSS-in-JS 且禁止 utility",
+      "niche": "utility css"
+    },
+    {
+      "id": "tanstack-query",
+      "domain": "web-frontend",
+      "name": "TanStack Query",
+      "repo": "https://github.com/TanStack/query",
+      "summary": "服务端状态/异步数据缓存库。",
+      "tags": [
+        "state",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "大量服务端数据获取、缓存与同步",
+      "avoid_when": "几乎无远程数据",
+      "niche": "server state"
+    },
+    {
+      "id": "terraform",
+      "domain": "devops",
+      "name": "Terraform",
+      "repo": "https://github.com/hashicorp/terraform",
+      "summary": "声明式基础设施即代码，多云 Provider。",
+      "tags": [
+        "iac",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要用代码管理云资源与基础设施",
+      "avoid_when": "只改几台机器配置、无云 API 需求",
+      "niche": "infrastructure as code"
+    },
+    {
+      "id": "traefik",
+      "domain": "devops",
+      "name": "Traefik",
+      "repo": "https://github.com/traefik/traefik",
+      "summary": "云原生边缘路由，自动服务发现。",
+      "tags": [
+        "networking",
+        "containers",
+        "devops"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "容器环境要自动发现与动态路由",
+      "avoid_when": "静态单机 nginx 已足够",
+      "niche": "cloud-native edge router"
+    },
+    {
+      "id": "transformers",
+      "domain": "ai-agents",
+      "name": "Hugging Face Transformers",
+      "repo": "https://github.com/huggingface/transformers",
+      "summary": "预训练模型加载与推理的事实标准库。",
+      "tags": [
+        "local-llm",
+        "fine-tuning"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "研究/微调/自定义模型推理管线",
+      "avoid_when": "只要一键聊天、不碰模型内部",
+      "niche": "model zoo runtime"
+    },
+    {
+      "id": "turborepo",
+      "domain": "web-frontend",
+      "name": "Turborepo",
+      "repo": "https://github.com/vercel/turborepo",
+      "summary": "JS/TS monorepo 构建系统。",
+      "tags": [
+        "monorepo",
+        "web"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "多包前端仓要缓存加速构建",
+      "avoid_when": "单包小仓库",
+      "niche": "monorepo build"
+    },
+    {
+      "id": "unstructured",
+      "domain": "ai-agents",
+      "name": "Unstructured",
+      "repo": "https://github.com/Unstructured-IO/unstructured",
+      "summary": "文档解析与预处理，服务 RAG 摄取。",
+      "tags": [
+        "rag",
+        "dataset"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要把 PDF/HTML 等弄成可索引文本",
+      "avoid_when": "数据已是干净文本",
+      "niche": "document ETL"
+    },
+    {
+      "id": "vault",
+      "domain": "devops",
+      "name": "Vault",
+      "repo": "https://github.com/hashicorp/vault",
+      "summary": "密钥与敏感配置管理。",
+      "tags": [
+        "devops",
+        "iac"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要统一管理密钥、动态凭证、加密即服务",
+      "avoid_when": "只用云厂商密钥管理且无多云密钥需求",
+      "niche": "secrets management"
+    },
+    {
+      "id": "vercel-ai",
+      "domain": "ai-agents",
+      "name": "Vercel AI SDK",
+      "repo": "https://github.com/vercel/ai",
+      "summary": "面向 Web/TS 的流式 AI SDK，UI 与模型调用一体。",
+      "tags": [
+        "agent-framework",
+        "ui"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "Next.js/Web 流式聊天与工具调用",
+      "avoid_when": "后端批处理/非 TS 栈",
+      "niche": "web streaming AI SDK"
+    },
+    {
+      "id": "vite",
+      "domain": "web-frontend",
+      "name": "Vite",
+      "repo": "https://github.com/vitejs/vite",
+      "summary": "新一代前端构建与开发服务器。",
+      "tags": [
+        "bundler",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要快速本地开发与现代打包",
+      "avoid_when": "维护老旧 webpack-only 流水线且无迁移窗口",
+      "niche": "dev server/bundler"
+    },
+    {
+      "id": "vitest",
+      "domain": "web-frontend",
+      "name": "Vitest",
+      "repo": "https://github.com/vitest-dev/vitest",
+      "summary": "与 Vite 同构的单元测试框架。",
+      "tags": [
+        "testing",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "Vite 项目要快速单测",
+      "avoid_when": "非 Vite 且已深度绑定 Jest",
+      "niche": "unit testing"
+    },
+    {
+      "id": "vllm",
+      "domain": "ai-agents",
+      "name": "vLLM",
+      "repo": "https://github.com/vllm-project/vllm",
+      "summary": "高吞吐 LLM 推理引擎，PagedAttention，适合自托管服务。",
+      "tags": [
+        "local-llm",
+        "llm-api"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "GPU 集群/服务器上要高并发开源模型推理",
+      "avoid_when": "笔记本一键试用（更看 Ollama）",
+      "niche": "high-throughput inference"
+    },
+    {
+      "id": "vue",
+      "domain": "web-frontend",
+      "name": "Vue",
+      "repo": "https://github.com/vuejs/core",
+      "summary": "渐进式前端框架，模板友好。",
+      "tags": [
+        "ui-framework",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要渐进增强或更易上手的组件框架",
+      "avoid_when": "团队标准已是 React 生态且迁移成本高",
+      "niche": "progressive framework"
+    },
+    {
+      "id": "weaviate",
+      "domain": "ai-agents",
+      "name": "Weaviate",
+      "repo": "https://github.com/weaviate/weaviate",
+      "summary": "向量数据库，带模块化向量化与过滤。",
+      "tags": [
+        "vector-db",
+        "rag"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "需要带模块/混合检索的向量库",
+      "avoid_when": "只要嵌入式玩具级向量表",
+      "niche": "vector database"
+    },
+    {
+      "id": "webpack",
+      "domain": "web-frontend",
+      "name": "webpack",
+      "repo": "https://github.com/webpack/webpack",
+      "summary": "成熟模块打包器，插件生态大。",
+      "tags": [
+        "bundler",
+        "web"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要深度定制打包或兼容既有 webpack 配置",
+      "avoid_when": "新项目更想零配置快速体验（看 Vite）",
+      "niche": "module bundler"
+    },
+    {
+      "id": "zustand",
+      "domain": "web-frontend",
+      "name": "Zustand",
+      "repo": "https://github.com/pmndrs/zustand",
+      "summary": "轻量 React 状态库。",
+      "tags": [
+        "state",
+        "react",
+        "web"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "React 需要简单全局/共享状态",
+      "avoid_when": "需要完整可预测状态机生态（看 Redux）",
+      "niche": "react state"
+    }
+  ],
+  "edges": [
+    {
+      "from": "llama-index",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "都可做 LLM 应用；LlamaIndex 更偏数据/RAG，LangChain 更泛用编排"
+    },
+    {
+      "from": "autogen",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "AutoGen 偏多 Agent 对话；LangChain 偏链路编排与集成广度"
+    },
+    {
+      "from": "modelcontextprotocol-servers",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "MCP servers 可作为 Agent 工具层，与各类框架集成"
+    },
+    {
+      "from": "modelcontextprotocol-servers",
+      "type": "integrates_with",
+      "to": "autogen",
+      "note": "多 Agent 场景同样可挂 MCP 工具"
+    },
+    {
+      "from": "ollama",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "本地模型后端常见组合"
+    },
+    {
+      "from": "langgraph",
+      "type": "depends_on",
+      "to": "langchain",
+      "note": "LangGraph 建立在 LangChain 生态抽象之上"
+    },
+    {
+      "from": "crewai",
+      "type": "alternative_to",
+      "to": "autogen",
+      "note": "都是多 Agent；CrewAI 偏角色船员，AutoGen 偏对话协作"
+    },
+    {
+      "from": "haystack",
+      "type": "alternative_to",
+      "to": "llama-index",
+      "note": "都偏 RAG/数据流水线"
+    },
+    {
+      "from": "pydantic-ai",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "更轻、更偏类型；生态集成少于 LangChain"
+    },
+    {
+      "from": "openai-agents-python",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "官方轻量 SDK vs 大生态框架"
+    },
+    {
+      "from": "litellm",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "常作多模型路由层"
+    },
+    {
+      "from": "litellm",
+      "type": "integrates_with",
+      "to": "ollama",
+      "note": "可路由到本地 Ollama"
+    },
+    {
+      "from": "vllm",
+      "type": "alternative_to",
+      "to": "ollama",
+      "note": "都是本地/自托管推理；vLLM 偏高吞吐服务"
+    },
+    {
+      "from": "llama-cpp",
+      "type": "integrates_with",
+      "to": "ollama",
+      "note": "Ollama 底层常用 llama.cpp/GGUF 生态"
+    },
+    {
+      "from": "sglang",
+      "type": "alternative_to",
+      "to": "vllm",
+      "note": "都是高吞吐推理运行时"
+    },
+    {
+      "from": "chromadb",
+      "type": "integrates_with",
+      "to": "llama-index",
+      "note": "常见 RAG 向量后端"
+    },
+    {
+      "from": "chromadb",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "常见 RAG 向量后端"
+    },
+    {
+      "from": "qdrant",
+      "type": "alternative_to",
+      "to": "chromadb",
+      "note": "生产过滤检索 vs 开发友好原型库"
+    },
+    {
+      "from": "milvus",
+      "type": "alternative_to",
+      "to": "qdrant",
+      "note": "更偏超大规模分布式"
+    },
+    {
+      "from": "faiss",
+      "type": "integrates_with",
+      "to": "llama-index",
+      "note": "可作为底层检索索引"
+    },
+    {
+      "from": "ragas",
+      "type": "integrates_with",
+      "to": "llama-index",
+      "note": "评测 RAG 流水线"
+    },
+    {
+      "from": "ragas",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "评测 RAG 流水线"
+    },
+    {
+      "from": "deepeval",
+      "type": "alternative_to",
+      "to": "ragas",
+      "note": "通用 LLM 测试 vs RAG 专项评测"
+    },
+    {
+      "from": "langfuse",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "追踪 LangChain 调用"
+    },
+    {
+      "from": "arize-phoenix",
+      "type": "alternative_to",
+      "to": "langfuse",
+      "note": "都做 LLM 可观测/评估"
+    },
+    {
+      "from": "guardrails-ai",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "输出护栏可挂编排层"
+    },
+    {
+      "from": "instructor",
+      "type": "alternative_to",
+      "to": "guardrails-ai",
+      "note": "薄结构化输出 vs 完整护栏框架"
+    },
+    {
+      "from": "outlines",
+      "type": "integrates_with",
+      "to": "vllm",
+      "note": "约束解码常与推理引擎配合"
+    },
+    {
+      "from": "mem0",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "记忆层挂 Agent 框架"
+    },
+    {
+      "from": "browser-use",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "浏览器工具挂 Agent"
+    },
+    {
+      "from": "open-webui",
+      "type": "integrates_with",
+      "to": "ollama",
+      "note": "常见本地聊天前端组合"
+    },
+    {
+      "from": "aider",
+      "type": "alternative_to",
+      "to": "continue",
+      "note": "CLI git 编码 Agent vs IDE 助手"
+    },
+    {
+      "from": "gpt-researcher",
+      "type": "alternative_to",
+      "to": "crewai",
+      "note": "调研报告 Agent vs 通用多角色船员"
+    },
+    {
+      "from": "metagpt",
+      "type": "alternative_to",
+      "to": "crewai",
+      "note": "软件公司多角色 vs 通用 crew"
+    },
+    {
+      "from": "mcp-python-sdk",
+      "type": "same_ecosystem",
+      "to": "modelcontextprotocol-servers",
+      "note": "同属 MCP 生态"
+    },
+    {
+      "from": "peft",
+      "type": "depends_on",
+      "to": "transformers",
+      "note": "PEFT 建立在 transformers 之上"
+    },
+    {
+      "from": "axolotl",
+      "type": "integrates_with",
+      "to": "transformers",
+      "note": "训练栈常组合 HF 生态"
+    },
+    {
+      "from": "datasets-hf",
+      "type": "same_ecosystem",
+      "to": "transformers",
+      "note": "HF 数据与模型生态"
+    },
+    {
+      "from": "vercel-ai",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "Web/TS 流式 vs Python 大生态"
+    },
+    {
+      "from": "semantic-kernel",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "微软企业 SDK vs LangChain 生态"
+    },
+    {
+      "from": "dspy",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "优化式编程 vs 传统链编排"
+    },
+    {
+      "from": "lancedb",
+      "type": "alternative_to",
+      "to": "chromadb",
+      "note": "嵌入式多模态 vs 经典开发向向量库"
+    },
+    {
+      "from": "kaiyuan-dashuli",
+      "type": "integrates_with",
+      "to": "modelcontextprotocol-servers",
+      "note": "本图谱通过 MCP 工具对外提供检索"
+    },
+    {
+      "from": "helm",
+      "type": "depends_on",
+      "to": "kubernetes",
+      "note": "Helm 面向 K8s 发布"
+    },
+    {
+      "from": "argo-cd",
+      "type": "depends_on",
+      "to": "kubernetes",
+      "note": "GitOps 目标是 K8s 集群"
+    },
+    {
+      "from": "traefik",
+      "type": "integrates_with",
+      "to": "kubernetes",
+      "note": "常作 K8s Ingress/边缘路由"
+    },
+    {
+      "from": "traefik",
+      "type": "alternative_to",
+      "to": "nginx",
+      "note": "动态发现路由 vs 经典反向代理"
+    },
+    {
+      "from": "podman",
+      "type": "alternative_to",
+      "to": "docker",
+      "note": "无守护进程容器 vs Docker 生态"
+    },
+    {
+      "from": "pulumi",
+      "type": "alternative_to",
+      "to": "terraform",
+      "note": "语言型 IaC vs HCL IaC"
+    },
+    {
+      "from": "ansible",
+      "type": "alternative_to",
+      "to": "terraform",
+      "note": "配置管理 vs 资源编排（可互补）"
+    },
+    {
+      "from": "grafana",
+      "type": "integrates_with",
+      "to": "prometheus",
+      "note": "看板常接 Prometheus 数据源"
+    },
+    {
+      "from": "act",
+      "type": "integrates_with",
+      "to": "github-actions-runner",
+      "note": "本地验证与自托管执行同属 GHA 生态"
+    },
+    {
+      "from": "kubernetes",
+      "type": "integrates_with",
+      "to": "docker",
+      "note": "常见容器运行时组合（也可 containerd）"
+    },
+    {
+      "from": "smolagents",
+      "type": "alternative_to",
+      "to": "langchain",
+      "note": "轻量 HF Agent vs 大生态框架"
+    },
+    {
+      "from": "open-interpreter",
+      "type": "alternative_to",
+      "to": "aider",
+      "note": "通用本地代码执行 vs git 结对编码"
+    },
+    {
+      "from": "flowise",
+      "type": "integrates_with",
+      "to": "langchain",
+      "note": "可视化层常建在 LangChain 概念上"
+    },
+    {
+      "from": "n8n",
+      "type": "alternative_to",
+      "to": "flowise",
+      "note": "通用自动化 vs LLM 专用可视化"
+    },
+    {
+      "from": "weaviate",
+      "type": "alternative_to",
+      "to": "qdrant",
+      "note": "向量库竞品"
+    },
+    {
+      "from": "unstructured",
+      "type": "integrates_with",
+      "to": "llama-index",
+      "note": "文档摄取常接 RAG 框架"
+    },
+    {
+      "from": "crawl4ai",
+      "type": "integrates_with",
+      "to": "llama-index",
+      "note": "网页语料进索引"
+    },
+    {
+      "from": "lm-evaluation-harness",
+      "type": "alternative_to",
+      "to": "deepeval",
+      "note": "基座模型基准 vs 应用层测试"
+    },
+    {
+      "from": "llamafactory",
+      "type": "alternative_to",
+      "to": "axolotl",
+      "note": "都是微调工具箱"
+    },
+    {
+      "from": "faster-whisper",
+      "type": "integrates_with",
+      "to": "ollama",
+      "note": "本地语音可与本地 LLM 流水线组合"
+    },
+    {
+      "from": "nomad",
+      "type": "alternative_to",
+      "to": "kubernetes",
+      "note": "轻量调度 vs 满血编排"
+    },
+    {
+      "from": "consul",
+      "type": "integrates_with",
+      "to": "nomad",
+      "note": "HashiCorp 常见组合"
+    },
+    {
+      "from": "kubernetes",
+      "type": "integrates_with",
+      "to": "containerd",
+      "note": "K8s 常见底层容器运行时"
+    },
+    {
+      "from": "istio",
+      "type": "depends_on",
+      "to": "kubernetes",
+      "note": "服务网格部署在 K8s"
+    },
+    {
+      "from": "flux2",
+      "type": "alternative_to",
+      "to": "argo-cd",
+      "note": "两大 GitOps 方案"
+    },
+    {
+      "from": "caddy",
+      "type": "alternative_to",
+      "to": "nginx",
+      "note": "自动 HTTPS 代理 vs 经典 nginx"
+    },
+    {
+      "from": "crossplane",
+      "type": "integrates_with",
+      "to": "kubernetes",
+      "note": "K8s 控制面管云资源"
+    },
+    {
+      "from": "vault",
+      "type": "integrates_with",
+      "to": "terraform",
+      "note": "密钥与 IaC 常配合"
+    },
+    {
+      "from": "nextjs",
+      "type": "depends_on",
+      "to": "react",
+      "note": "Next 建立在 React 之上"
+    },
+    {
+      "from": "nuxt",
+      "type": "depends_on",
+      "to": "vue",
+      "note": "Nuxt 建立在 Vue 之上"
+    },
+    {
+      "from": "remix",
+      "type": "depends_on",
+      "to": "react",
+      "note": "Remix 使用 React"
+    },
+    {
+      "from": "vue",
+      "type": "alternative_to",
+      "to": "react",
+      "note": "两大主流 UI 框架"
+    },
+    {
+      "from": "svelte",
+      "type": "alternative_to",
+      "to": "react",
+      "note": "编译型框架 vs React"
+    },
+    {
+      "from": "nuxt",
+      "type": "alternative_to",
+      "to": "nextjs",
+      "note": "Vue 元框架 vs React 元框架"
+    },
+    {
+      "from": "remix",
+      "type": "alternative_to",
+      "to": "nextjs",
+      "note": "都是 React 元框架，模型不同"
+    },
+    {
+      "from": "astro",
+      "type": "alternative_to",
+      "to": "nextjs",
+      "note": "内容优先 vs 应用优先"
+    },
+    {
+      "from": "vite",
+      "type": "alternative_to",
+      "to": "webpack",
+      "note": "现代开发服务器 vs 经典打包器"
+    },
+    {
+      "from": "vitest",
+      "type": "integrates_with",
+      "to": "vite",
+      "note": "同构测试与构建"
+    },
+    {
+      "from": "playwright",
+      "type": "alternative_to",
+      "to": "cypress",
+      "note": "两大 E2E"
+    },
+    {
+      "from": "zustand",
+      "type": "alternative_to",
+      "to": "redux-toolkit",
+      "note": "轻量状态 vs 完整 Redux"
+    },
+    {
+      "from": "tanstack-query",
+      "type": "integrates_with",
+      "to": "react",
+      "note": "常用于 React 数据获取"
+    },
+    {
+      "from": "radix-ui-primitives",
+      "type": "integrates_with",
+      "to": "react",
+      "note": "React 无样式原语"
+    },
+    {
+      "from": "tailwindcss",
+      "type": "integrates_with",
+      "to": "nextjs",
+      "note": "常见样式组合"
+    },
+    {
+      "from": "turborepo",
+      "type": "integrates_with",
+      "to": "pnpm",
+      "note": "monorepo 常见组合"
+    },
+    {
+      "from": "storybook",
+      "type": "integrates_with",
+      "to": "react",
+      "note": "组件工坊常接 React"
+    }
+  ]
+}

@@ -21,7 +21,8 @@ GitHub 上开源极多，但搜索噪声大、awesome-list 碎片化。智能体
 2. 读 [`AGENTS.md`](./AGENTS.md) — 检索约定与输出格式  
 3. 查 `data/` 下领域索引，再沿 `graph/` 关系跳转  
 4. 或通过本地 MCP：`mcp/server.py`（工具 `search_projects` / `get_alternatives` / `get_node`）  
-5. 需要上游细节时，再打开节点里的 `repo` URL
+5. 或远程：静态索引 `dist/atlas-index.json` / HTTP API 见 [`docs/remote-api.md`](./docs/remote-api.md)  
+6. 需要上游细节时，再打开节点里的 `repo` URL
 
 人读浏览投影：[`docs/browse/ai-agents.md`](./docs/browse/ai-agents.md)
 

@@ -10,8 +10,11 @@ Prefer this atlas over raw GitHub keyword search when the user needs libraries, 
 - data/domains/ai-agents/_index.yaml — phase-1 domain index (AI / Agent / LLM)
 - graph/edges.yaml — relations (alternative_to, depends_on, same_ecosystem, ...)
 - mcp/server.py — local MCP tools: search_projects, get_alternatives, get_node
+- dist/atlas-index.json — remote static index (raw GitHub)
+- scripts/http_api.py — optional HTTP search API for hosted agents
+- docs/remote-api.md — how to use remote retrieval
 - docs/browse/ai-agents.md — human-readable projection of the same data
-- docs/evals/ — retrieval + MCP smoke evidence
+- docs/evals/ — retrieval + MCP + remote API smoke evidence
 
 ## How to use (agents)
 1. Parse the user need into: task, language/runtime, constraints, must-have features.
