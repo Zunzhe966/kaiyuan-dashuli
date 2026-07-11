@@ -1,0 +1,58 @@
+# 开源大梳理 — ontology（分类与字段规范）
+version: 0.1.0
+updated: 2026-07-11
+
+# 领域（第一期只启用 ai-agents）
+domains:
+  ai-agents:
+    title: AI / Agent / LLM 工具链
+    description: 模型接入、Agent 框架、RAG、评测、提示词、MCP、编排与观测
+  # 后续扩面示例（暂不填充）
+  # languages: ...
+  # devops: ...
+
+# 节点类型
+node_types:
+  project:
+    description: 一个可指向的开源仓库或组织级产品
+  category:
+    description: 分类节点（可嵌套）
+  ecosystem:
+    description: 生态位（如 LangChain 生态、Hugging Face 生态）
+
+# 项目节点必填/选填字段
+project_fields:
+  required: [id, name, repo, summary, tags, status]
+  optional: [homepage, language, license, use_when, avoid_when, niche, related_ecosystem, quality_notes]
+
+# 关系类型
+edge_types:
+  alternative_to:
+    description: A 与 B 解决同类问题，可互相替代
+  depends_on:
+    description: A 常见依赖或建立在 B 之上
+  integrates_with:
+    description: A 与 B 常集成，但非硬依赖
+  supersedes:
+    description: A 在多数场景更推荐于 B（后继/更优默认）
+  same_ecosystem:
+    description: 同属一个生态，配套使用
+  parent_category:
+    description: 分类从属
+
+# 标签约定（可扩展；写入时尽量复用）
+tag_vocabulary:
+  - agent-framework
+  - llm-api
+  - rag
+  - vector-db
+  - eval
+  - prompt
+  - mcp
+  - orchestration
+  - observability
+  - local-llm
+  - fine-tuning
+  - dataset
+  - ui
+  - multi-agent

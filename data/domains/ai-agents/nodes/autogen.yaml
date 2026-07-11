@@ -1,0 +1,12 @@
+id: autogen
+type: project
+name: AutoGen
+repo: https://github.com/microsoft/autogen
+summary: 微软系多 Agent 对话与协作框架。
+tags: [agent-framework, multi-agent, orchestration]
+language: Python
+status: active
+use_when: 需要多角色 Agent 对话协作原型
+avoid_when: 只要单 Agent 工具调用，不想引入多 Agent 复杂度
+niche: multi-agent conversation framework
+related_ecosystem: autogen

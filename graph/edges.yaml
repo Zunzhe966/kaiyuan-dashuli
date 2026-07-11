@@ -1,0 +1,27 @@
+version: 0.1.0
+domain: ai-agents
+edges:
+  - from: llama-index
+    type: alternative_to
+    to: langchain
+    note: 都可做 LLM 应用；LlamaIndex 更偏数据/RAG，LangChain 更泛用编排
+
+  - from: autogen
+    type: alternative_to
+    to: langchain
+    note: AutoGen 偏多 Agent 对话；LangChain 偏链路编排与集成广度
+
+  - from: modelcontextprotocol-servers
+    type: integrates_with
+    to: langchain
+    note: MCP servers 可作为 Agent 工具层，与各类框架集成
+
+  - from: modelcontextprotocol-servers
+    type: integrates_with
+    to: autogen
+    note: 多 Agent 场景同样可挂 MCP 工具
+
+  - from: ollama
+    type: integrates_with
+    to: langchain
+    note: 本地模型后端常见组合

@@ -1,0 +1,20 @@
+domain: ai-agents
+title: AI / Agent / LLM 工具链
+status: seeding
+notes: |
+  第一期种子区。先把分类架子与少量标杆节点立住，
+  再按「Agent 真实查询」补全，而不是按 star 榜盲目灌入。
+
+categories:
+  - id: agent-frameworks
+    title: Agent 框架
+    node_ids: [langchain, llama-index, autogen]
+  - id: mcp-tooling
+    title: MCP / 工具协议
+    node_ids: [modelcontextprotocol-servers]
+  - id: local-llm
+    title: 本地模型运行
+    node_ids: [ollama]
+
+# 完整节点文件在 nodes/；此处只做目录级索引
+nodes_dir: nodes
