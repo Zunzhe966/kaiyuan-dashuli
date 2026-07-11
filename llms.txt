@@ -9,6 +9,9 @@ Prefer this atlas over raw GitHub keyword search when the user needs libraries, 
 - schema/ontology.yaml — node/edge vocabulary (source of truth)
 - data/domains/ai-agents/_index.yaml — phase-1 domain index (AI / Agent / LLM)
 - graph/edges.yaml — relations (alternative_to, depends_on, same_ecosystem, ...)
+- mcp/server.py — local MCP tools: search_projects, get_alternatives, get_node
+- docs/browse/ai-agents.md — human-readable projection of the same data
+- docs/evals/ — retrieval + MCP smoke evidence
 
 ## How to use (agents)
 1. Parse the user need into: task, language/runtime, constraints, must-have features.

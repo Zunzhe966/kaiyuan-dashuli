@@ -1,0 +1,96 @@
+{
+  "tools": [
+    "get_alternatives",
+    "get_node",
+    "search_projects"
+  ],
+  "search_projects": {
+    "results": [
+      {
+        "id": "open-webui",
+        "name": "Open WebUI",
+        "repo": "https://github.com/open-webui/open-webui",
+        "summary": "自托管的 ChatGPT 风格 Web UI，常配 Ollama。",
+        "use_when": "给本地/私有模型一个好用聊天界面",
+        "avoid_when": "只要 API 不要前端",
+        "score": 5.0
+      },
+      {
+        "id": "ollama",
+        "name": "Ollama",
+        "repo": "https://github.com/ollama/ollama",
+        "summary": "本地一键跑开源大模型的运行时与模型分发。",
+        "use_when": "本地/内网推理、快速试用开源模型",
+        "avoid_when": "需要大规模分布式推理集群（应看 vLLM 等）",
+        "score": 5.0
+      },
+      {
+        "id": "llama-cpp",
+        "name": "llama.cpp",
+        "repo": "https://github.com/ggml-org/llama.cpp",
+        "summary": "C/C++ 本地 LLM 推理，GGUF 生态核心。",
+        "use_when": "CPU/消费级 GPU 本地跑量化模型、嵌入式部署",
+        "avoid_when": "需要多租户高并发 OpenAI 兼容服务集群",
+        "score": 5.0
+      }
+    ]
+  },
+  "get_alternatives": {
+    "results": [
+      {
+        "id": "llama-index",
+        "name": "LlamaIndex",
+        "repo": "https://github.com/run-llama/llama_index",
+        "summary": "偏 RAG / 数据接入的 LLM 框架，文档与索引工作流强。",
+        "use_when": "核心需求是文档问答、索引与检索增强",
+        "avoid_when": "主要做多 Agent 协作且不需要复杂数据连接器",
+        "edge_type": "alternative_to",
+        "note": "都可做 LLM 应用；LlamaIndex 更偏数据/RAG，LangChain 更泛用编排"
+      },
+      {
+        "id": "autogen",
+        "name": "AutoGen",
+        "repo": "https://github.com/microsoft/autogen",
+        "summary": "微软系多 Agent 对话与协作框架。",
+        "use_when": "需要多角色 Agent 对话协作原型",
+        "avoid_when": "只要单 Agent 工具调用，不想引入多 Agent 复杂度",
+        "edge_type": "alternative_to",
+        "note": "AutoGen 偏多 Agent 对话；LangChain 偏链路编排与集成广度"
+      },
+      {
+        "id": "pydantic-ai",
+        "name": "Pydantic AI",
+        "repo": "https://github.com/pydantic/pydantic-ai",
+        "summary": "Pydantic 团队的类型友好 Agent 框架，结构化输出强。",
+        "use_when": "要强类型、依赖注入式 Agent 与结构化结果",
+        "avoid_when": "需要巨型现成集成市场",
+        "edge_type": "alternative_to",
+        "note": "更轻、更偏类型；生态集成少于 LangChain"
+      },
+      {
+        "id": "openai-agents-python",
+        "name": "OpenAI Agents SDK",
+        "repo": "https://github.com/openai/openai-agents-python",
+        "summary": "OpenAI 官方轻量多 Agent/工具编排 SDK。",
+        "use_when": "主要走 OpenAI 模型与官方 Agent 抽象",
+        "avoid_when": "必须厂商中立、避免绑定 OpenAI API 形态",
+        "edge_type": "alternative_to",
+        "note": "官方轻量 SDK vs 大生态框架"
+      },
+      {
+        "id": "vercel-ai",
+        "name": "Vercel AI SDK",
+        "repo": "https://github.com/vercel/ai",
+        "summary": "面向 Web/TS 的流式 AI SDK，UI 与模型调用一体。",
+        "use_when": "Next.js/Web 流式聊天与工具调用",
+        "avoid_when": "后端批处理/非 TS 栈",
+        "edge_type": "alternative_to",
+        "note": "Web/TS 流式 vs Python 大生态"
+      }
+    ]
+  },
+  "get_node": {
+    "id": "ollama",
+    "edge_count": 5
+  }
+}
