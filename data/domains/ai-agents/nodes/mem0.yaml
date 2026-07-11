@@ -1,0 +1,12 @@
+id: mem0
+type: project
+name: Mem0
+repo: https://github.com/mem0ai/mem0
+summary: Agent 长期记忆层，跨会话偏好与事实存储。
+tags: [agent-framework, rag]
+language: Python
+status: active
+use_when: 聊天/Agent 需要跨会话记忆
+avoid_when: 无状态单次完成任务
+niche: agent memory layer
+related_ecosystem: mem0

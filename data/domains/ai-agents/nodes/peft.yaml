@@ -1,0 +1,12 @@
+id: peft
+type: project
+name: PEFT
+repo: https://github.com/huggingface/peft
+summary: Hugging Face 参数高效微调库（LoRA 等）。
+tags: [fine-tuning]
+language: Python
+status: active
+use_when: 要做 LoRA/QLoRA 等高效微调
+avoid_when: 不做训练，只做推理
+niche: parameter-efficient finetuning
+related_ecosystem: huggingface

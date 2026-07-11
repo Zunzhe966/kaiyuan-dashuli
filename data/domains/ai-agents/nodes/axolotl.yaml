@@ -1,0 +1,12 @@
+id: axolotl
+type: project
+name: Axolotl
+repo: https://github.com/axolotl-ai-cloud/axolotl
+summary: 大模型微调工具包，配置化训练常见。
+tags: [fine-tuning]
+language: Python
+status: active
+use_when: 要用现成配置跑开源模型 SFT/偏好训练
+avoid_when: 只需调用托管微调 API
+niche: LLM finetune toolkit
+related_ecosystem: axolotl

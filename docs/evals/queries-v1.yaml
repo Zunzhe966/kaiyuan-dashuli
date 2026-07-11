@@ -1,0 +1,51 @@
+version: 1
+domain: ai-agents
+queries:
+  - id: q1
+    query: 我想做多 Agent 角色分工协作，Python
+    intent_tags: [multi-agent]
+    expect_any: [crewai, autogen, metagpt, openai-agents-python]
+  - id: q2
+    query: 本地笔记本快速跑开源模型聊天
+    intent_tags: [local-llm]
+    expect_any: [ollama, open-webui, llama-cpp]
+  - id: q3
+    query: GPU 服务器高并发自托管推理
+    intent_tags: [local-llm]
+    expect_any: [vllm, sglang]
+  - id: q4
+    query: 做文档问答 RAG，偏数据连接与索引
+    intent_tags: [rag]
+    expect_any: [llama-index, haystack]
+  - id: q5
+    query: 需要向量库，先快速原型
+    intent_tags: [vector-db]
+    expect_any: [chromadb, lancedb]
+  - id: q6
+    query: 生产环境要带过滤条件的向量检索
+    intent_tags: [vector-db]
+    expect_any: [qdrant, milvus]
+  - id: q7
+    query: 给 Agent 接 MCP 工具
+    intent_tags: [mcp]
+    expect_any: [modelcontextprotocol-servers, mcp-python-sdk]
+  - id: q8
+    query: 追踪生产环境 LLM 调用和提示版本
+    intent_tags: [observability]
+    expect_any: [langfuse, arize-phoenix]
+  - id: q9
+    query: 把 RAG 质量纳入自动评测
+    intent_tags: [eval, rag]
+    expect_any: [ragas, deepeval]
+  - id: q10
+    query: 只要强类型结构化输出，不要重型 Agent 框架
+    intent_tags: [prompt]
+    expect_any: [instructor, pydantic-ai, outlines]
+  - id: q11
+    query: VS Code 里开源编码助手
+    intent_tags: [ui]
+    expect_any: [continue]
+  - id: q12
+    query: 统一多个模型供应商的 API 路由
+    intent_tags: [llm-api]
+    expect_any: [litellm]

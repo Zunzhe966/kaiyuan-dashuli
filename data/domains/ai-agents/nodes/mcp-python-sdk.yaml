@@ -1,0 +1,12 @@
+id: mcp-python-sdk
+type: project
+name: MCP Python SDK
+repo: https://github.com/modelcontextprotocol/python-sdk
+summary: Model Context Protocol 官方 Python SDK。
+tags: [mcp]
+language: Python
+status: active
+use_when: 要用 Python 实现 MCP client/server
+avoid_when: 不采用 MCP，只用私有 function calling
+niche: MCP python SDK
+related_ecosystem: mcp

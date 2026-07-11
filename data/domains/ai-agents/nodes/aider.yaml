@@ -1,0 +1,12 @@
+id: aider
+type: project
+name: Aider
+repo: https://github.com/Aider-AI/aider
+summary: 终端里的 AI 结对编程，直接改 git 仓库。
+tags: [agent-framework]
+language: Python
+status: active
+use_when: 命令行驱动、以 git 为中心的编码 Agent
+avoid_when: 要 IDE 内嵌体验为主
+niche: CLI coding agent
+related_ecosystem: aider

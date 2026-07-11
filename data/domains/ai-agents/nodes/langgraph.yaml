@@ -1,0 +1,12 @@
+id: langgraph
+type: project
+name: LangGraph
+repo: https://github.com/langchain-ai/langgraph
+summary: LangChain 生态的图/状态机式 Agent 编排，适合可控多步工作流。
+tags: [agent-framework, orchestration]
+language: Python
+status: active
+use_when: 需要显式状态图、循环、人机审批的 Agent 流程
+avoid_when: 只要简单链式 LLM 调用，不想引入图运行时
+niche: graph-based agent orchestration
+related_ecosystem: langchain

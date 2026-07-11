@@ -1,0 +1,12 @@
+id: guardrails-ai
+type: project
+name: Guardrails AI
+repo: https://github.com/guardrails-ai/guardrails
+summary: LLM 输出校验与护栏框架。
+tags: [prompt]
+language: Python
+status: active
+use_when: 要对输出做结构/安全/策略校验
+avoid_when: 模型已可靠且只需自由文本
+niche: output guardrails
+related_ecosystem: guardrails

@@ -1,0 +1,12 @@
+id: sglang
+type: project
+name: SGLang
+repo: https://github.com/sgl-project/sglang
+summary: 结构化生成与高吞吐推理运行时。
+tags: [local-llm, llm-api]
+language: Python
+status: active
+use_when: 自托管推理且在意结构化解码/吞吐
+avoid_when: 只要最简单本地聊天
+niche: structured generation runtime
+related_ecosystem: sglang

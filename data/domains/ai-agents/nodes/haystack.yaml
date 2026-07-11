@@ -1,0 +1,12 @@
+id: haystack
+type: project
+name: Haystack
+repo: https://github.com/deepset-ai/haystack
+summary: deepset 的 NLP/RAG 流水线框架，管道组合清晰。
+tags: [rag, agent-framework]
+language: Python
+status: active
+use_when: 生产向 RAG 管道、组件可替换
+avoid_when: 只要最薄的向量检索包装
+niche: RAG pipelines
+related_ecosystem: haystack

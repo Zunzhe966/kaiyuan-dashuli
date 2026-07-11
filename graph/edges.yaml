@@ -25,3 +25,188 @@ edges:
     type: integrates_with
     to: langchain
     note: 本地模型后端常见组合
+
+  - from: langgraph
+    type: depends_on
+    to: langchain
+    note: LangGraph 建立在 LangChain 生态抽象之上
+
+  - from: crewai
+    type: alternative_to
+    to: autogen
+    note: 都是多 Agent；CrewAI 偏角色船员，AutoGen 偏对话协作
+
+  - from: haystack
+    type: alternative_to
+    to: llama-index
+    note: 都偏 RAG/数据流水线
+
+  - from: pydantic-ai
+    type: alternative_to
+    to: langchain
+    note: 更轻、更偏类型；生态集成少于 LangChain
+
+  - from: openai-agents-python
+    type: alternative_to
+    to: langchain
+    note: 官方轻量 SDK vs 大生态框架
+
+  - from: litellm
+    type: integrates_with
+    to: langchain
+    note: 常作多模型路由层
+
+  - from: litellm
+    type: integrates_with
+    to: ollama
+    note: 可路由到本地 Ollama
+
+  - from: vllm
+    type: alternative_to
+    to: ollama
+    note: 都是本地/自托管推理；vLLM 偏高吞吐服务
+
+  - from: llama-cpp
+    type: integrates_with
+    to: ollama
+    note: Ollama 底层常用 llama.cpp/GGUF 生态
+
+  - from: sglang
+    type: alternative_to
+    to: vllm
+    note: 都是高吞吐推理运行时
+
+  - from: chromadb
+    type: integrates_with
+    to: llama-index
+    note: 常见 RAG 向量后端
+
+  - from: chromadb
+    type: integrates_with
+    to: langchain
+    note: 常见 RAG 向量后端
+
+  - from: qdrant
+    type: alternative_to
+    to: chromadb
+    note: 生产过滤检索 vs 开发友好原型库
+
+  - from: milvus
+    type: alternative_to
+    to: qdrant
+    note: 更偏超大规模分布式
+
+  - from: faiss
+    type: integrates_with
+    to: llama-index
+    note: 可作为底层检索索引
+
+  - from: ragas
+    type: integrates_with
+    to: llama-index
+    note: 评测 RAG 流水线
+
+  - from: ragas
+    type: integrates_with
+    to: langchain
+    note: 评测 RAG 流水线
+
+  - from: deepeval
+    type: alternative_to
+    to: ragas
+    note: 通用 LLM 测试 vs RAG 专项评测
+
+  - from: langfuse
+    type: integrates_with
+    to: langchain
+    note: 追踪 LangChain 调用
+
+  - from: arize-phoenix
+    type: alternative_to
+    to: langfuse
+    note: 都做 LLM 可观测/评估
+
+  - from: guardrails-ai
+    type: integrates_with
+    to: langchain
+    note: 输出护栏可挂编排层
+
+  - from: instructor
+    type: alternative_to
+    to: guardrails-ai
+    note: 薄结构化输出 vs 完整护栏框架
+
+  - from: outlines
+    type: integrates_with
+    to: vllm
+    note: 约束解码常与推理引擎配合
+
+  - from: mem0
+    type: integrates_with
+    to: langchain
+    note: 记忆层挂 Agent 框架
+
+  - from: browser-use
+    type: integrates_with
+    to: langchain
+    note: 浏览器工具挂 Agent
+
+  - from: open-webui
+    type: integrates_with
+    to: ollama
+    note: 常见本地聊天前端组合
+
+  - from: aider
+    type: alternative_to
+    to: continue
+    note: CLI git 编码 Agent vs IDE 助手
+
+  - from: gpt-researcher
+    type: alternative_to
+    to: crewai
+    note: 调研报告 Agent vs 通用多角色船员
+
+  - from: metagpt
+    type: alternative_to
+    to: crewai
+    note: 软件公司多角色 vs 通用 crew
+
+  - from: mcp-python-sdk
+    type: same_ecosystem
+    to: modelcontextprotocol-servers
+    note: 同属 MCP 生态
+
+  - from: peft
+    type: depends_on
+    to: transformers
+    note: PEFT 建立在 transformers 之上
+
+  - from: axolotl
+    type: integrates_with
+    to: transformers
+    note: 训练栈常组合 HF 生态
+
+  - from: datasets-hf
+    type: same_ecosystem
+    to: transformers
+    note: HF 数据与模型生态
+
+  - from: vercel-ai
+    type: alternative_to
+    to: langchain
+    note: Web/TS 流式 vs Python 大生态
+
+  - from: semantic-kernel
+    type: alternative_to
+    to: langchain
+    note: 微软企业 SDK vs LangChain 生态
+
+  - from: dspy
+    type: alternative_to
+    to: langchain
+    note: 优化式编程 vs 传统链编排
+
+  - from: lancedb
+    type: alternative_to
+    to: chromadb
+    note: 嵌入式多模态 vs 经典开发向向量库

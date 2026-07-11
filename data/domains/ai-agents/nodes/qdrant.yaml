@@ -1,0 +1,12 @@
+id: qdrant
+type: project
+name: Qdrant
+repo: https://github.com/qdrant/qdrant
+summary: Rust 向量数据库，过滤与生产部署友好。
+tags: [vector-db, rag]
+language: Rust
+status: active
+use_when: 需要可过滤的向量检索与较稳的生产部署
+avoid_when: 只要进程内玩具级向量表
+niche: filtered vector search
+related_ecosystem: qdrant

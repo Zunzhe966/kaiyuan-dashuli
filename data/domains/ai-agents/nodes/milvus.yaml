@@ -1,0 +1,12 @@
+id: milvus
+type: project
+name: Milvus
+repo: https://github.com/milvus-io/milvus
+summary: 云原生大规模向量数据库。
+tags: [vector-db, rag]
+language: Go
+status: active
+use_when: 十亿级向量、分布式检索
+avoid_when: 单机小语料原型
+niche: large-scale vector DB
+related_ecosystem: milvus
