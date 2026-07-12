@@ -945,3 +945,69 @@ edges:
     type: alternative_to
     to: flutter-desktop
     note: Kotlin 多端 vs Flutter 多端
+
+  - from: pytorch
+    type: integrates_with
+    to: langchain
+    note: LLM 应用常叠训练/推理栈
+
+  - from: mlflow
+    type: integrates_with
+    to: fastapi
+    note: 模型服务常挂 API
+
+  - from: airflow
+    type: integrates_with
+    to: kubernetes
+    note: 编排任务常跑在 K8s
+
+  - from: electron
+    type: alternative_to
+    to: flutter-desktop
+    note: Web 壳 vs Flutter 桌面
+
+  - from: nestjs
+    type: integrates_with
+    to: postgresql
+    note: Node 后端常接 Postgres
+
+  - from: trivy
+    type: integrates_with
+    to: kubernetes
+    note: 集群镜像漏洞扫描
+
+  - from: prometheus
+    type: integrates_with
+    to: kubernetes
+    note: 云原生观测标配
+
+  - from: ollama
+    type: integrates_with
+    to: open-webui
+    note: 本地模型+Web UI
+
+  - from: pandas
+    type: integrates_with
+    to: postgresql
+    note: 表格数据常落仓/抽取
+
+  - from: uv
+    type: integrates_with
+    to: ruff
+    note: Astral 工具链
+
+  - from: ripgrep
+    type: integrates_with
+    to: fzf
+    note: 搜索+模糊选择工作流
+
+  - from: docker
+    type: integrates_with
+    to: github-actions-runner
+    note: CI 构建容器
+
+  - from: celery
+    type: depends_on
+    to: redis
+    note: 常见 broker
+
