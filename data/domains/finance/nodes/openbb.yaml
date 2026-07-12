@@ -1,0 +1,12 @@
+id: openbb
+type: project
+name: OpenBB
+repo: https://github.com/OpenBB-finance/OpenBB
+summary: 开源投资研究平台。
+tags: [finance, research, terminal]
+language: Python
+status: active
+use_when: 要一站式开源投研终端/数据路由
+avoid_when: 只要单个数据下载脚本
+niche: research platform
+related_ecosystem: finance

@@ -1,0 +1,12 @@
+id: gnucash
+type: project
+name: GnuCash
+repo: https://github.com/Gnucash/gnucash
+summary: 开源复式记账财务软件。
+tags: [finance, accounting, desktop]
+language: C++
+status: active
+use_when: 要个人/小企业复式记账
+avoid_when: 只要轻量预算 App
+niche: accounting
+related_ecosystem: finance

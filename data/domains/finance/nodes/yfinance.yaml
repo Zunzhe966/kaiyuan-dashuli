@@ -1,0 +1,12 @@
+id: yfinance
+type: project
+name: yfinance
+repo: https://github.com/ranaroussi/yfinance
+summary: Yahoo Finance 行情下载器。
+tags: [finance, market-data, python]
+language: Python
+status: active
+use_when: 快速拉股票/ETF 历史行情做研究
+avoid_when: 要生产级付费数据源 SLA
+niche: market data
+related_ecosystem: finance

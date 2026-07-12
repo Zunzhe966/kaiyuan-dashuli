@@ -1,0 +1,12 @@
+id: vectorbt
+type: project
+name: vectorbt
+repo: https://github.com/polakowo/vectorbt
+summary: 基于 NumPy/Pandas 的高速向量化回测。
+tags: [finance, backtest, python]
+language: Python
+status: active
+use_when: 要快速参数扫描与向量化回测
+avoid_when: 要精细订单簿级仿真
+niche: vector backtest
+related_ecosystem: finance

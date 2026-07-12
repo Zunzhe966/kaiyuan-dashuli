@@ -234,6 +234,14 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
         if nid == "postgis": s += 3
     if "地理数据转换" in query or "GDAL" in query:
         if nid in ("gdal", "rasterio", "geopandas"): s += 2
+    if "加密货币交易机器人" in query or "交易所 API" in query:
+        if nid in ("freqtrade", "ccxt"): s += 3
+    if "策略回测" in query or "量化回测" in query:
+        if nid in ("backtrader", "zipline-reloaded", "vectorbt", "lean"): s += 3
+    if "自托管记账" in query or "个人预算" in query:
+        if nid in ("firefly-iii", "actual-budget", "gnucash", "hledger", "ledger-cli"): s += 3
+    if "A 股" in query or "国内财经数据" in query:
+        if nid == "akshare": s += 3
     return s
 
 

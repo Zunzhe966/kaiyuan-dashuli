@@ -1,0 +1,12 @@
+id: backtrader
+type: project
+name: backtrader
+repo: https://github.com/mementum/backtrader
+summary: Python 回测与交易框架。
+tags: [finance, backtest, python]
+language: Python
+status: active
+use_when: 要灵活的 Python 策略回测框架
+avoid_when: 要超大规模机构级回测平台
+niche: backtest
+related_ecosystem: finance

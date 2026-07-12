@@ -1,0 +1,12 @@
+id: akshare
+type: project
+name: AKShare
+repo: https://github.com/akfamily/akshare
+summary: 中国财经数据接口库。
+tags: [finance, market-data, china]
+language: Python
+status: active
+use_when: 要 A 股/国内财经公开数据
+avoid_when: 只要美股 Yahoo 源
+niche: cn market data
+related_ecosystem: finance

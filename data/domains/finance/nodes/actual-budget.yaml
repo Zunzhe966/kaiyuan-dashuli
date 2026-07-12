@@ -1,0 +1,12 @@
+id: actual-budget
+type: project
+name: Actual Budget
+repo: https://github.com/actualbudget/actual
+summary: 本地优先的个人预算工具。
+tags: [finance, personal-finance]
+language: JavaScript
+status: active
+use_when: 要本地/可同步的预算记账
+avoid_when: 要企业总账
+niche: budgeting
+related_ecosystem: finance

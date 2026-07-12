@@ -1,0 +1,12 @@
+id: zipline-reloaded
+type: project
+name: Zipline-Reloaded
+repo: https://github.com/stefan-jansen/zipline-reloaded
+summary: 算法交易回测库（Zipline 社区维护版）。
+tags: [finance, backtest, python]
+language: Python
+status: active
+use_when: 要事件驱动的股票策略回测
+avoid_when: 只要简单向量化回测脚本
+niche: backtest
+related_ecosystem: finance

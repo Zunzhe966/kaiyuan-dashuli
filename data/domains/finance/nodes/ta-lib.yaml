@@ -1,0 +1,12 @@
+id: ta-lib
+type: project
+name: TA-Lib
+repo: https://github.com/TA-Lib/ta-lib
+summary: 技术分析指标库。
+tags: [finance, indicators]
+language: C
+status: active
+use_when: 要经典技术指标计算
+avoid_when: 只要基本涨跌幅统计
+niche: indicators
+related_ecosystem: finance

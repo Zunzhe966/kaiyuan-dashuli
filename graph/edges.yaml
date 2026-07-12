@@ -1785,3 +1785,173 @@ edges:
     type: integrates_with
     to: postgis
     note: 发布库内空间数据
+
+  - from: postgis
+    type: integrates_with
+    to: django
+    note: Django 常接 PostGIS
+
+  - from: postgis
+    type: integrates_with
+    to: geopandas
+    note: 分析层读写空间库
+
+  - from: godot
+    type: integrates_with
+    to: blender
+    note: 3D 资产进引擎
+
+  - from: godot
+    type: integrates_with
+    to: aseprite
+    note: 2D 像素资产
+
+  - from: bevy
+    type: integrates_with
+    to: wgpu
+    note: 已有则跳过
+
+  - from: phaser
+    type: integrates_with
+    to: tiled
+    note: 已有则跳过
+
+  - from: ffmpeg
+    type: integrates_with
+    to: obs-studio
+    note: 录播后期处理
+
+  - from: jellyfin
+    type: integrates_with
+    to: ffmpeg
+    note: 转码依赖
+
+  - from: home-assistant
+    type: integrates_with
+    to: mosquitto
+    note: 智能家居 MQTT
+
+  - from: maplibre-gl
+    type: integrates_with
+    to: tippecanoe
+    note: 瓦片供给渲染
+
+  - from: deckgl
+    type: integrates_with
+    to: keplergl
+    note: 可视化栈
+
+  - from: opencv
+    type: integrates_with
+    to: gstreamer
+    note: 视觉管线
+
+  - from: threejs
+    type: integrates_with
+    to: vite
+    note: Web 工程脚手架
+
+  - from: geopandas
+    type: integrates_with
+    to: pandas
+    note: 建立在 DataFrame 生态
+
+  - from: rasterio
+    type: integrates_with
+    to: numpy
+    note: 栅格数组常经 NumPy
+
+  - from: gdal
+    type: integrates_with
+    to: qgis
+    note: 数据能力支撑桌面 GIS
+
+  - from: apisix
+    type: integrates_with
+    to: opentelemetry-collector
+    note: 网关遥测
+
+  - from: sentry
+    type: integrates_with
+    to: nextjs
+    note: 前端错误监控常见
+
+  - from: freqtrade
+    type: depends_on
+    to: ccxt
+    note: 交易机器人常经 CCXT 接交易所
+
+  - from: backtrader
+    type: alternative_to
+    to: zipline-reloaded
+    note: 两大 Python 回测框架
+
+  - from: vectorbt
+    type: alternative_to
+    to: backtrader
+    note: 向量化快扫 vs 事件驱动
+
+  - from: pandas-ta
+    type: alternative_to
+    to: ta-lib
+    note: 纯 Python/pandas vs C 库
+
+  - from: pandas-ta
+    type: integrates_with
+    to: pandas
+    note: 指标构建在 DataFrame
+
+  - from: yfinance
+    type: alternative_to
+    to: akshare
+    note: 美股 yahoo 源 vs 国内数据源
+
+  - from: openbb
+    type: integrates_with
+    to: yfinance
+    note: 投研平台可路由行情源
+
+  - from: akshare
+    type: integrates_with
+    to: pandas
+    note: 数据常落 DataFrame
+
+  - from: actual-budget
+    type: alternative_to
+    to: firefly-iii
+    note: 本地优先预算 vs 自托管财务管家
+
+  - from: hledger
+    type: alternative_to
+    to: ledger-cli
+    note: 友好纯文本会计 vs 经典 Ledger
+
+  - from: gnucash
+    type: alternative_to
+    to: firefly-iii
+    note: 桌面复式记账 vs Web 财务管家
+
+  - from: killbill
+    type: alternative_to
+    to: stripe-mock
+    note: 真实计费平台 vs 支付 API mock
+
+  - from: lean
+    type: alternative_to
+    to: backtrader
+    note: 多资产引擎 vs 轻量 Python 回测
+
+  - from: freqtrade
+    type: integrates_with
+    to: pandas-ta
+    note: 策略侧常用指标
+
+  - from: zipline-reloaded
+    type: integrates_with
+    to: pandas
+    note: 回测数据管线
+
+  - from: vectorbt
+    type: depends_on
+    to: numpy
+    note: 向量化依赖 NumPy

@@ -55,6 +55,9 @@ domains:
   gis:
     title: 地理空间
     description: GIS 桌面、空间库、Web 地图、瓦片与遥感点云
+  finance:
+    title: 金融与记账
+    description: 交易回测、行情指标、个人财务与订阅计费
 
 # 节点类型
 node_types:

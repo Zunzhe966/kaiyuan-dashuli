@@ -256,3 +256,15 @@ queries:
     query: PostgreSQL 空间数据库扩展
     intent_tags: [gis, database]
     expect_any: [postgis]
+  - id: q64
+    query: 开源加密货币交易机器人
+    intent_tags: [finance, crypto]
+    expect_any: [freqtrade, ccxt]
+  - id: q65
+    query: Python 量化策略回测框架
+    intent_tags: [finance, backtest]
+    expect_any: [backtrader, zipline-reloaded, vectorbt, lean]
+  - id: q66
+    query: 自托管个人记账和预算
+    intent_tags: [finance, personal-finance]
+    expect_any: [firefly-iii, actual-budget, gnucash, hledger, ledger-cli]

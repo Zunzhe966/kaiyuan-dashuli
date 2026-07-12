@@ -4,7 +4,7 @@
 
 ## 当前规模（随 main 更新）
 
-- domains：17（见下方清单）
+- domains：18（见下方清单）
 - 机读总索引：https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json
 - 评测：`scripts/run_retrieval_eval.py`（默认 `domain=all`，阈值 ≥80%）
 
@@ -24,7 +24,7 @@
 
 ## Domains
 
-`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot` · `media` · `gamedev` · `gis`
+`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot` · `media` · `gamedev` · `gis` · `finance`
 
 ## 建议的 GitHub About
 

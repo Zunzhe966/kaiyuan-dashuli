@@ -69,8 +69,11 @@
 | q61 | 开源桌面 GIS 制图软件 | qgis, grass-gis, openlayers | Y | Y |
 | q62 | 网页嵌入轻量交互地图 | leaflet, openlayers, maplibre-gl | Y | Y |
 | q63 | PostgreSQL 空间数据库扩展 | postgis, turfjs, tippecanoe | Y | Y |
+| q64 | 开源加密货币交易机器人 | freqtrade, ccxt, zipline-reloaded | Y | Y |
+| q65 | Python 量化策略回测框架 | backtrader, zipline-reloaded, vectorbt | Y | Y |
+| q66 | 自托管个人记账和预算 | firefly-iii, actual-budget, zipline-reloaded | Y | Y |
 
-**通过率：63/63 = 100%**
+**通过率：66/66 = 100%**
 
 判定阈值：≥80%
 
@@ -1007,5 +1010,50 @@
   - use_when: 要把矢量数据打成 MBTiles/矢量瓦片
   - avoid_when: 只要即时动态查询无预切片
   - repo: https://github.com/felt/tippecanoe
+- result: PASS (hit=True, compliant=True)
+
+### q64 — 开源加密货币交易机器人
+- **Freqtrade** (`freqtrade` / finance)
+  - use_when: 要策略化加密货币自动交易
+  - avoid_when: 要股票/期货为主且无加密需求
+  - repo: https://github.com/freqtrade/freqtrade
+- **CCXT** (`ccxt` / finance)
+  - use_when: 要对接多家交易所行情与下单 API
+  - avoid_when: 只要传统股票券商接口
+  - repo: https://github.com/ccxt/ccxt
+- **Zipline-Reloaded** (`zipline-reloaded` / finance)
+  - use_when: 要事件驱动的股票策略回测
+  - avoid_when: 只要简单向量化回测脚本
+  - repo: https://github.com/stefan-jansen/zipline-reloaded
+- result: PASS (hit=True, compliant=True)
+
+### q65 — Python 量化策略回测框架
+- **backtrader** (`backtrader` / finance)
+  - use_when: 要灵活的 Python 策略回测框架
+  - avoid_when: 要超大规模机构级回测平台
+  - repo: https://github.com/mementum/backtrader
+- **Zipline-Reloaded** (`zipline-reloaded` / finance)
+  - use_when: 要事件驱动的股票策略回测
+  - avoid_when: 只要简单向量化回测脚本
+  - repo: https://github.com/stefan-jansen/zipline-reloaded
+- **vectorbt** (`vectorbt` / finance)
+  - use_when: 要快速参数扫描与向量化回测
+  - avoid_when: 要精细订单簿级仿真
+  - repo: https://github.com/polakowo/vectorbt
+- result: PASS (hit=True, compliant=True)
+
+### q66 — 自托管个人记账和预算
+- **Firefly III** (`firefly-iii` / finance)
+  - use_when: 要自托管记账与预算
+  - avoid_when: 只要交易策略回测
+  - repo: https://github.com/firefly-iii/firefly-iii
+- **Actual Budget** (`actual-budget` / finance)
+  - use_when: 要本地/可同步的预算记账
+  - avoid_when: 要企业总账
+  - repo: https://github.com/actualbudget/actual
+- **Zipline-Reloaded** (`zipline-reloaded` / finance)
+  - use_when: 要事件驱动的股票策略回测
+  - avoid_when: 只要简单向量化回测脚本
+  - repo: https://github.com/stefan-jansen/zipline-reloaded
 - result: PASS (hit=True, compliant=True)
 

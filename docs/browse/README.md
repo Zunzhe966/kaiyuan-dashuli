@@ -17,3 +17,4 @@
 - [media](./media.md)
 - [gamedev](./gamedev.md)
 - [gis](./gis.md)
+- [finance](./finance.md)

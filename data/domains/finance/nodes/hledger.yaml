@@ -1,0 +1,12 @@
+id: hledger
+type: project
+name: hledger
+repo: https://github.com/simonmichael/hledger
+summary: 易用的纯文本会计工具（Haskell）。
+tags: [finance, accounting, cli]
+language: Haskell
+status: active
+use_when: 要友好的纯文本会计与报表
+avoid_when: 只要 GUI 会计
+niche: plaintext accounting
+related_ecosystem: finance
