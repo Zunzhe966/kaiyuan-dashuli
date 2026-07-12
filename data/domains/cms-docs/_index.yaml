@@ -16,6 +16,6 @@ categories:
     node_ids: [docusaurus, vitepress, mkdocs, mkdocs-material, sphinx, docsify, nextra, starlight]
   - id: ssg
     title: 静态站 / 内容站
-    node_ids: [hugo, jekyll, astro, gitbook-oss]
+    node_ids: [hugo, jekyll, gitbook-oss]
 
 nodes_dir: nodes

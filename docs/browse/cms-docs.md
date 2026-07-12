@@ -27,6 +27,8 @@
 
 - [Hugo](https://github.com/gohugoio/hugo) — 极速 Go 静态站点生成器。
 - [Jekyll](https://github.com/jekyll/jekyll) — GitHub Pages 默认静态站引擎。
-- [Astro](https://github.com/withastro/astro) — 内容优先的多框架静态/混合站点。
 - [GitBook (legacy open)](https://github.com/GitbookIO/gitbook) — 早期开源 GitBook（现产品已商业化，仓供参考）。
+
+
+> 注：`astro` 节点在 `web-frontend` 域，与 `starlight` 同生态。
 

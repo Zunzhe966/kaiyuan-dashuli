@@ -177,8 +177,10 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
         if nid in ("docusaurus", "vitepress", "mkdocs", "starlight", "nextra"): s += 3
     if "无头 CMS" in query or "headless" in query.lower():
         if nid in ("strapi", "directus", "payload", "keystone"): s += 3
-    if "静态站点" in query or "博客引擎" in query:
-        if nid in ("hugo", "jekyll", "astro"): s += 2
+    if "静态站点" in query or "博客引擎" in query or "静态站点生成器" in query:
+        if nid in ("hugo", "jekyll", "astro"): s += 4
+        if nid in ("vitepress", "mkdocs", "docusaurus") and "博客" in query:
+            s -= 1
     return s
 
 

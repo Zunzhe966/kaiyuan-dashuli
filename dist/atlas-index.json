@@ -2,12 +2,13 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T00:33:25.745638+00:00",
+  "generated_at": "2026-07-12T00:39:02.377778+00:00",
   "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
   "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
   "domains": [
     "ai-agents",
     "backend",
+    "cms-docs",
     "data-ml",
     "databases",
     "desktop",
@@ -17,8 +18,8 @@
     "security",
     "web-frontend"
   ],
-  "node_count": 222,
-  "edge_count": 202,
+  "node_count": 239,
+  "edge_count": 217,
   "nodes": [
     {
       "id": "act",
@@ -780,6 +781,23 @@
       "niche": "rn e2e"
     },
     {
+      "id": "directus",
+      "domain": "cms-docs",
+      "name": "Directus",
+      "repo": "https://github.com/directus/directus",
+      "summary": "把 SQL 数据库瞬间变成无头 CMS/API。",
+      "tags": [
+        "cms",
+        "headless",
+        "sql"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "已有 SQL 库要快速变内容 API",
+      "avoid_when": "要从零只要博客主题生态",
+      "niche": "db-backed cms"
+    },
+    {
       "id": "django",
       "domain": "backend",
       "name": "Django",
@@ -811,6 +829,40 @@
       "use_when": "需要打包运行隔离环境或构建镜像",
       "avoid_when": "只要语言虚拟环境、不需要容器",
       "niche": "containers"
+    },
+    {
+      "id": "docsify",
+      "domain": "cms-docs",
+      "name": "docsify",
+      "repo": "https://github.com/docsifyjs/docsify",
+      "summary": "无需构建的文档站点生成器。",
+      "tags": [
+        "docs",
+        "static-site",
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要零构建把 Markdown 变成文档站",
+      "avoid_when": "要 SEO 强的预渲染静态站",
+      "niche": "runtime docs"
+    },
+    {
+      "id": "docusaurus",
+      "domain": "cms-docs",
+      "name": "Docusaurus",
+      "repo": "https://github.com/facebook/docusaurus",
+      "summary": "React 文档网站生成器。",
+      "tags": [
+        "docs",
+        "static-site",
+        "react"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要版本化产品文档站且用 React",
+      "avoid_when": "只要极简 Markdown 预览",
+      "niche": "docs site"
     },
     {
       "id": "dspy",
@@ -1157,6 +1209,23 @@
       "niche": "fuzzy finder"
     },
     {
+      "id": "ghost",
+      "domain": "cms-docs",
+      "name": "Ghost",
+      "repo": "https://github.com/TryGhost/Ghost",
+      "summary": "面向出版的现代 Node CMS。",
+      "tags": [
+        "cms",
+        "node",
+        "blogging"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要会员制出版/新闻站且偏 Node",
+      "avoid_when": "只要纯静态文档且无会员",
+      "niche": "publishing cms"
+    },
+    {
       "id": "gin",
       "domain": "backend",
       "name": "Gin",
@@ -1171,6 +1240,22 @@
       "use_when": "Go 要快速写 HTTP API",
       "avoid_when": "要更完整生态工具箱可看其他 Go 框架",
       "niche": "go http"
+    },
+    {
+      "id": "gitbook-oss",
+      "domain": "cms-docs",
+      "name": "GitBook (legacy open)",
+      "repo": "https://github.com/GitbookIO/gitbook",
+      "summary": "早期开源 GitBook（现产品已商业化，仓供参考）。",
+      "tags": [
+        "docs",
+        "legacy"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "研究历史 GitBook 开源实现",
+      "avoid_when": "要当前托管文档产品请用官方云",
+      "niche": "legacy docs"
     },
     {
       "id": "github-actions-runner",
@@ -1366,6 +1451,23 @@
       "niche": "edge web framework"
     },
     {
+      "id": "hugo",
+      "domain": "cms-docs",
+      "name": "Hugo",
+      "repo": "https://github.com/gohugoio/hugo",
+      "summary": "极速 Go 静态站点生成器。",
+      "tags": [
+        "static-site",
+        "blog",
+        "docs"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要极快构建的博客/文档/营销页",
+      "avoid_when": "要强 React 组件化页面",
+      "niche": "ssg"
+    },
+    {
       "id": "hyperfine",
       "domain": "devtools",
       "name": "hyperfine",
@@ -1482,6 +1584,23 @@
       "niche": "composable numerics"
     },
     {
+      "id": "jekyll",
+      "domain": "cms-docs",
+      "name": "Jekyll",
+      "repo": "https://github.com/jekyll/jekyll",
+      "summary": "GitHub Pages 默认静态站引擎。",
+      "tags": [
+        "static-site",
+        "blog",
+        "ruby"
+      ],
+      "language": "Ruby",
+      "status": "active",
+      "use_when": "要贴合 GitHub Pages 的博客/文档",
+      "avoid_when": "要现代 JS 工具链与组件",
+      "niche": "ssg"
+    },
+    {
       "id": "jetpack-compose",
       "domain": "mobile",
       "name": "Jetpack Compose",
@@ -1579,6 +1698,23 @@
       "use_when": "要 Redis 兼容且更高多核吞吐",
       "avoid_when": "标准 Redis 已足够",
       "niche": "multithreaded redis-compatible"
+    },
+    {
+      "id": "keystone",
+      "domain": "cms-docs",
+      "name": "Keystone",
+      "repo": "https://github.com/keystonejs/keystone",
+      "summary": "基于 GraphQL 的 Node CMS 框架。",
+      "tags": [
+        "cms",
+        "headless",
+        "graphql"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要 GraphQL 内容 API 与自定义字段",
+      "avoid_when": "只要最简 Markdown 文档",
+      "niche": "graphql cms"
     },
     {
       "id": "kotlin-android",
@@ -1999,6 +2135,40 @@
       "niche": "runtime manager"
     },
     {
+      "id": "mkdocs",
+      "domain": "cms-docs",
+      "name": "MkDocs",
+      "repo": "https://github.com/mkdocs/mkdocs",
+      "summary": "Python Markdown 文档静态站点。",
+      "tags": [
+        "docs",
+        "static-site",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "Python 项目要用 Markdown 出文档站",
+      "avoid_when": "要 React 组件化文档体验",
+      "niche": "docs site"
+    },
+    {
+      "id": "mkdocs-material",
+      "domain": "cms-docs",
+      "name": "Material for MkDocs",
+      "repo": "https://github.com/squidfunk/mkdocs-material",
+      "summary": "MkDocs 最流行的 Material 主题。",
+      "tags": [
+        "docs",
+        "static-site",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "MkDocs 要开箱好看的文档 UI",
+      "avoid_when": "不用 MkDocs",
+      "niche": "docs theme"
+    },
+    {
       "id": "mlflow",
       "domain": "data-ml",
       "name": "MLflow",
@@ -2159,6 +2329,23 @@
       "use_when": "React 项目需要路由/SSR/全栈约定",
       "avoid_when": "只要纯 CSR 且不想要框架约定",
       "niche": "react meta-framework"
+    },
+    {
+      "id": "nextra",
+      "domain": "cms-docs",
+      "name": "Nextra",
+      "repo": "https://github.com/shuding/nextra",
+      "summary": "基于 Next.js 的文档/站点框架。",
+      "tags": [
+        "docs",
+        "nextjs",
+        "react"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "Next.js 团队要文档/知识库站",
+      "avoid_when": "不想依赖 Next",
+      "niche": "docs site"
     },
     {
       "id": "nginx",
@@ -2384,6 +2571,23 @@
       "use_when": "Python 做表格数据处理与分析",
       "avoid_when": "超大规模分布式表处理（看 Spark/Polars）",
       "niche": "dataframe"
+    },
+    {
+      "id": "payload",
+      "domain": "cms-docs",
+      "name": "Payload",
+      "repo": "https://github.com/payloadcms/payload",
+      "summary": "TypeScript 无头 CMS，代码优先。",
+      "tags": [
+        "cms",
+        "headless",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "TS 团队要代码优先的无头 CMS",
+      "avoid_when": "非 Node/TS 栈",
+      "niche": "code-first cms"
     },
     {
       "id": "peft",
@@ -3004,6 +3208,22 @@
       "niche": "encrypted config"
     },
     {
+      "id": "sphinx",
+      "domain": "cms-docs",
+      "name": "Sphinx",
+      "repo": "https://github.com/sphinx-doc/sphinx",
+      "summary": "Python 生态经典文档工具。",
+      "tags": [
+        "docs",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要 API 文档与复杂交叉引用",
+      "avoid_when": "只要轻量产品手册 Markdown 站",
+      "niche": "api docs"
+    },
+    {
       "id": "spring-boot",
       "domain": "backend",
       "name": "Spring Boot",
@@ -3036,6 +3256,23 @@
       "niche": "embedded sql"
     },
     {
+      "id": "starlight",
+      "domain": "cms-docs",
+      "name": "Starlight",
+      "repo": "https://github.com/withastro/starlight",
+      "summary": "Astro 官方文档主题套件。",
+      "tags": [
+        "docs",
+        "static-site",
+        "astro"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "用 Astro 做产品文档站",
+      "avoid_when": "非 Astro 栈",
+      "niche": "docs theme"
+    },
+    {
       "id": "storybook",
       "domain": "web-frontend",
       "name": "Storybook",
@@ -3051,6 +3288,23 @@
       "use_when": "要隔离开发/文档化组件",
       "avoid_when": "没有组件库协作需求",
       "niche": "component workshop"
+    },
+    {
+      "id": "strapi",
+      "domain": "cms-docs",
+      "name": "Strapi",
+      "repo": "https://github.com/strapi/strapi",
+      "summary": "开源无头 CMS，可自托管。",
+      "tags": [
+        "cms",
+        "headless",
+        "node"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要自托管无头 CMS 给多前端供内容",
+      "avoid_when": "只要 Git 驱动的文档站",
+      "niche": "headless cms"
     },
     {
       "id": "supabase",
@@ -3441,6 +3695,23 @@
       "niche": "dev server/bundler"
     },
     {
+      "id": "vitepress",
+      "domain": "cms-docs",
+      "name": "VitePress",
+      "repo": "https://github.com/vuejs/vitepress",
+      "summary": "Vite + Vue 的静态文档站。",
+      "tags": [
+        "docs",
+        "static-site",
+        "vue"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "Vue/Vite 生态要快速文档站",
+      "avoid_when": "要强版本化与庞大插件市场",
+      "niche": "docs site"
+    },
+    {
       "id": "vitest",
       "domain": "web-frontend",
       "name": "Vitest",
@@ -3552,6 +3823,23 @@
       "use_when": "要简洁高性能组网/远程访问",
       "avoid_when": "必须兼容老旧 IPSec 套件为主",
       "niche": "vpn"
+    },
+    {
+      "id": "wordpress",
+      "domain": "cms-docs",
+      "name": "WordPress",
+      "repo": "https://github.com/WordPress/WordPress",
+      "summary": "全球最流行的 PHP 内容管理系统。",
+      "tags": [
+        "cms",
+        "php",
+        "blogging"
+      ],
+      "language": "PHP",
+      "status": "active",
+      "use_when": "要成熟插件生态的内容站/博客",
+      "avoid_when": "要无头 CMS 或纯静态文档站",
+      "niche": "classic cms"
     },
     {
       "id": "wxwidgets",
@@ -4833,6 +5121,96 @@
       "type": "depends_on",
       "to": "redis",
       "note": "常见 broker"
+    },
+    {
+      "from": "ghost",
+      "type": "alternative_to",
+      "to": "wordpress",
+      "note": "现代出版 CMS vs 经典 PHP CMS"
+    },
+    {
+      "from": "strapi",
+      "type": "alternative_to",
+      "to": "directus",
+      "note": "自研内容模型 vs DB 即 CMS"
+    },
+    {
+      "from": "payload",
+      "type": "alternative_to",
+      "to": "strapi",
+      "note": "代码优先 TS vs 传统无头 CMS"
+    },
+    {
+      "from": "keystone",
+      "type": "alternative_to",
+      "to": "payload",
+      "note": "GraphQL CMS 路线差异"
+    },
+    {
+      "from": "vitepress",
+      "type": "alternative_to",
+      "to": "docusaurus",
+      "note": "Vue 文档站 vs React 文档站"
+    },
+    {
+      "from": "mkdocs",
+      "type": "alternative_to",
+      "to": "sphinx",
+      "note": "轻量 Markdown vs 重型 API 文档"
+    },
+    {
+      "from": "mkdocs-material",
+      "type": "depends_on",
+      "to": "mkdocs",
+      "note": "主题建立在 MkDocs"
+    },
+    {
+      "from": "starlight",
+      "type": "depends_on",
+      "to": "astro",
+      "note": "Astro 文档套件"
+    },
+    {
+      "from": "nextra",
+      "type": "depends_on",
+      "to": "nextjs",
+      "note": "建立在 Next.js"
+    },
+    {
+      "from": "docsify",
+      "type": "alternative_to",
+      "to": "mkdocs",
+      "note": "运行时渲染 vs 预构建"
+    },
+    {
+      "from": "hugo",
+      "type": "alternative_to",
+      "to": "jekyll",
+      "note": "极速 Go SSG vs Ruby/GH Pages 经典"
+    },
+    {
+      "from": "astro",
+      "type": "alternative_to",
+      "to": "hugo",
+      "note": "岛屿架构内容站 vs 经典 SSG"
+    },
+    {
+      "from": "astro",
+      "type": "alternative_to",
+      "to": "nextjs",
+      "note": "内容优先 vs 全功能 React 元框架"
+    },
+    {
+      "from": "docusaurus",
+      "type": "alternative_to",
+      "to": "nextra",
+      "note": "独立文档框架 vs Next 文档层"
+    },
+    {
+      "from": "directus",
+      "type": "integrates_with",
+      "to": "postgresql",
+      "note": "常接 SQL 仓"
     }
   ]
 }
