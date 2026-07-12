@@ -25,7 +25,7 @@
 | q17 | 前端要快速本地开发和现代打包 | vite, webpack | Y | Y |
 | q18 | 多浏览器端到端测试 | playwright, cypress, vitest | Y | Y |
 | q19 | 嵌入式单文件 SQL 数据库 | sqlite, postgresql, tidb | Y | Y |
-| q20 | 低延迟缓存和会话存储 | redis, keydb | Y | Y |
+| q20 | 低延迟缓存和会话存储 | redis, keydb, mongodb | Y | Y |
 | q21 | 大量事件明细做分析查询 | duckdb, clickhouse, elasticsearch | Y | Y |
 | q22 | CI 里扫描容器镜像漏洞 | trivy, grype, gitleaks | Y | Y |
 | q23 | 防止 Git 仓库密钥泄漏 | gitleaks, sops, vault-hashicorp | Y | Y |
@@ -360,6 +360,10 @@
   - use_when: 要 Redis 兼容且更高多核吞吐
   - avoid_when: 标准 Redis 已足够
   - repo: https://github.com/Snapchat/KeyDB
+- **MongoDB** (`mongodb` / databases)
+  - use_when: 文档模型更贴合业务、灵活 schema
+  - avoid_when: 强事务多表关系是核心
+  - repo: https://github.com/mongodb/mongo
 - result: PASS (hit=True, compliant=True)
 
 ### q21 — 大量事件明细做分析查询

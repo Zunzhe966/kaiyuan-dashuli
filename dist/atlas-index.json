@@ -2,7 +2,7 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T01:06:33.617101+00:00",
+  "generated_at": "2026-07-12T01:07:32.486385+00:00",
   "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
   "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
   "domains": [
@@ -23,7 +23,7 @@
     "web-frontend"
   ],
   "node_count": 317,
-  "edge_count": 302,
+  "edge_count": 323,
   "nodes": [
     {
       "id": "act",
@@ -7035,6 +7035,132 @@
       "type": "integrates_with",
       "to": "ffmpeg",
       "note": "生态上广泛关联编解码"
+    },
+    {
+      "from": "opentelemetry-python",
+      "type": "integrates_with",
+      "to": "opentelemetry-collector",
+      "note": "应用 SDK 常导出到 Collector"
+    },
+    {
+      "from": "opentelemetry-python",
+      "type": "integrates_with",
+      "to": "jaeger",
+      "note": "Python 链路可落到 Jaeger"
+    },
+    {
+      "from": "comfyui",
+      "type": "integrates_with",
+      "to": "pytorch",
+      "note": "节点式生图常见 PyTorch 后端"
+    },
+    {
+      "from": "laravel",
+      "type": "alternative_to",
+      "to": "django",
+      "note": "PHP 全栈 vs Python 全栈"
+    },
+    {
+      "from": "laravel",
+      "type": "alternative_to",
+      "to": "rails",
+      "note": "两大经典全栈框架"
+    },
+    {
+      "from": "spring-boot",
+      "type": "alternative_to",
+      "to": "nestjs",
+      "note": "JVM 企业后端 vs Node 企业后端"
+    },
+    {
+      "from": "spring-boot",
+      "type": "alternative_to",
+      "to": "fastapi",
+      "note": "重型企业栈 vs 轻量 Python API"
+    },
+    {
+      "from": "rails",
+      "type": "alternative_to",
+      "to": "django",
+      "note": "约定优于配置的两大全栈"
+    },
+    {
+      "from": "rails",
+      "type": "integrates_with",
+      "to": "postgresql",
+      "note": "Rails 常见数据库"
+    },
+    {
+      "from": "gitbook-oss",
+      "type": "alternative_to",
+      "to": "docusaurus",
+      "note": "历史 GitBook vs 现代文档站"
+    },
+    {
+      "from": "mongodb",
+      "type": "alternative_to",
+      "to": "postgresql",
+      "note": "文档库 vs 关系库"
+    },
+    {
+      "from": "mongodb",
+      "type": "alternative_to",
+      "to": "redis",
+      "note": "持久文档 vs 缓存/KV（场景不同但常被对比）"
+    },
+    {
+      "from": "kismet",
+      "type": "integrates_with",
+      "to": "nmap",
+      "note": "无线侦测后常接主机发现"
+    },
+    {
+      "from": "kismet",
+      "type": "integrates_with",
+      "to": "wireshark",
+      "note": "无线流量深度分析"
+    },
+    {
+      "from": "swiftui-notes",
+      "type": "integrates_with",
+      "to": "swift",
+      "note": "SwiftUI 建立在 Swift"
+    },
+    {
+      "from": "swiftui-notes",
+      "type": "alternative_to",
+      "to": "jetpack-compose",
+      "note": "声明式 UI：iOS vs Android"
+    },
+    {
+      "from": "iperf3",
+      "type": "integrates_with",
+      "to": "wireshark",
+      "note": "带宽测完常接抓包定位"
+    },
+    {
+      "from": "iperf3",
+      "type": "integrates_with",
+      "to": "nmap",
+      "note": "测速前常先探活路径"
+    },
+    {
+      "from": "laravel",
+      "type": "integrates_with",
+      "to": "redis",
+      "note": "队列/缓存常见组合"
+    },
+    {
+      "from": "spring-boot",
+      "type": "integrates_with",
+      "to": "postgresql",
+      "note": "Spring 数据层常见组合"
+    },
+    {
+      "from": "mongodb",
+      "type": "integrates_with",
+      "to": "fastapi",
+      "note": "文档 API 常见组合"
     }
   ]
 }
