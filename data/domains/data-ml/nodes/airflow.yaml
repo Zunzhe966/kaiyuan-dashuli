@@ -1,0 +1,12 @@
+id: airflow
+type: project
+name: Apache Airflow
+repo: https://github.com/apache/airflow
+summary: 工作流编排平台。
+tags: [orchestration, etl]
+language: Python
+status: active
+use_when: 要调度复杂数据/ML 流水线
+avoid_when: 只要单机 cron
+niche: workflow orchestration
+related_ecosystem: data-ml

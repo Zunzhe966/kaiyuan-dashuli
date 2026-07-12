@@ -1,0 +1,12 @@
+id: pytorch
+type: project
+name: PyTorch
+repo: https://github.com/pytorch/pytorch
+summary: 主流深度学习框架。
+tags: [deep-learning, python]
+language: Python
+status: active
+use_when: 研究/生产深度学习与自定义训练
+avoid_when: 只要经典 ML 不碰神经网络
+niche: deep learning
+related_ecosystem: data-ml

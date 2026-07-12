@@ -2,20 +2,21 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T00:25:51.628466+00:00",
+  "generated_at": "2026-07-12T00:28:27.351481+00:00",
   "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
   "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
   "domains": [
     "ai-agents",
     "backend",
+    "data-ml",
     "databases",
     "devops",
     "mobile",
     "security",
     "web-frontend"
   ],
-  "node_count": 168,
-  "edge_count": 145,
+  "node_count": 186,
+  "edge_count": 159,
   "nodes": [
     {
       "id": "act",
@@ -81,6 +82,22 @@
       "niche": "CLI coding agent"
     },
     {
+      "id": "airflow",
+      "domain": "data-ml",
+      "name": "Apache Airflow",
+      "repo": "https://github.com/apache/airflow",
+      "summary": "工作流编排平台。",
+      "tags": [
+        "orchestration",
+        "etl"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要调度复杂数据/ML 流水线",
+      "avoid_when": "只要单机 cron",
+      "niche": "workflow orchestration"
+    },
+    {
       "id": "alamofire",
       "domain": "mobile",
       "name": "Alamofire",
@@ -128,6 +145,22 @@
       "use_when": "高吞吐事件流/日志总线",
       "avoid_when": "简单任务队列已够",
       "niche": "event streaming"
+    },
+    {
+      "id": "apache-spark",
+      "domain": "data-ml",
+      "name": "Apache Spark",
+      "repo": "https://github.com/apache/spark",
+      "summary": "大规模分布式数据处理引擎。",
+      "tags": [
+        "bigdata",
+        "etl"
+      ],
+      "language": "Scala",
+      "status": "active",
+      "use_when": "集群级批/流数据处理",
+      "avoid_when": "单机数据帧已够",
+      "niche": "distributed data"
     },
     {
       "id": "appium",
@@ -595,6 +628,23 @@
       "niche": "dataset pipeline"
     },
     {
+      "id": "dbt-core",
+      "domain": "data-ml",
+      "name": "dbt Core",
+      "repo": "https://github.com/dbt-labs/dbt-core",
+      "summary": "分析工程中的 SQL 变换框架。",
+      "tags": [
+        "analytics-eng",
+        "etl",
+        "sql"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "仓内用 SQL 做可版本化变换",
+      "avoid_when": "没有数仓/分析工程流程",
+      "niche": "analytics engineering"
+    },
+    {
       "id": "deepeval",
       "domain": "ai-agents",
       "name": "DeepEval",
@@ -803,6 +853,22 @@
       "use_when": "本地/服务端要快的语音转写",
       "avoid_when": "只要云端语音 API",
       "niche": "speech-to-text"
+    },
+    {
+      "id": "feast",
+      "domain": "data-ml",
+      "name": "Feast",
+      "repo": "https://github.com/feast-dev/feast",
+      "summary": "特征存储。",
+      "tags": [
+        "mlops",
+        "ml"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "在线/离线特征需要统一管理",
+      "avoid_when": "特征很少、无服务化需求",
+      "niche": "feature store"
     },
     {
       "id": "fiber",
@@ -1127,6 +1193,23 @@
       "niche": "service mesh"
     },
     {
+      "id": "jax",
+      "domain": "data-ml",
+      "name": "JAX",
+      "repo": "https://github.com/jax-ml/jax",
+      "summary": "可组合的数值计算与自动微分。",
+      "tags": [
+        "deep-learning",
+        "numerics",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要函数式/可微科学计算与加速",
+      "avoid_when": "只要高层 Keras 式 API",
+      "niche": "composable numerics"
+    },
+    {
       "id": "jetpack-compose",
       "domain": "mobile",
       "name": "Jetpack Compose",
@@ -1341,6 +1424,22 @@
       "niche": "php framework"
     },
     {
+      "id": "lightgbm",
+      "domain": "data-ml",
+      "name": "LightGBM",
+      "repo": "https://github.com/microsoft/LightGBM",
+      "summary": "高效梯度提升框架。",
+      "tags": [
+        "ml",
+        "python"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要更快/更省的 GBDT",
+      "avoid_when": "只要单一 XGBoost 栈",
+      "niche": "gbdt"
+    },
+    {
       "id": "litellm",
       "domain": "ai-agents",
       "name": "LiteLLM",
@@ -1435,6 +1534,22 @@
       "niche": "mysql-compatible"
     },
     {
+      "id": "matplotlib",
+      "domain": "data-ml",
+      "name": "Matplotlib",
+      "repo": "https://github.com/matplotlib/matplotlib",
+      "summary": "Python 绑图基础库。",
+      "tags": [
+        "viz",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要可定制的静态绑图",
+      "avoid_when": "只要交互仪表盘",
+      "niche": "plotting"
+    },
+    {
       "id": "maui",
       "domain": "mobile",
       "name": ".NET MAUI",
@@ -1527,6 +1642,22 @@
       "use_when": "十亿级向量、分布式检索",
       "avoid_when": "单机小语料原型",
       "niche": "large-scale vector DB"
+    },
+    {
+      "id": "mlflow",
+      "domain": "data-ml",
+      "name": "MLflow",
+      "repo": "https://github.com/mlflow/mlflow",
+      "summary": "实验跟踪与模型管理。",
+      "tags": [
+        "mlops",
+        "ml"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要记录实验/模型注册",
+      "avoid_when": "一次性脚本无实验管理需求",
+      "niche": "mlops tracking"
     },
     {
       "id": "modelcontextprotocol-servers",
@@ -1671,6 +1802,22 @@
       "use_when": "要调度容器/非容器任务又不想上满血 K8s",
       "avoid_when": "团队标准已是 Kubernetes 且生态绑定深",
       "niche": "workload scheduler"
+    },
+    {
+      "id": "numpy",
+      "domain": "data-ml",
+      "name": "NumPy",
+      "repo": "https://github.com/numpy/numpy",
+      "summary": "Python 数值计算基础库。",
+      "tags": [
+        "numerics",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "数组数值计算与科学栈底座",
+      "avoid_when": "只要高层表格 API",
+      "niche": "ndarray"
     },
     {
       "id": "nuxt",
@@ -1833,6 +1980,23 @@
       "niche": "constrained decoding"
     },
     {
+      "id": "pandas",
+      "domain": "data-ml",
+      "name": "pandas",
+      "repo": "https://github.com/pandas-dev/pandas",
+      "summary": "Python 表格数据分析库。",
+      "tags": [
+        "dataframe",
+        "python",
+        "etl"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "Python 做表格数据处理与分析",
+      "avoid_when": "超大规模分布式表处理（看 Spark/Polars）",
+      "niche": "dataframe"
+    },
+    {
       "id": "peft",
       "domain": "ai-agents",
       "name": "PEFT",
@@ -1862,6 +2026,22 @@
       "use_when": "要可靠的端到端/多浏览器自动化",
       "avoid_when": "只要组件单测、不测真实浏览器",
       "niche": "e2e testing"
+    },
+    {
+      "id": "plotly",
+      "domain": "data-ml",
+      "name": "Plotly",
+      "repo": "https://github.com/plotly/plotly.py",
+      "summary": "交互可视化库。",
+      "tags": [
+        "viz",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要交互图表/仪表盘组件",
+      "avoid_when": "只要出版级静态图",
+      "niche": "interactive viz"
     },
     {
       "id": "pnpm",
@@ -1896,6 +2076,23 @@
       "niche": "daemonless containers"
     },
     {
+      "id": "polars",
+      "domain": "data-ml",
+      "name": "Polars",
+      "repo": "https://github.com/pola-rs/polars",
+      "summary": "高性能 DataFrame 库（Rust 核心）。",
+      "tags": [
+        "dataframe",
+        "python",
+        "rust"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "要比 pandas 更快的本地/懒执行表处理",
+      "avoid_when": "只要最大学术/教程生态",
+      "niche": "fast dataframe"
+    },
+    {
       "id": "postgresql",
       "domain": "databases",
       "name": "PostgreSQL",
@@ -1910,6 +2107,22 @@
       "use_when": "需要可靠通用 SQL 数据库与强生态",
       "avoid_when": "只要嵌入式单文件库",
       "niche": "relational db"
+    },
+    {
+      "id": "prefect",
+      "domain": "data-ml",
+      "name": "Prefect",
+      "repo": "https://github.com/PrefectHQ/prefect",
+      "summary": "现代 Python 工作流编排。",
+      "tags": [
+        "orchestration",
+        "etl"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "Python 原生编排、动态工作流",
+      "avoid_when": "已深度绑定 Airflow",
+      "niche": "python orchestration"
     },
     {
       "id": "prisma",
@@ -1974,6 +2187,22 @@
       "use_when": "要强类型、依赖注入式 Agent 与结构化结果",
       "avoid_when": "需要巨型现成集成市场",
       "niche": "typed python agents"
+    },
+    {
+      "id": "pytorch",
+      "domain": "data-ml",
+      "name": "PyTorch",
+      "repo": "https://github.com/pytorch/pytorch",
+      "summary": "主流深度学习框架。",
+      "tags": [
+        "deep-learning",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "研究/生产深度学习与自定义训练",
+      "avoid_when": "只要经典 ML 不碰神经网络",
+      "niche": "deep learning"
     },
     {
       "id": "qdrant",
@@ -2155,6 +2384,38 @@
       "use_when": "Android 要声明式 API 客户端",
       "avoid_when": "非 JVM",
       "niche": "android api client"
+    },
+    {
+      "id": "scikit-learn",
+      "domain": "data-ml",
+      "name": "scikit-learn",
+      "repo": "https://github.com/scikit-learn/scikit-learn",
+      "summary": "经典机器学习工具包。",
+      "tags": [
+        "ml",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "表格/经典 ML 模型与流水线",
+      "avoid_when": "只要大模型/深度学习",
+      "niche": "classical ml"
+    },
+    {
+      "id": "scipy",
+      "domain": "data-ml",
+      "name": "SciPy",
+      "repo": "https://github.com/scipy/scipy",
+      "summary": "科学计算算法库。",
+      "tags": [
+        "numerics",
+        "python"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "优化/统计/稀疏等科学算法",
+      "avoid_when": "只要深度学习训练框架",
+      "niche": "scientific computing"
     },
     {
       "id": "scylladb",
@@ -2412,6 +2673,22 @@
       "use_when": "大量服务端数据获取、缓存与同步",
       "avoid_when": "几乎无远程数据",
       "niche": "server state"
+    },
+    {
+      "id": "tensorflow",
+      "domain": "data-ml",
+      "name": "TensorFlow",
+      "repo": "https://github.com/tensorflow/tensorflow",
+      "summary": "端到端机器学习平台。",
+      "tags": [
+        "deep-learning",
+        "python"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "TF/Keras 生态或移动/嵌入部署路径",
+      "avoid_when": "团队标准已是 PyTorch",
+      "niche": "deep learning"
     },
     {
       "id": "terraform",
@@ -2700,6 +2977,22 @@
       "use_when": "要简洁高性能组网/远程访问",
       "avoid_when": "必须兼容老旧 IPSec 套件为主",
       "niche": "vpn"
+    },
+    {
+      "id": "xgboost",
+      "domain": "data-ml",
+      "name": "XGBoost",
+      "repo": "https://github.com/dmlc/xgboost",
+      "summary": "梯度提升树库。",
+      "tags": [
+        "ml",
+        "python"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "表格竞赛/生产树模型",
+      "avoid_when": "非表格深度模型主战场",
+      "niche": "gbdt"
     },
     {
       "id": "zustand",
@@ -3589,6 +3882,90 @@
       "type": "integrates_with",
       "to": "kotlin-android",
       "note": "Compose 用于 Android Kotlin"
+    },
+    {
+      "from": "polars",
+      "type": "alternative_to",
+      "to": "pandas",
+      "note": "高性能 DataFrame vs 生态最广"
+    },
+    {
+      "from": "lightgbm",
+      "type": "alternative_to",
+      "to": "xgboost",
+      "note": "都是 GBDT"
+    },
+    {
+      "from": "tensorflow",
+      "type": "alternative_to",
+      "to": "pytorch",
+      "note": "两大深度学习框架"
+    },
+    {
+      "from": "jax",
+      "type": "alternative_to",
+      "to": "pytorch",
+      "note": "可组合数值/微分 vs 通用 DL"
+    },
+    {
+      "from": "prefect",
+      "type": "alternative_to",
+      "to": "airflow",
+      "note": "现代 Python 编排 vs Airflow"
+    },
+    {
+      "from": "scipy",
+      "type": "depends_on",
+      "to": "numpy",
+      "note": "SciPy 建立在 NumPy 之上"
+    },
+    {
+      "from": "pandas",
+      "type": "depends_on",
+      "to": "numpy",
+      "note": "pandas 依赖 NumPy"
+    },
+    {
+      "from": "scikit-learn",
+      "type": "integrates_with",
+      "to": "pandas",
+      "note": "经典 ML 常接表格数据"
+    },
+    {
+      "from": "mlflow",
+      "type": "integrates_with",
+      "to": "pytorch",
+      "note": "实验跟踪常见组合"
+    },
+    {
+      "from": "feast",
+      "type": "integrates_with",
+      "to": "scikit-learn",
+      "note": "特征存储对接模型训练"
+    },
+    {
+      "from": "dbt-core",
+      "type": "integrates_with",
+      "to": "postgresql",
+      "note": "分析变换常落仓"
+    },
+    {
+      "from": "apache-spark",
+      "type": "alternative_to",
+      "to": "polars",
+      "note": "分布式 vs 单机高性能"
+    },
+    {
+      "from": "matplotlib",
+      "type": "alternative_to",
+      "to": "plotly",
+      "note": "静态 vs 交互可视化"
+    },
+    {
+      "from": "airflow",
+      "type": "integrates_with",
+      "to": "apache-spark",
+      "note": "编排大数据作业"
     }
   ]
 }

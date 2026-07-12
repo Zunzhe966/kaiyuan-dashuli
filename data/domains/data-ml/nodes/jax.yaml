@@ -1,0 +1,12 @@
+id: jax
+type: project
+name: JAX
+repo: https://github.com/jax-ml/jax
+summary: 可组合的数值计算与自动微分。
+tags: [deep-learning, numerics, python]
+language: Python
+status: active
+use_when: 要函数式/可微科学计算与加速
+avoid_when: 只要高层 Keras 式 API
+niche: composable numerics
+related_ecosystem: data-ml

@@ -1,0 +1,12 @@
+id: matplotlib
+type: project
+name: Matplotlib
+repo: https://github.com/matplotlib/matplotlib
+summary: Python 绑图基础库。
+tags: [viz, python]
+language: Python
+status: active
+use_when: 要可定制的静态绑图
+avoid_when: 只要交互仪表盘
+niche: plotting
+related_ecosystem: data-ml

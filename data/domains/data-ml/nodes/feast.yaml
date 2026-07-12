@@ -1,0 +1,12 @@
+id: feast
+type: project
+name: Feast
+repo: https://github.com/feast-dev/feast
+summary: 特征存储。
+tags: [mlops, ml]
+language: Python
+status: active
+use_when: 在线/离线特征需要统一管理
+avoid_when: 特征很少、无服务化需求
+niche: feature store
+related_ecosystem: data-ml

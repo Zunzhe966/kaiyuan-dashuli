@@ -148,6 +148,14 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
         if nid in ("react-native", "expo", "detox"): s += 2
     if "移动" in query and "自动化" in query:
         if nid in ("appium", "detox"): s += 3
+    if "DataFrame" in query or "表格数据" in query:
+        if nid in ("pandas", "polars"): s += 3
+    if "经典机器学习" in query or ("梯度提升" in query):
+        if nid in ("scikit-learn", "xgboost", "lightgbm"): s += 2
+    if "深度学习" in query:
+        if nid in ("pytorch", "tensorflow", "jax"): s += 3
+    if "实验跟踪" in query or "模型注册" in query:
+        if nid == "mlflow": s += 3
     return s
 
 
@@ -191,6 +199,9 @@ def search_projects(
             "任务队列": "queue",
             "跨平台": "cross-platform",
             "移动端": "mobile",
+            "机器学习": "ml",
+            "深度学习": "deep-learning",
+            "DataFrame": "dataframe",
         }
         ql = query.lower()
         for k, v in cues.items():

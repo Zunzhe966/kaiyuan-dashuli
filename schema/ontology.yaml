@@ -25,6 +25,9 @@ domains:
   mobile:
     title: 移动端
     description: 跨平台、Android、iOS、移动测试
+  data-ml:
+    title: 数据与机器学习
+    description: DataFrame、经典 ML、深度学习、大数据、MLOps
 
 # 节点类型
 node_types:

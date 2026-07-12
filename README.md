@@ -36,6 +36,7 @@ GitHub 上开源极多，但搜索噪声大、awesome-list 碎片化。智能体
 | `security` | 安全与供应链 | [browse](./docs/browse/security.md) |
 | `backend` | 后端与 API | [browse](./docs/browse/backend.md) |
 | `mobile` | 移动端 | [browse](./docs/browse/mobile.md) |
+| `data-ml` | 数据与机器学习 | [browse](./docs/browse/data-ml.md) |
 
 总览：[`docs/browse/`](./docs/browse/) · Pages 首页草案：[`docs/index.md`](./docs/index.md)
 

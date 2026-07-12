@@ -123,3 +123,15 @@ queries:
     query: 移动应用端到端自动化测试
     intent_tags: [mobile, testing]
     expect_any: [appium, detox]
+  - id: q31
+    query: Python 表格 DataFrame 处理
+    intent_tags: [dataframe, python]
+    expect_any: [pandas, polars]
+  - id: q32
+    query: 深度学习训练框架
+    intent_tags: [deep-learning]
+    expect_any: [pytorch, tensorflow, jax]
+  - id: q33
+    query: 机器学习实验跟踪和模型注册
+    intent_tags: [mlops]
+    expect_any: [mlflow]

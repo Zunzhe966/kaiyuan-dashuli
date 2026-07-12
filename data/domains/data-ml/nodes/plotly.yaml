@@ -1,0 +1,12 @@
+id: plotly
+type: project
+name: Plotly
+repo: https://github.com/plotly/plotly.py
+summary: 交互可视化库。
+tags: [viz, python]
+language: Python
+status: active
+use_when: 要交互图表/仪表盘组件
+avoid_when: 只要出版级静态图
+niche: interactive viz
+related_ecosystem: data-ml

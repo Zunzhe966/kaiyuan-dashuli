@@ -1,0 +1,12 @@
+id: polars
+type: project
+name: Polars
+repo: https://github.com/pola-rs/polars
+summary: 高性能 DataFrame 库（Rust 核心）。
+tags: [dataframe, python, rust]
+language: Rust
+status: active
+use_when: 要比 pandas 更快的本地/懒执行表处理
+avoid_when: 只要最大学术/教程生态
+niche: fast dataframe
+related_ecosystem: data-ml

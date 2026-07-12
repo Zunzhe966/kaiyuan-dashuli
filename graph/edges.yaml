@@ -1,5 +1,5 @@
 version: 0.1.0
-domains: [ai-agents, devops, web-frontend, databases, security, backend, mobile]
+domains: [ai-agents, devops, web-frontend, databases, security, backend, mobile, data-ml]
 edges:
   - from: llama-index
     type: alternative_to
@@ -725,3 +725,73 @@ edges:
     type: integrates_with
     to: kotlin-android
     note: Compose 用于 Android Kotlin
+
+  - from: polars
+    type: alternative_to
+    to: pandas
+    note: 高性能 DataFrame vs 生态最广
+
+  - from: lightgbm
+    type: alternative_to
+    to: xgboost
+    note: 都是 GBDT
+
+  - from: tensorflow
+    type: alternative_to
+    to: pytorch
+    note: 两大深度学习框架
+
+  - from: jax
+    type: alternative_to
+    to: pytorch
+    note: 可组合数值/微分 vs 通用 DL
+
+  - from: prefect
+    type: alternative_to
+    to: airflow
+    note: 现代 Python 编排 vs Airflow
+
+  - from: scipy
+    type: depends_on
+    to: numpy
+    note: SciPy 建立在 NumPy 之上
+
+  - from: pandas
+    type: depends_on
+    to: numpy
+    note: pandas 依赖 NumPy
+
+  - from: scikit-learn
+    type: integrates_with
+    to: pandas
+    note: 经典 ML 常接表格数据
+
+  - from: mlflow
+    type: integrates_with
+    to: pytorch
+    note: 实验跟踪常见组合
+
+  - from: feast
+    type: integrates_with
+    to: scikit-learn
+    note: 特征存储对接模型训练
+
+  - from: dbt-core
+    type: integrates_with
+    to: postgresql
+    note: 分析变换常落仓
+
+  - from: apache-spark
+    type: alternative_to
+    to: polars
+    note: 分布式 vs 单机高性能
+
+  - from: matplotlib
+    type: alternative_to
+    to: plotly
+    note: 静态 vs 交互可视化
+
+  - from: airflow
+    type: integrates_with
+    to: apache-spark
+    note: 编排大数据作业
