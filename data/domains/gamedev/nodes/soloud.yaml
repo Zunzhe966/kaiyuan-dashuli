@@ -1,0 +1,12 @@
+id: soloud
+type: project
+name: SoLoud
+repo: https://github.com/jarikomppa/soloud
+summary: 易用的跨平台游戏音频引擎。
+tags: [gamedev, audio]
+language: C++
+status: active
+use_when: 游戏要简单音频混音播放
+avoid_when: 要完整 DAW
+niche: game audio
+related_ecosystem: gamedev

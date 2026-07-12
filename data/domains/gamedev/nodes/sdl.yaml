@@ -1,0 +1,12 @@
+id: sdl
+type: project
+name: SDL
+repo: https://github.com/libsdl-org/SDL
+summary: 跨平台底层多媒体/窗口/输入库。
+tags: [gamedev, library, multimedia]
+language: C
+status: active
+use_when: 要跨平台窗口、输入、音频抽象
+avoid_when: 只要高层完整游戏引擎
+niche: platform layer
+related_ecosystem: gamedev

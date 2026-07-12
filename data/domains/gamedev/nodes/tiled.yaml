@@ -1,0 +1,12 @@
+id: tiled
+type: project
+name: Tiled
+repo: https://github.com/mapeditor/tiled
+summary: 灵活的 2D 关卡编辑器。
+tags: [gamedev, tools, 2d]
+language: C++
+status: active
+use_when: 要编辑 tilemap 关卡
+avoid_when: 纯 3D 关卡管线
+niche: level editor
+related_ecosystem: gamedev

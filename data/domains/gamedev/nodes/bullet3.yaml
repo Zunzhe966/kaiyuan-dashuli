@@ -1,0 +1,12 @@
+id: bullet3
+type: project
+name: Bullet Physics
+repo: https://github.com/bulletphysics/bullet3
+summary: 3D 物理引擎。
+tags: [gamedev, physics, 3d]
+language: C++
+status: active
+use_when: 3D 游戏/仿真需要物理
+avoid_when: 只要 2D 物理
+niche: physics
+related_ecosystem: gamedev

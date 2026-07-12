@@ -232,3 +232,15 @@ queries:
     query: 自托管影视媒体服务器
     intent_tags: [media, media-server]
     expect_any: [jellyfin]
+  - id: q58
+    query: 开源游戏引擎做 2D 和 3D
+    intent_tags: [gamedev, engine]
+    expect_any: [godot, bevy, monogame]
+  - id: q59
+    query: 浏览器 HTML5 2D 游戏框架
+    intent_tags: [gamedev, web]
+    expect_any: [phaser]
+  - id: q60
+    query: 浏览器 Web 3D 渲染库
+    intent_tags: [gamedev, 3d]
+    expect_any: [threejs, babylonjs]

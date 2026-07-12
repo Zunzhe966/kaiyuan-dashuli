@@ -49,6 +49,9 @@ domains:
   media:
     title: 音视频与媒体
     description: 转码、播放、录播、媒体服务、剪辑与语音视觉
+  gamedev:
+    title: 游戏开发
+    description: 引擎、框架、物理、内容工具与 Web 游戏
 
 # 节点类型
 node_types:

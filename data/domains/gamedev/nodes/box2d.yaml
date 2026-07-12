@@ -1,0 +1,12 @@
+id: box2d
+type: project
+name: Box2D
+repo: https://github.com/erincatto/box2d
+summary: 2D 物理引擎。
+tags: [gamedev, physics, 2d]
+language: C++
+status: active
+use_when: 2D 游戏需要刚体物理
+avoid_when: 3D 物理为主
+niche: physics
+related_ecosystem: gamedev

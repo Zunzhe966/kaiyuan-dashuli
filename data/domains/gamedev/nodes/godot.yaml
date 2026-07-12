@@ -1,0 +1,12 @@
+id: godot
+type: project
+name: Godot Engine
+repo: https://github.com/godotengine/godot
+summary: 功能完整的开源游戏引擎。
+tags: [gamedev, engine]
+language: C++
+status: active
+use_when: 要开源、轻量、一体化的 2D/3D 引擎
+avoid_when: 团队已深度绑定商业引擎管线
+niche: game engine
+related_ecosystem: gamedev

@@ -218,6 +218,14 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
         if nid in ("jellyfin", "navidrome"): s += 3
     if "语音转文字" in query or "本地语音识别" in query:
         if nid in ("whisper-cpp", "faster-whisper"): s += 3
+    if "开源游戏引擎" in query or "做游戏引擎" in query:
+        if nid in ("godot", "bevy", "monogame"): s += 3
+    if "HTML5" in query and "游戏" in query:
+        if nid in ("phaser", "threejs", "babylonjs"): s += 3
+    if "2D 物理" in query:
+        if nid == "box2d": s += 3
+    if "Web 3D" in query or "浏览器 3D" in query:
+        if nid in ("threejs", "babylonjs"): s += 3
     return s
 
 

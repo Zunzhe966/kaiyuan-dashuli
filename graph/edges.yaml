@@ -1615,3 +1615,83 @@ edges:
     type: integrates_with
     to: fastapi
     note: 文档 API 常见组合
+
+  - from: godot
+    type: alternative_to
+    to: bevy
+    note: 一体化开源引擎 vs Rust ECS 引擎
+
+  - from: raylib
+    type: alternative_to
+    to: sdl
+    note: 易上手游戏库 vs 底层跨平台层
+
+  - from: sfml
+    type: alternative_to
+    to: raylib
+    note: C++ 多媒体库 vs C 游戏库
+
+  - from: phaser
+    type: alternative_to
+    to: godot
+    note: Web 2D vs 通用引擎导出
+
+  - from: babylonjs
+    type: alternative_to
+    to: threejs
+    note: 完整 Web 引擎 vs 渲染库
+
+  - from: box2d
+    type: alternative_to
+    to: bullet3
+    note: 2D 物理 vs 3D 物理
+
+  - from: bevy
+    type: depends_on
+    to: wgpu
+    note: Bevy 渲染常建在 wgpu
+
+  - from: hecs
+    type: alternative_to
+    to: bevy
+    note: 只要 ECS vs 完整引擎
+
+  - from: tiled
+    type: integrates_with
+    to: godot
+    note: tilemap 常导入引擎
+
+  - from: tiled
+    type: integrates_with
+    to: phaser
+    note: Web 游戏常用 Tiled
+
+  - from: aseprite
+    type: integrates_with
+    to: godot
+    note: 像素资产进引擎
+
+  - from: soloud
+    type: integrates_with
+    to: raylib
+    note: 音频与简易游戏库可组合
+
+  - from: monogame
+    type: alternative_to
+    to: godot
+    note: .NET 框架 vs Godot
+
+  - from: openmw
+    type: alternative_to
+    to: godot
+    note: 特定游戏重实现 vs 通用引擎
+
+  - from: threejs
+    type: integrates_with
+    to: blender
+    note: Web 3D 资产常从 Blender 来
+
+  - from: spine-runtimes
+    type: integrates_with
+    to: phaser
+    note: 骨骼动画进 Web 游戏

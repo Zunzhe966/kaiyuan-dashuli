@@ -63,8 +63,11 @@
 | q55 | 命令行音视频转码处理 | handbrake, gstreamer, ffmpeg | Y | Y |
 | q56 | 开源直播推流和录屏 | obs-studio, yt-dlp, whisper-cpp | Y | Y |
 | q57 | 自托管影视媒体服务器 | navidrome, jellyfin, yt-dlp | Y | Y |
+| q58 | 开源游戏引擎做 2D 和 3D | godot, monogame, bevy | Y | Y |
+| q59 | 浏览器 HTML5 2D 游戏框架 | phaser, threejs, babylonjs | Y | Y |
+| q60 | 浏览器 Web 3D 渲染库 | threejs, babylonjs, bullet3 | Y | Y |
 
-**通过率：57/57 = 100%**
+**通过率：60/60 = 100%**
 
 判定阈值：≥80%
 
@@ -911,5 +914,50 @@
   - use_when: 要从网站下载音视频并后处理
   - avoid_when: 要合法仅限官方客户端的内容分发
   - repo: https://github.com/yt-dlp/yt-dlp
+- result: PASS (hit=True, compliant=True)
+
+### q58 — 开源游戏引擎做 2D 和 3D
+- **Godot Engine** (`godot` / gamedev)
+  - use_when: 要开源、轻量、一体化的 2D/3D 引擎
+  - avoid_when: 团队已深度绑定商业引擎管线
+  - repo: https://github.com/godotengine/godot
+- **MonoGame** (`monogame` / gamedev)
+  - use_when: .NET 团队要跨平台 2D/3D 框架
+  - avoid_when: 非 C# 栈
+  - repo: https://github.com/MonoGame/MonoGame
+- **Bevy** (`bevy` / gamedev)
+  - use_when: 要用 Rust ECS 做游戏/交互应用
+  - avoid_when: 要开箱即用的可视化编辑器为主
+  - repo: https://github.com/bevyengine/bevy
+- result: PASS (hit=True, compliant=True)
+
+### q59 — 浏览器 HTML5 2D 游戏框架
+- **Phaser** (`phaser` / gamedev)
+  - use_when: 要浏览器 2D 游戏
+  - avoid_when: 要原生高性能 3D
+  - repo: https://github.com/phaserjs/phaser
+- **three.js** (`threejs` / gamedev)
+  - use_when: 浏览器里做 3D 可视化/轻游戏
+  - avoid_when: 要 AAA 原生引擎
+  - repo: https://github.com/mrdoob/three.js
+- **Babylon.js** (`babylonjs` / gamedev)
+  - use_when: 要更完整的 Web 3D 引擎能力
+  - avoid_when: 只要最小 WebGL 渲染器
+  - repo: https://github.com/BabylonJS/Babylon.js
+- result: PASS (hit=True, compliant=True)
+
+### q60 — 浏览器 Web 3D 渲染库
+- **three.js** (`threejs` / gamedev)
+  - use_when: 浏览器里做 3D 可视化/轻游戏
+  - avoid_when: 要 AAA 原生引擎
+  - repo: https://github.com/mrdoob/three.js
+- **Babylon.js** (`babylonjs` / gamedev)
+  - use_when: 要更完整的 Web 3D 引擎能力
+  - avoid_when: 只要最小 WebGL 渲染器
+  - repo: https://github.com/BabylonJS/Babylon.js
+- **Bullet Physics** (`bullet3` / gamedev)
+  - use_when: 3D 游戏/仿真需要物理
+  - avoid_when: 只要 2D 物理
+  - repo: https://github.com/bulletphysics/bullet3
 - result: PASS (hit=True, compliant=True)
 

@@ -1,0 +1,12 @@
+id: phaser
+type: project
+name: Phaser
+repo: https://github.com/phaserjs/phaser
+summary: 快速的 HTML5 游戏框架。
+tags: [gamedev, web, javascript]
+language: JavaScript
+status: active
+use_when: 要浏览器 2D 游戏
+avoid_when: 要原生高性能 3D
+niche: web games
+related_ecosystem: gamedev

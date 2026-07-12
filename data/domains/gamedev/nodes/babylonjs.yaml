@@ -1,0 +1,12 @@
+id: babylonjs
+type: project
+name: Babylon.js
+repo: https://github.com/BabylonJS/Babylon.js
+summary: 强大的 Web 3D 引擎。
+tags: [gamedev, web, 3d]
+language: TypeScript
+status: active
+use_when: 要更完整的 Web 3D 引擎能力
+avoid_when: 只要最小 WebGL 渲染器
+niche: web 3d
+related_ecosystem: gamedev

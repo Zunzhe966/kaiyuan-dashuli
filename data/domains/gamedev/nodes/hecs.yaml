@@ -1,0 +1,12 @@
+id: hecs
+type: project
+name: hecs
+repo: https://github.com/Ralith/hecs
+summary: 轻量 Rust ECS 库。
+tags: [gamedev, ecs, rust]
+language: Rust
+status: active
+use_when: 只要 ECS 数据结构不要完整引擎
+avoid_when: 要 Bevy 一体引擎
+niche: ecs
+related_ecosystem: gamedev

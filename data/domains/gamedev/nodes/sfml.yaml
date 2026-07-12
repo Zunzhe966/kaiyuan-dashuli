@@ -1,0 +1,12 @@
+id: sfml
+type: project
+name: SFML
+repo: https://github.com/SFML/SFML
+summary: 简单快速的多媒体库。
+tags: [gamedev, library]
+language: C++
+status: active
+use_when: C++ 快速做 2D 游戏/多媒体
+avoid_when: 要完整 3D 引擎
+niche: multimedia lib
+related_ecosystem: gamedev

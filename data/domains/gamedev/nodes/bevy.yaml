@@ -1,0 +1,12 @@
+id: bevy
+type: project
+name: Bevy
+repo: https://github.com/bevyengine/bevy
+summary: 数据驱动的 Rust 游戏引擎。
+tags: [gamedev, engine, rust]
+language: Rust
+status: active
+use_when: 要用 Rust ECS 做游戏/交互应用
+avoid_when: 要开箱即用的可视化编辑器为主
+niche: rust engine
+related_ecosystem: gamedev
