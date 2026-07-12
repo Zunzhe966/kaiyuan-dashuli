@@ -1,0 +1,12 @@
+id: emqx
+type: project
+name: EMQX
+repo: https://github.com/emqx/emqx
+summary: 大规模可扩展 MQTT 平台。
+tags: [iot, mqtt, messaging]
+language: Erlang
+status: active
+use_when: 要高并发 MQTT 与规则引擎
+avoid_when: 家庭实验室只要 Mosquitto
+niche: mqtt broker
+related_ecosystem: iot

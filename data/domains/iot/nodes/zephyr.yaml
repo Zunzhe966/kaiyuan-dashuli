@@ -1,0 +1,12 @@
+id: zephyr
+type: project
+name: Zephyr
+repo: https://github.com/zephyrproject-rtos/zephyr
+summary: 可扩展实时操作系统，面向受限设备。
+tags: [iot, rtos, embedded]
+language: C
+status: active
+use_when: 要跨芯片的现代嵌入式 RTOS
+avoid_when: 只要 Arduino 级入门原型
+niche: rtos
+related_ecosystem: iot

@@ -208,3 +208,15 @@ queries:
     query: 应用错误监控与聚合
     intent_tags: [observability, errors]
     expect_any: [sentry, signoz]
+  - id: q52
+    query: 自托管智能家居家庭自动化中枢
+    intent_tags: [iot, home-automation]
+    expect_any: [home-assistant, openhab]
+  - id: q53
+    query: YAML 配置刷 ESP 传感器固件
+    intent_tags: [iot, firmware]
+    expect_any: [esphome]
+  - id: q54
+    query: 轻量自托管 MQTT broker
+    intent_tags: [iot, mqtt]
+    expect_any: [mosquitto, emqx]

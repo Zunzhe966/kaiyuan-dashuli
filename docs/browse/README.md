@@ -13,3 +13,4 @@
 - [cms-docs](./cms-docs.md)
 - [networking](./networking.md)
 - [observability](./observability.md)
+- [iot](./iot.md)

@@ -1,0 +1,12 @@
+id: openhab
+type: project
+name: openHAB
+repo: https://github.com/openhab/openhab-core
+summary: 开源家庭自动化运行时。
+tags: [iot, home-automation]
+language: Java
+status: active
+use_when: 要规则引擎强的家庭自动化替代
+avoid_when: 更熟 Home Assistant 生态
+niche: home automation
+related_ecosystem: iot

@@ -1,0 +1,12 @@
+id: arduino-core
+type: project
+name: Arduino Core
+repo: https://github.com/arduino/ArduinoCore-avr
+summary: Arduino AVR 核心（入门嵌入式生态代表）。
+tags: [iot, embedded, maker]
+language: C++
+status: active
+use_when: 教学/创客快速原型
+avoid_when: 要生产级安全与复杂网络栈
+niche: maker
+related_ecosystem: iot

@@ -43,6 +43,9 @@ domains:
   observability:
     title: 可观测性
     description: 指标、日志、链路、APM、采集管道与可用性监控
+  iot:
+    title: 物联网与嵌入式
+    description: 家庭自动化、MCU 固件、RTOS、MQTT、无线桥接与边缘 ML
 
 # 节点类型
 node_types:

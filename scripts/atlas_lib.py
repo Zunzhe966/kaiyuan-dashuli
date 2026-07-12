@@ -204,6 +204,12 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
         if nid in ("opentelemetry-collector", "grafana-alloy", "vector-dev"): s += 3
     if "错误监控" in query or "应用错误" in query:
         if nid in ("sentry", "signoz"): s += 3
+    if "家庭自动化" in query or "智能家居" in query:
+        if nid in ("home-assistant", "openhab", "nodered"): s += 3
+    if "ESP" in query and ("固件" in query or "刷" in query):
+        if nid in ("esphome", "esp-idf", "tasmota"): s += 3
+    if "MQTT" in query and ("broker" in query.lower() or "消息总线" in query):
+        if nid in ("mosquitto", "emqx"): s += 3
     return s
 
 

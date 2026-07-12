@@ -1350,3 +1350,83 @@ edges:
     type: alternative_to
     to: elasticsearch
     note: 日志平台 vs 纯搜索引擎后端
+
+  - from: esphome
+    type: alternative_to
+    to: esp-idf
+    note: 声明式刷机 vs 官方深度 SDK
+
+  - from: esphome
+    type: integrates_with
+    to: home-assistant
+    note: 常见智能家居组合
+
+  - from: tasmota
+    type: alternative_to
+    to: esphome
+    note: 设备固件另一路线
+
+  - from: openhab
+    type: alternative_to
+    to: home-assistant
+    note: 两大开源家庭自动化
+
+  - from: nodered
+    type: integrates_with
+    to: mosquitto
+    note: 流编排常接 MQTT
+
+  - from: nodered
+    type: integrates_with
+    to: home-assistant
+    note: 自动化编排互补
+
+  - from: zigbee2mqtt
+    type: integrates_with
+    to: mosquitto
+    note: Zigbee 桥到 MQTT
+
+  - from: zigbee2mqtt
+    type: integrates_with
+    to: home-assistant
+    note: HA 常见集成
+
+  - from: emqx
+    type: alternative_to
+    to: mosquitto
+    note: 大规模 vs 轻量 broker
+
+  - from: zephyr
+    type: alternative_to
+    to: freertos
+    note: 完整设备模型 vs 经典内核
+
+  - from: platformio
+    type: integrates_with
+    to: arduino-core
+    note: 构建系统对接 Arduino 生态
+
+  - from: platformio
+    type: integrates_with
+    to: esp-idf
+    note: 可构建 ESP-IDF 工程
+
+  - from: zwave-js
+    type: integrates_with
+    to: home-assistant
+    note: Z-Wave 常见接入
+
+  - from: matter
+    type: integrates_with
+    to: home-assistant
+    note: Matter 设备互通
+
+  - from: tinyml-tflite-micro
+    type: integrates_with
+    to: esp-idf
+    note: MCU 推理常见落地
+
+  - from: edge-impulse-cli
+    type: integrates_with
+    to: tinyml-tflite-micro
+    note: 边缘 ML 工具链到 MCU 推理

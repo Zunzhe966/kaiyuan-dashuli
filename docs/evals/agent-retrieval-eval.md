@@ -57,8 +57,11 @@
 | q49 | 开源分布式链路追踪 | zipkin, tempo, jaeger | Y | Y |
 | q50 | 与 Grafana 配套的日志聚合 | loki, opensearch, graylog | Y | Y |
 | q51 | 应用错误监控与聚合 | sentry, signoz, zipkin | Y | Y |
+| q52 | 自托管智能家居家庭自动化中枢 | openhab, home-assistant, nodered | Y | Y |
+| q53 | YAML 配置刷 ESP 传感器固件 | esphome, tasmota, esp-idf | Y | Y |
+| q54 | 轻量自托管 MQTT broker | emqx, mosquitto, zigbee2mqtt | Y | Y |
 
-**通过率：51/51 = 100%**
+**通过率：54/54 = 100%**
 
 判定阈值：≥80%
 
@@ -811,5 +814,50 @@
   - use_when: 要轻量经典 tracing 后端
   - avoid_when: 要与 OTel 深度一体的现代栈
   - repo: https://github.com/openzipkin/zipkin
+- result: PASS (hit=True, compliant=True)
+
+### q52 — 自托管智能家居家庭自动化中枢
+- **openHAB** (`openhab` / iot)
+  - use_when: 要规则引擎强的家庭自动化替代
+  - avoid_when: 更熟 Home Assistant 生态
+  - repo: https://github.com/openhab/openhab-core
+- **Home Assistant** (`home-assistant` / iot)
+  - use_when: 要自托管智能家居中枢与海量集成
+  - avoid_when: 只要单设备脚本无家庭场景
+  - repo: https://github.com/home-assistant/core
+- **Node-RED** (`nodered` / iot)
+  - use_when: 要用可视化流连接设备与服务
+  - avoid_when: 要强类型大型后端系统
+  - repo: https://github.com/node-red/node-red
+- result: PASS (hit=True, compliant=True)
+
+### q53 — YAML 配置刷 ESP 传感器固件
+- **ESPHome** (`esphome` / iot)
+  - use_when: 要用声明式配置刷 ESP 传感器/开关
+  - avoid_when: 要完全手写底层 IDF 驱动
+  - repo: https://github.com/esphome/esphome
+- **Tasmota** (`tasmota` / iot)
+  - use_when: 要刷开源固件接管消费级 Wi-Fi 设备
+  - avoid_when: 设备不支持或要官方保修
+  - repo: https://github.com/arendst/Tasmota
+- **ESP-IDF** (`esp-idf` / iot)
+  - use_when: 要官方级 ESP32 深度开发
+  - avoid_when: 只要快速 YAML 刷机（ESPHome）
+  - repo: https://github.com/espressif/esp-idf
+- result: PASS (hit=True, compliant=True)
+
+### q54 — 轻量自托管 MQTT broker
+- **EMQX** (`emqx` / iot)
+  - use_when: 要高并发 MQTT 与规则引擎
+  - avoid_when: 家庭实验室只要 Mosquitto
+  - repo: https://github.com/emqx/emqx
+- **Eclipse Mosquitto** (`mosquitto` / iot)
+  - use_when: 要自托管 MQTT 消息总线
+  - avoid_when: 只要云厂商托管 MQTT
+  - repo: https://github.com/eclipse/mosquitto
+- **Zigbee2MQTT** (`zigbee2mqtt` / iot)
+  - use_when: 要用 MQTT 统一接入 Zigbee 设备
+  - avoid_when: 全屋已是 Z-Wave/Matter 且无 Zigbee
+  - repo: https://github.com/Koenkk/zigbee2mqtt
 - result: PASS (hit=True, compliant=True)
 

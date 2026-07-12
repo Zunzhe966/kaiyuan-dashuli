@@ -1,0 +1,12 @@
+id: mosquitto
+type: project
+name: Eclipse Mosquitto
+repo: https://github.com/eclipse/mosquitto
+summary: 轻量 MQTT broker。
+tags: [iot, mqtt, messaging]
+language: C
+status: active
+use_when: 要自托管 MQTT 消息总线
+avoid_when: 只要云厂商托管 MQTT
+niche: mqtt broker
+related_ecosystem: iot

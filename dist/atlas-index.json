@@ -2,7 +2,7 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T00:52:19.690971+00:00",
+  "generated_at": "2026-07-12T01:03:36.725066+00:00",
   "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
   "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
   "domains": [
@@ -14,14 +14,15 @@
     "desktop",
     "devops",
     "devtools",
+    "iot",
     "mobile",
     "networking",
     "observability",
     "security",
     "web-frontend"
   ],
-  "node_count": 281,
-  "edge_count": 270,
+  "node_count": 299,
+  "edge_count": 286,
   "nodes": [
     {
       "id": "act",
@@ -214,6 +215,23 @@
       "use_when": "原生/混合 App 要跨端自动化",
       "avoid_when": "只要单元测试",
       "niche": "mobile automation"
+    },
+    {
+      "id": "arduino-core",
+      "domain": "iot",
+      "name": "Arduino Core",
+      "repo": "https://github.com/arduino/ArduinoCore-avr",
+      "summary": "Arduino AVR 核心（入门嵌入式生态代表）。",
+      "tags": [
+        "iot",
+        "embedded",
+        "maker"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "教学/创客快速原型",
+      "avoid_when": "要生产级安全与复杂网络栈",
+      "niche": "maker"
     },
     {
       "id": "argo-cd",
@@ -998,6 +1016,23 @@
       "niche": "embedded analytics"
     },
     {
+      "id": "edge-impulse-cli",
+      "domain": "iot",
+      "name": "Edge Impulse CLI / tooling refs",
+      "repo": "https://github.com/edgeimpulse/edge-impulse-cli",
+      "summary": "边缘 ML 数据采集与部署工具链入口。",
+      "tags": [
+        "iot",
+        "tinyml",
+        "tooling"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要加速嵌入式 ML 数据到模型闭环",
+      "avoid_when": "只要纯开源自建训练管线",
+      "niche": "tinyml tooling"
+    },
+    {
       "id": "egui",
       "domain": "desktop",
       "name": "egui",
@@ -1048,6 +1083,23 @@
       "niche": "web desktop"
     },
     {
+      "id": "emqx",
+      "domain": "iot",
+      "name": "EMQX",
+      "repo": "https://github.com/emqx/emqx",
+      "summary": "大规模可扩展 MQTT 平台。",
+      "tags": [
+        "iot",
+        "mqtt",
+        "messaging"
+      ],
+      "language": "Erlang",
+      "status": "active",
+      "use_when": "要高并发 MQTT 与规则引擎",
+      "avoid_when": "家庭实验室只要 Mosquitto",
+      "niche": "mqtt broker"
+    },
+    {
       "id": "envoy",
       "domain": "networking",
       "name": "Envoy",
@@ -1063,6 +1115,40 @@
       "use_when": "要可编程 L7 代理或网格数据面",
       "avoid_when": "只要简单反向代理静态站",
       "niche": "proxy"
+    },
+    {
+      "id": "esp-idf",
+      "domain": "iot",
+      "name": "ESP-IDF",
+      "repo": "https://github.com/espressif/esp-idf",
+      "summary": "乐鑫官方 IoT 开发框架。",
+      "tags": [
+        "iot",
+        "firmware",
+        "esp"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要官方级 ESP32 深度开发",
+      "avoid_when": "只要快速 YAML 刷机（ESPHome）",
+      "niche": "esp sdk"
+    },
+    {
+      "id": "esphome",
+      "domain": "iot",
+      "name": "ESPHome",
+      "repo": "https://github.com/esphome/esphome",
+      "summary": "用 YAML 配置 ESP 设备固件。",
+      "tags": [
+        "iot",
+        "firmware",
+        "esp"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要用声明式配置刷 ESP 传感器/开关",
+      "avoid_when": "要完全手写底层 IDF 驱动",
+      "niche": "esp firmware"
     },
     {
       "id": "expo",
@@ -1342,6 +1428,23 @@
       "use_when": "K8s GitOps 且偏 Flux 生态",
       "avoid_when": "已选定 Argo CD 且无双栈需求",
       "niche": "gitops toolkit"
+    },
+    {
+      "id": "freertos",
+      "domain": "iot",
+      "name": "FreeRTOS",
+      "repo": "https://github.com/FreeRTOS/FreeRTOS",
+      "summary": "广泛使用的实时操作系统内核。",
+      "tags": [
+        "iot",
+        "rtos",
+        "embedded"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要成熟轻量 RTOS 内核与生态",
+      "avoid_when": "要完整发行版式 Zephyr 设备模型",
+      "niche": "rtos"
     },
     {
       "id": "frp",
@@ -1704,6 +1807,22 @@
       "niche": "k8s package manager"
     },
     {
+      "id": "home-assistant",
+      "domain": "iot",
+      "name": "Home Assistant",
+      "repo": "https://github.com/home-assistant/core",
+      "summary": "开源家庭自动化平台。",
+      "tags": [
+        "iot",
+        "home-automation"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要自托管智能家居中枢与海量集成",
+      "avoid_when": "只要单设备脚本无家庭场景",
+      "niche": "home automation"
+    },
+    {
       "id": "hono",
       "domain": "backend",
       "name": "Hono",
@@ -2016,6 +2135,23 @@
       "use_when": "要 GraphQL 内容 API 与自定义字段",
       "avoid_when": "只要最简 Markdown 文档",
       "niche": "graphql cms"
+    },
+    {
+      "id": "kismet",
+      "domain": "iot",
+      "name": "Kismet",
+      "repo": "https://github.com/kismetwireless/kismet",
+      "summary": "无线网络侦测与监测。",
+      "tags": [
+        "iot",
+        "wireless",
+        "security"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要监测 Wi-Fi/蓝牙等无线环境",
+      "avoid_when": "只要应用层 MQTT 设备控制",
+      "niche": "wireless monitor"
     },
     {
       "id": "kmp",
@@ -2410,6 +2546,23 @@
       "niche": "plotting"
     },
     {
+      "id": "matter",
+      "domain": "iot",
+      "name": "connectedhomeip (Matter)",
+      "repo": "https://github.com/project-chip/connectedhomeip",
+      "summary": "Matter 智能家居互联标准参考实现。",
+      "tags": [
+        "iot",
+        "matter",
+        "standards"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要做 Matter 设备/控制器开发",
+      "avoid_when": "只要应用层集成现成 Matter 设备",
+      "niche": "matter"
+    },
+    {
       "id": "maui",
       "domain": "mobile",
       "name": ".NET MAUI",
@@ -2636,6 +2789,23 @@
       "niche": "document db"
     },
     {
+      "id": "mosquitto",
+      "domain": "iot",
+      "name": "Eclipse Mosquitto",
+      "repo": "https://github.com/eclipse/mosquitto",
+      "summary": "轻量 MQTT broker。",
+      "tags": [
+        "iot",
+        "mqtt",
+        "messaging"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要自托管 MQTT 消息总线",
+      "avoid_when": "只要云厂商托管 MQTT",
+      "niche": "mqtt broker"
+    },
+    {
       "id": "mysql",
       "domain": "databases",
       "name": "MySQL",
@@ -2817,6 +2987,23 @@
       "niche": "network scan"
     },
     {
+      "id": "nodered",
+      "domain": "iot",
+      "name": "Node-RED",
+      "repo": "https://github.com/node-red/node-red",
+      "summary": "基于流的低代码自动化编排。",
+      "tags": [
+        "iot",
+        "automation",
+        "low-code"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要用可视化流连接设备与服务",
+      "avoid_when": "要强类型大型后端系统",
+      "niche": "flow automation"
+    },
+    {
       "id": "nomad",
       "domain": "devops",
       "name": "Nomad",
@@ -2962,6 +3149,22 @@
       "niche": "openai-native agents"
     },
     {
+      "id": "openhab",
+      "domain": "iot",
+      "name": "openHAB",
+      "repo": "https://github.com/openhab/openhab-core",
+      "summary": "开源家庭自动化运行时。",
+      "tags": [
+        "iot",
+        "home-automation"
+      ],
+      "language": "Java",
+      "status": "active",
+      "use_when": "要规则引擎强的家庭自动化替代",
+      "avoid_when": "更熟 Home Assistant 生态",
+      "niche": "home automation"
+    },
+    {
       "id": "opensearch",
       "domain": "observability",
       "name": "OpenSearch",
@@ -3090,6 +3293,23 @@
       "use_when": "要做 LoRA/QLoRA 等高效微调",
       "avoid_when": "不做训练，只做推理",
       "niche": "parameter-efficient finetuning"
+    },
+    {
+      "id": "platformio",
+      "domain": "iot",
+      "name": "PlatformIO",
+      "repo": "https://github.com/platformio/platformio-core",
+      "summary": "嵌入式开发的专业 IDE/构建系统。",
+      "tags": [
+        "iot",
+        "embedded",
+        "tooling"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要多平台嵌入式构建与库管理",
+      "avoid_when": "只要单板 Arduino IDE 最简流程",
+      "niche": "embedded tooling"
     },
     {
       "id": "playwright",
@@ -3991,6 +4211,23 @@
       "niche": "server state"
     },
     {
+      "id": "tasmota",
+      "domain": "iot",
+      "name": "Tasmota",
+      "repo": "https://github.com/arendst/Tasmota",
+      "summary": "替代固件，常用于智能插座/继电器。",
+      "tags": [
+        "iot",
+        "firmware",
+        "mqtt"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要刷开源固件接管消费级 Wi-Fi 设备",
+      "avoid_when": "设备不支持或要官方保修",
+      "niche": "device firmware"
+    },
+    {
       "id": "tauri",
       "domain": "desktop",
       "name": "Tauri",
@@ -4087,6 +4324,23 @@
       "use_when": "要 MySQL 兼容的分布式扩展",
       "avoid_when": "无分布式需求",
       "niche": "distributed mysql-compatible"
+    },
+    {
+      "id": "tinyml-tflite-micro",
+      "domain": "iot",
+      "name": "TensorFlow Lite for Microcontrollers",
+      "repo": "https://github.com/tensorflow/tflite-micro",
+      "summary": "微控制器上的轻量推理。",
+      "tags": [
+        "iot",
+        "tinyml",
+        "embedded"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要在 MCU 跑小型 ML 推理",
+      "avoid_when": "有 GPU/服务器可跑完整框架",
+      "niche": "tinyml"
     },
     {
       "id": "traefik",
@@ -4578,6 +4832,40 @@
       "niche": "yaml cli"
     },
     {
+      "id": "zephyr",
+      "domain": "iot",
+      "name": "Zephyr",
+      "repo": "https://github.com/zephyrproject-rtos/zephyr",
+      "summary": "可扩展实时操作系统，面向受限设备。",
+      "tags": [
+        "iot",
+        "rtos",
+        "embedded"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要跨芯片的现代嵌入式 RTOS",
+      "avoid_when": "只要 Arduino 级入门原型",
+      "niche": "rtos"
+    },
+    {
+      "id": "zigbee2mqtt",
+      "domain": "iot",
+      "name": "Zigbee2MQTT",
+      "repo": "https://github.com/Koenkk/zigbee2mqtt",
+      "summary": "把 Zigbee 设备桥到 MQTT。",
+      "tags": [
+        "iot",
+        "zigbee",
+        "mqtt"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要用 MQTT 统一接入 Zigbee 设备",
+      "avoid_when": "全屋已是 Z-Wave/Matter 且无 Zigbee",
+      "niche": "zigbee bridge"
+    },
+    {
       "id": "zipkin",
       "domain": "observability",
       "name": "Zipkin",
@@ -4609,6 +4897,22 @@
       "use_when": "React 需要简单全局/共享状态",
       "avoid_when": "需要完整可预测状态机生态（看 Redux）",
       "niche": "react state"
+    },
+    {
+      "id": "zwave-js",
+      "domain": "iot",
+      "name": "Z-Wave JS",
+      "repo": "https://github.com/zwave-js/node-zwave-js",
+      "summary": "现代 Z-Wave 驱动栈。",
+      "tags": [
+        "iot",
+        "zwave"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要驱动 Z-Wave 控制器与设备",
+      "avoid_when": "无 Z-Wave 硬件",
+      "niche": "zwave"
     }
   ],
   "edges": [
@@ -6231,6 +6535,102 @@
       "type": "alternative_to",
       "to": "elasticsearch",
       "note": "日志平台 vs 纯搜索引擎后端"
+    },
+    {
+      "from": "esphome",
+      "type": "alternative_to",
+      "to": "esp-idf",
+      "note": "声明式刷机 vs 官方深度 SDK"
+    },
+    {
+      "from": "esphome",
+      "type": "integrates_with",
+      "to": "home-assistant",
+      "note": "常见智能家居组合"
+    },
+    {
+      "from": "tasmota",
+      "type": "alternative_to",
+      "to": "esphome",
+      "note": "设备固件另一路线"
+    },
+    {
+      "from": "openhab",
+      "type": "alternative_to",
+      "to": "home-assistant",
+      "note": "两大开源家庭自动化"
+    },
+    {
+      "from": "nodered",
+      "type": "integrates_with",
+      "to": "mosquitto",
+      "note": "流编排常接 MQTT"
+    },
+    {
+      "from": "nodered",
+      "type": "integrates_with",
+      "to": "home-assistant",
+      "note": "自动化编排互补"
+    },
+    {
+      "from": "zigbee2mqtt",
+      "type": "integrates_with",
+      "to": "mosquitto",
+      "note": "Zigbee 桥到 MQTT"
+    },
+    {
+      "from": "zigbee2mqtt",
+      "type": "integrates_with",
+      "to": "home-assistant",
+      "note": "HA 常见集成"
+    },
+    {
+      "from": "emqx",
+      "type": "alternative_to",
+      "to": "mosquitto",
+      "note": "大规模 vs 轻量 broker"
+    },
+    {
+      "from": "zephyr",
+      "type": "alternative_to",
+      "to": "freertos",
+      "note": "完整设备模型 vs 经典内核"
+    },
+    {
+      "from": "platformio",
+      "type": "integrates_with",
+      "to": "arduino-core",
+      "note": "构建系统对接 Arduino 生态"
+    },
+    {
+      "from": "platformio",
+      "type": "integrates_with",
+      "to": "esp-idf",
+      "note": "可构建 ESP-IDF 工程"
+    },
+    {
+      "from": "zwave-js",
+      "type": "integrates_with",
+      "to": "home-assistant",
+      "note": "Z-Wave 常见接入"
+    },
+    {
+      "from": "matter",
+      "type": "integrates_with",
+      "to": "home-assistant",
+      "note": "Matter 设备互通"
+    },
+    {
+      "from": "tinyml-tflite-micro",
+      "type": "integrates_with",
+      "to": "esp-idf",
+      "note": "MCU 推理常见落地"
+    },
+    {
+      "from": "edge-impulse-cli",
+      "type": "integrates_with",
+      "to": "tinyml-tflite-micro",
+      "note": "边缘 ML 工具链到 MCU 推理"
     }
   ]
 }

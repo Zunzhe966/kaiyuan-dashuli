@@ -1,0 +1,12 @@
+id: tinyml-tflite-micro
+type: project
+name: TensorFlow Lite for Microcontrollers
+repo: https://github.com/tensorflow/tflite-micro
+summary: 微控制器上的轻量推理。
+tags: [iot, tinyml, embedded]
+language: C++
+status: active
+use_when: 要在 MCU 跑小型 ML 推理
+avoid_when: 有 GPU/服务器可跑完整框架
+niche: tinyml
+related_ecosystem: iot

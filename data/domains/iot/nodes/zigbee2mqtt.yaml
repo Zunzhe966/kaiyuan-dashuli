@@ -1,0 +1,12 @@
+id: zigbee2mqtt
+type: project
+name: Zigbee2MQTT
+repo: https://github.com/Koenkk/zigbee2mqtt
+summary: 把 Zigbee 设备桥到 MQTT。
+tags: [iot, zigbee, mqtt]
+language: TypeScript
+status: active
+use_when: 要用 MQTT 统一接入 Zigbee 设备
+avoid_when: 全屋已是 Z-Wave/Matter 且无 Zigbee
+niche: zigbee bridge
+related_ecosystem: iot
