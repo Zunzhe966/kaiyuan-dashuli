@@ -2,7 +2,7 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T00:49:48.098626+00:00",
+  "generated_at": "2026-07-12T00:50:33.026447+00:00",
   "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
   "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
   "domains": [
@@ -19,8 +19,8 @@
     "security",
     "web-frontend"
   ],
-  "node_count": 257,
-  "edge_count": 233,
+  "node_count": 263,
+  "edge_count": 248,
   "nodes": [
     {
       "id": "act",
@@ -133,6 +133,22 @@
       "use_when": "批量配置服务器、应用部署剧本",
       "avoid_when": "主要是不可变镜像/GitOps，不需要 SSH 推送配置",
       "niche": "config management"
+    },
+    {
+      "id": "antora",
+      "domain": "cms-docs",
+      "name": "Antora",
+      "repo": "https://github.com/antora/antora",
+      "summary": "多仓 AsciiDoc 文档站点生成器。",
+      "tags": [
+        "docs",
+        "static-site"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "多仓库文档要统一版本化发布",
+      "avoid_when": "单仓简单 Markdown 手册",
+      "niche": "docs site"
     },
     {
       "id": "apache-kafka",
@@ -882,6 +898,22 @@
       "niche": "python full framework"
     },
     {
+      "id": "docfx",
+      "domain": "cms-docs",
+      "name": "DocFX",
+      "repo": "https://github.com/dotnet/docfx",
+      "summary": ".NET API 与概念文档生成器。",
+      "tags": [
+        "docs",
+        "dotnet"
+      ],
+      "language": "C#",
+      "status": "active",
+      "use_when": ".NET 项目要 API 参考+概念文档站",
+      "avoid_when": "非 .NET 栈",
+      "niche": "api docs"
+    },
+    {
       "id": "docker",
       "domain": "devops",
       "name": "Docker",
@@ -1126,6 +1158,23 @@
       "use_when": "本地/服务端要快的语音转写",
       "avoid_when": "只要云端语音 API",
       "niche": "speech-to-text"
+    },
+    {
+      "id": "fastlane",
+      "domain": "mobile",
+      "name": "fastlane",
+      "repo": "https://github.com/fastlane/fastlane",
+      "summary": "iOS/Android 构建发布自动化。",
+      "tags": [
+        "mobile",
+        "ci",
+        "release"
+      ],
+      "language": "Ruby",
+      "status": "active",
+      "use_when": "要自动化证书、截图、商店发布流水线",
+      "avoid_when": "只要本地跑通 App 无发布",
+      "niche": "mobile release"
     },
     {
       "id": "fd",
@@ -1885,6 +1934,23 @@
       "niche": "graphql cms"
     },
     {
+      "id": "kmp",
+      "domain": "mobile",
+      "name": "Kotlin Multiplatform",
+      "repo": "https://github.com/JetBrains/kotlin",
+      "summary": "Kotlin 多平台共享业务逻辑（含移动）。",
+      "tags": [
+        "mobile",
+        "cross-platform",
+        "kotlin"
+      ],
+      "language": "Kotlin",
+      "status": "active",
+      "use_when": "要在 Android/iOS 共享 Kotlin 业务层",
+      "avoid_when": "要完整跨端 UI 一体化（更看 Compose MP/Flutter）",
+      "niche": "shared logic"
+    },
+    {
       "id": "kong",
       "domain": "networking",
       "name": "Kong",
@@ -2192,6 +2258,23 @@
       "use_when": "要标准化评测基座模型能力",
       "avoid_when": "只评业务 RAG 流水线（看 ragas）",
       "niche": "foundation model eval"
+    },
+    {
+      "id": "maestro",
+      "domain": "mobile",
+      "name": "Maestro",
+      "repo": "https://github.com/mobile-dev-inc/maestro",
+      "summary": "声明式移动端 UI 自动化测试。",
+      "tags": [
+        "mobile",
+        "testing",
+        "e2e"
+      ],
+      "language": "Kotlin",
+      "status": "active",
+      "use_when": "要用 YAML 风格快速写移动端 UI 测试",
+      "avoid_when": "要深度接入原生 XCTest/Espresso 体系",
+      "niche": "mobile e2e"
     },
     {
       "id": "mariadb",
@@ -3410,6 +3493,23 @@
       "use_when": "自托管推理且在意结构化解码/吞吐",
       "avoid_when": "只要最简单本地聊天",
       "niche": "structured generation runtime"
+    },
+    {
+      "id": "shorebird",
+      "domain": "mobile",
+      "name": "Shorebird",
+      "repo": "https://github.com/shorebirdtech/shorebird",
+      "summary": "Flutter 代码推送更新（Code Push）。",
+      "tags": [
+        "mobile",
+        "flutter",
+        "code-push"
+      ],
+      "language": "Dart",
+      "status": "active",
+      "use_when": "Flutter 应用要绕过商店发补丁级更新",
+      "avoid_when": "非 Flutter 或不允许热更新策略",
+      "niche": "flutter code push"
     },
     {
       "id": "slint",
@@ -5609,6 +5709,96 @@
       "type": "alternative_to",
       "to": "nginx",
       "note": "LB 专长 vs 通用反代"
+    },
+    {
+      "from": "maestro",
+      "type": "alternative_to",
+      "to": "appium",
+      "note": "声明式移动 E2E vs 经典 Appium"
+    },
+    {
+      "from": "maestro",
+      "type": "alternative_to",
+      "to": "detox",
+      "note": "跨端声明式 vs RN 专用 Detox"
+    },
+    {
+      "from": "fastlane",
+      "type": "integrates_with",
+      "to": "github-actions-runner",
+      "note": "常挂 CI 做商店发布"
+    },
+    {
+      "from": "shorebird",
+      "type": "integrates_with",
+      "to": "flutter",
+      "note": "Flutter Code Push"
+    },
+    {
+      "from": "kmp",
+      "type": "integrates_with",
+      "to": "kotlin-android",
+      "note": "共享逻辑对接 Android"
+    },
+    {
+      "from": "kmp",
+      "type": "alternative_to",
+      "to": "flutter",
+      "note": "共享逻辑 vs 全栈 UI 跨端"
+    },
+    {
+      "from": "antora",
+      "type": "alternative_to",
+      "to": "docusaurus",
+      "note": "多仓 AsciiDoc vs React 文档站"
+    },
+    {
+      "from": "docfx",
+      "type": "alternative_to",
+      "to": "sphinx",
+      "note": ".NET 文档 vs Python Sphinx"
+    },
+    {
+      "from": "apisix",
+      "type": "integrates_with",
+      "to": "prometheus",
+      "note": "网关指标常接 Prometheus"
+    },
+    {
+      "from": "cilium",
+      "type": "integrates_with",
+      "to": "prometheus",
+      "note": "eBPF 可观测常导出指标"
+    },
+    {
+      "from": "tailscale",
+      "type": "alternative_to",
+      "to": "wireguard",
+      "note": "托管/易用组网 vs 裸 WireGuard"
+    },
+    {
+      "from": "frp",
+      "type": "integrates_with",
+      "to": "nginx",
+      "note": "穿透后常接反代"
+    },
+    {
+      "from": "payload",
+      "type": "integrates_with",
+      "to": "nextjs",
+      "note": "无头 CMS 常配 Next 前端"
+    },
+    {
+      "from": "strapi",
+      "type": "integrates_with",
+      "to": "nextjs",
+      "note": "无头内容给前端"
+    },
+    {
+      "from": "uv",
+      "type": "integrates_with",
+      "to": "fastapi",
+      "note": "Python 服务常用 uv 管依赖"
     }
   ]
 }

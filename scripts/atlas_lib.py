@@ -190,6 +190,12 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
     if "服务网格" in query and "轻量" in query:
         if nid == "linkerd2": s += 3
         if nid == "istio": s -= 1
+    if "移动端 UI 自动化" in query or "移动端 E2E" in query:
+        if nid in ("maestro", "appium", "detox"): s += 3
+    if "Flutter" in query and ("热更新" in query or "Code Push" in query):
+        if nid == "shorebird": s += 3
+    if "Kotlin" in query and "多平台" in query:
+        if nid == "kmp": s += 3
     return s
 
 

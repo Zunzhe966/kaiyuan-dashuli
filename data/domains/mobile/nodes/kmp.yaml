@@ -1,0 +1,12 @@
+id: kmp
+type: project
+name: Kotlin Multiplatform
+repo: https://github.com/JetBrains/kotlin
+summary: Kotlin 多平台共享业务逻辑（含移动）。
+tags: [mobile, cross-platform, kotlin]
+language: Kotlin
+status: active
+use_when: 要在 Android/iOS 共享 Kotlin 业务层
+avoid_when: 要完整跨端 UI 一体化（更看 Compose MP/Flutter）
+niche: shared logic
+related_ecosystem: mobile

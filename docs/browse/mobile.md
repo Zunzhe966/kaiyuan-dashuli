@@ -28,3 +28,10 @@
 - [Detox](https://github.com/wix/Detox) — React Native 灰盒 E2E 测试。
 - [Appium](https://github.com/appium/appium) — 跨端移动自动化测试框架。
 
+## 发布与测试增强
+
+- [Maestro](https://github.com/mobile-dev-inc/maestro) — 声明式移动端 UI 自动化测试。
+- [fastlane](https://github.com/fastlane/fastlane) — iOS/Android 构建发布自动化。
+- [Shorebird](https://github.com/shorebirdtech/shorebird) — Flutter 代码推送更新（Code Push）。
+- [Kotlin Multiplatform](https://github.com/JetBrains/kotlin) — Kotlin 多平台共享业务逻辑（含移动）。
+

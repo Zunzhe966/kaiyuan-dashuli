@@ -1165,3 +1165,78 @@ edges:
     type: alternative_to
     to: nginx
     note: LB 专长 vs 通用反代
+
+  - from: maestro
+    type: alternative_to
+    to: appium
+    note: 声明式移动 E2E vs 经典 Appium
+
+  - from: maestro
+    type: alternative_to
+    to: detox
+    note: 跨端声明式 vs RN 专用 Detox
+
+  - from: fastlane
+    type: integrates_with
+    to: github-actions-runner
+    note: 常挂 CI 做商店发布
+
+  - from: shorebird
+    type: integrates_with
+    to: flutter
+    note: Flutter Code Push
+
+  - from: kmp
+    type: integrates_with
+    to: kotlin-android
+    note: 共享逻辑对接 Android
+
+  - from: kmp
+    type: alternative_to
+    to: flutter
+    note: 共享逻辑 vs 全栈 UI 跨端
+
+  - from: antora
+    type: alternative_to
+    to: docusaurus
+    note: 多仓 AsciiDoc vs React 文档站
+
+  - from: docfx
+    type: alternative_to
+    to: sphinx
+    note: .NET 文档 vs Python Sphinx
+
+  - from: apisix
+    type: integrates_with
+    to: prometheus
+    note: 网关指标常接 Prometheus
+
+  - from: cilium
+    type: integrates_with
+    to: prometheus
+    note: eBPF 可观测常导出指标
+
+  - from: tailscale
+    type: alternative_to
+    to: wireguard
+    note: 托管/易用组网 vs 裸 WireGuard
+
+  - from: frp
+    type: integrates_with
+    to: nginx
+    note: 穿透后常接反代
+
+  - from: payload
+    type: integrates_with
+    to: nextjs
+    note: 无头 CMS 常配 Next 前端
+
+  - from: strapi
+    type: integrates_with
+    to: nextjs
+    note: 无头内容给前端
+
+  - from: uv
+    type: integrates_with
+    to: fastapi
+    note: Python 服务常用 uv 管依赖

@@ -1,0 +1,12 @@
+id: antora
+type: project
+name: Antora
+repo: https://github.com/antora/antora
+summary: 多仓 AsciiDoc 文档站点生成器。
+tags: [docs, static-site]
+language: JavaScript
+status: active
+use_when: 多仓库文档要统一版本化发布
+avoid_when: 单仓简单 Markdown 手册
+niche: docs site
+related_ecosystem: docs

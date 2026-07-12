@@ -1,0 +1,12 @@
+id: shorebird
+type: project
+name: Shorebird
+repo: https://github.com/shorebirdtech/shorebird
+summary: Flutter 代码推送更新（Code Push）。
+tags: [mobile, flutter, code-push]
+language: Dart
+status: active
+use_when: Flutter 应用要绕过商店发补丁级更新
+avoid_when: 非 Flutter 或不允许热更新策略
+niche: flutter code push
+related_ecosystem: mobile

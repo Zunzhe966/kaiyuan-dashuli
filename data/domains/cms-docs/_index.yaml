@@ -13,7 +13,7 @@ categories:
     node_ids: [strapi, directus, payload, keystone]
   - id: docs
     title: 文档站
-    node_ids: [docusaurus, vitepress, mkdocs, mkdocs-material, sphinx, docsify, nextra, starlight]
+    node_ids: [docusaurus, vitepress, mkdocs, mkdocs-material, sphinx, docsify, nextra, starlight, antora, docfx]
   - id: ssg
     title: 静态站 / 内容站
     node_ids: [hugo, jekyll, gitbook-oss]

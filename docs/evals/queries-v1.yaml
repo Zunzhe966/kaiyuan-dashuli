@@ -183,3 +183,15 @@ queries:
     query: 把内网服务穿透到公网
     intent_tags: [networking, tunnel]
     expect_any: [frp, cloudflared, gost]
+  - id: q46
+    query: 移动端 UI 自动化测试不要太重
+    intent_tags: [mobile, testing]
+    expect_any: [maestro, detox, appium]
+  - id: q47
+    query: Flutter 应用代码热更新
+    intent_tags: [mobile, flutter]
+    expect_any: [shorebird]
+  - id: q48
+    query: Kotlin 多平台共享业务逻辑
+    intent_tags: [mobile, kotlin]
+    expect_any: [kmp]
