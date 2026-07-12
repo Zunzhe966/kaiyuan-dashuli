@@ -1,0 +1,12 @@
+id: rasterio
+type: project
+name: rasterio
+repo: https://github.com/rasterio/rasterio
+summary: Python 栅格 I/O（GDAL 友好封装）。
+tags: [gis, python, raster]
+language: Python
+status: active
+use_when: Python 读写处理栅格数据
+avoid_when: 只要矢量分析
+niche: python raster
+related_ecosystem: gis

@@ -1,0 +1,12 @@
+id: mapserver
+type: project
+name: MapServer
+repo: https://github.com/MapServer/MapServer
+summary: 开源地图服务器。
+tags: [gis, server, ogc]
+language: C
+status: active
+use_when: 要高性能地图服务渲染
+avoid_when: 更熟 Java/GeoServer 生态
+niche: geo server
+related_ecosystem: gis

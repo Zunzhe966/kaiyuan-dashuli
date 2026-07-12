@@ -226,6 +226,14 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
         if nid == "box2d": s += 3
     if "Web 3D" in query or "浏览器 3D" in query:
         if nid in ("threejs", "babylonjs"): s += 3
+    if "网页地图" in query or "Web 地图" in query:
+        if nid in ("leaflet", "openlayers", "maplibre-gl"): s += 3
+    if "桌面 GIS" in query or "桌面端制图" in query:
+        if nid in ("qgis", "grass-gis"): s += 3
+    if "空间数据库" in query or "PostGIS" in query:
+        if nid == "postgis": s += 3
+    if "地理数据转换" in query or "GDAL" in query:
+        if nid in ("gdal", "rasterio", "geopandas"): s += 2
     return s
 
 

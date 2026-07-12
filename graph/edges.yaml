@@ -1695,3 +1695,93 @@ edges:
     type: integrates_with
     to: phaser
     note: 骨骼动画进 Web 游戏
+
+  - from: qgis
+    type: integrates_with
+    to: gdal
+    note: 桌面 GIS 常依赖 GDAL 数据能力
+
+  - from: gdal
+    type: depends_on
+    to: proj
+    note: 坐标转换常经 PROJ
+
+  - from: geopandas
+    type: depends_on
+    to: gdal
+    note: 矢量 I/O 底层常见 GDAL/OGR
+
+  - from: rasterio
+    type: depends_on
+    to: gdal
+    note: 栅格封装建立在 GDAL
+
+  - from: leaflet
+    type: alternative_to
+    to: openlayers
+    note: 轻量 vs 全能 Web 地图
+
+  - from: maplibre-gl
+    type: alternative_to
+    to: leaflet
+    note: 矢量瓦片风格 vs 经典图层
+
+  - from: deckgl
+    type: integrates_with
+    to: maplibre-gl
+    note: 大规模可视化常叠底图
+
+  - from: keplergl
+    type: integrates_with
+    to: deckgl
+    note: 建立在 deck.gl 能力上
+
+  - from: geoserver
+    type: alternative_to
+    to: mapserver
+    note: 两大开源地图服务器
+
+  - from: tippecanoe
+    type: integrates_with
+    to: maplibre-gl
+    note: 切片供给矢量渲染
+
+  - from: turfjs
+    type: integrates_with
+    to: leaflet
+    note: 前端空间运算+地图
+
+  - from: osmnx
+    type: integrates_with
+    to: geopandas
+    note: 网络数据常转 GeoDataFrame
+
+  - from: grass-gis
+    type: alternative_to
+    to: qgis
+    note: 强处理套件 vs 友好桌面 GIS
+
+  - from: pdal
+    type: integrates_with
+    to: gdal
+    note: 点云与栅格管线常协同
+
+  - from: openlayers
+    type: alternative_to
+    to: maplibre-gl
+    note: 传统 GIS Web vs 矢量瓦片渲染
+
+  - from: postgis
+    type: integrates_with
+    to: postgresql
+    note: 空间扩展建立在 Postgres
+
+  - from: qgis
+    type: integrates_with
+    to: postgis
+    note: 桌面连空间库
+
+  - from: geoserver
+    type: integrates_with
+    to: postgis
+    note: 发布库内空间数据

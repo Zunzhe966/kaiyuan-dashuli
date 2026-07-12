@@ -1,0 +1,12 @@
+id: geoserver
+type: project
+name: GeoServer
+repo: https://github.com/geoserver/geoserver
+summary: 开源地理数据服务器（OGC 服务）。
+tags: [gis, server, ogc]
+language: Java
+status: active
+use_when: 要发布 WMS/WFS 等地图服务
+avoid_when: 只要静态瓦片托管
+niche: geo server
+related_ecosystem: gis

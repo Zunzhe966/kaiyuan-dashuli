@@ -36,12 +36,12 @@
 | q28 | 一套代码做 Android 和 iOS 跨平台 UI | flutter, react-native, expo | Y | Y |
 | q29 | React 团队做移动端并要快速迭代 | react-native, expo, detox | Y | Y |
 | q30 | 移动应用端到端自动化测试 | detox, appium, playwright | Y | Y |
-| q31 | Python 表格 DataFrame 处理 | pandas, polars, scikit-learn | Y | Y |
+| q31 | Python 表格 DataFrame 处理 | pandas, polars, geopandas | Y | Y |
 | q32 | 深度学习训练框架 | tensorflow, pytorch, jax | Y | Y |
 | q33 | 机器学习实验跟踪和模型注册 | mlflow, feast | Y | Y |
 | q34 | 代码库正则快速搜索 | ripgrep, fzf, fd | Y | Y |
 | q35 | 交互式模糊查找文件 | fzf, ripgrep, fd | Y | Y |
-| q36 | 极速 Python 包管理和虚拟环境 | uv, ruff, pyside | Y | Y |
+| q36 | 极速 Python 包管理和虚拟环境 | uv, ruff, rasterio | Y | Y |
 | q37 | 用 Web 技术做跨平台桌面应用 | electron, wails, tauri | Y | Y |
 | q38 | 轻量桌面客户端不要捆绑 Chromium | wails, tauri, electron | Y | Y |
 | q39 | Python 做桌面 GUI | pyqt, pyside, dearpygui | Y | Y |
@@ -66,8 +66,11 @@
 | q58 | 开源游戏引擎做 2D 和 3D | godot, monogame, bevy | Y | Y |
 | q59 | 浏览器 HTML5 2D 游戏框架 | phaser, threejs, babylonjs | Y | Y |
 | q60 | 浏览器 Web 3D 渲染库 | threejs, babylonjs, bullet3 | Y | Y |
+| q61 | 开源桌面 GIS 制图软件 | qgis, grass-gis, openlayers | Y | Y |
+| q62 | 网页嵌入轻量交互地图 | leaflet, openlayers, maplibre-gl | Y | Y |
+| q63 | PostgreSQL 空间数据库扩展 | postgis, turfjs, tippecanoe | Y | Y |
 
-**通过率：60/60 = 100%**
+**通过率：63/63 = 100%**
 
 判定阈值：≥80%
 
@@ -524,10 +527,10 @@
   - use_when: 要比 pandas 更快的本地/懒执行表处理
   - avoid_when: 只要最大学术/教程生态
   - repo: https://github.com/pola-rs/polars
-- **scikit-learn** (`scikit-learn` / data-ml)
-  - use_when: 表格/经典 ML 模型与流水线
-  - avoid_when: 只要大模型/深度学习
-  - repo: https://github.com/scikit-learn/scikit-learn
+- **GeoPandas** (`geopandas` / gis)
+  - use_when: Python 里做矢量数据分析
+  - avoid_when: 超大规模需分布式空间计算
+  - repo: https://github.com/geopandas/geopandas
 - result: PASS (hit=True, compliant=True)
 
 ### q32 — 深度学习训练框架
@@ -595,10 +598,10 @@
   - use_when: 要快速统一 Python 风格与静态检查
   - avoid_when: 依赖仅 flake8 插件生态且尚未迁移
   - repo: https://github.com/astral-sh/ruff
-- **PySide (Qt for Python)** (`pyside` / desktop)
-  - use_when: Python + Qt 且偏好官方绑定许可路径
-  - avoid_when: 只要极简脚本弹窗
-  - repo: https://github.com/qtproject/pyside-setup
+- **rasterio** (`rasterio` / gis)
+  - use_when: Python 读写处理栅格数据
+  - avoid_when: 只要矢量分析
+  - repo: https://github.com/rasterio/rasterio
 - result: PASS (hit=True, compliant=True)
 
 ### q37 — 用 Web 技术做跨平台桌面应用
@@ -959,5 +962,50 @@
   - use_when: 3D 游戏/仿真需要物理
   - avoid_when: 只要 2D 物理
   - repo: https://github.com/bulletphysics/bullet3
+- result: PASS (hit=True, compliant=True)
+
+### q61 — 开源桌面 GIS 制图软件
+- **QGIS** (`qgis` / gis)
+  - use_when: 要桌面端制图、分析与数据管理
+  - avoid_when: 只要嵌入网页的轻量地图组件
+  - repo: https://github.com/qgis/QGIS
+- **GRASS GIS** (`grass-gis` / gis)
+  - use_when: 要科学级栅格/矢量地理处理
+  - avoid_when: 只要轻量制图 UI
+  - repo: https://github.com/OSGeo/grass
+- **OpenLayers** (`openlayers` / gis)
+  - use_when: Web 端要更强 GIS 能力与多源数据
+  - avoid_when: 只要最简标记点地图
+  - repo: https://github.com/openlayers/openlayers
+- result: PASS (hit=True, compliant=True)
+
+### q62 — 网页嵌入轻量交互地图
+- **Leaflet** (`leaflet` / gis)
+  - use_when: 网页嵌入轻量交互地图
+  - avoid_when: 要复杂 3D/海量矢量瓦片引擎
+  - repo: https://github.com/Leaflet/Leaflet
+- **OpenLayers** (`openlayers` / gis)
+  - use_when: Web 端要更强 GIS 能力与多源数据
+  - avoid_when: 只要最简标记点地图
+  - repo: https://github.com/openlayers/openlayers
+- **MapLibre GL** (`maplibre-gl` / gis)
+  - use_when: 要开源矢量瓦片漂亮底图渲染
+  - avoid_when: 绑定专有 Mapbox 条款可接受且需要其云
+  - repo: https://github.com/maplibre/maplibre-gl-js
+- result: PASS (hit=True, compliant=True)
+
+### q63 — PostgreSQL 空间数据库扩展
+- **PostGIS** (`postgis` / gis)
+  - use_when: 要在 Postgres 里做空间查询与索引
+  - avoid_when: 只要文件级 GIS 无数据库
+  - repo: https://github.com/postgis/postgis
+- **Turf.js** (`turfjs` / gis)
+  - use_when: 前端做缓冲/布尔/测距等空间运算
+  - avoid_when: 要数据库级海量空间 SQL
+  - repo: https://github.com/Turfjs/turf
+- **tippecanoe** (`tippecanoe` / gis)
+  - use_when: 要把矢量数据打成 MBTiles/矢量瓦片
+  - avoid_when: 只要即时动态查询无预切片
+  - repo: https://github.com/felt/tippecanoe
 - result: PASS (hit=True, compliant=True)
 

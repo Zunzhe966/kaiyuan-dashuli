@@ -1,0 +1,12 @@
+id: gdal
+type: project
+name: GDAL
+repo: https://github.com/OSGeo/gdal
+summary: 栅格/矢量地理数据转换库。
+tags: [gis, library, data]
+language: C++
+status: active
+use_when: 要读写/重投影/转换地理空间数据
+avoid_when: 只要展示一张底图
+niche: geo data
+related_ecosystem: gis

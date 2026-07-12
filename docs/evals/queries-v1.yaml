@@ -244,3 +244,15 @@ queries:
     query: 浏览器 Web 3D 渲染库
     intent_tags: [gamedev, 3d]
     expect_any: [threejs, babylonjs]
+  - id: q61
+    query: 开源桌面 GIS 制图软件
+    intent_tags: [gis, desktop]
+    expect_any: [qgis, grass-gis]
+  - id: q62
+    query: 网页嵌入轻量交互地图
+    intent_tags: [gis, web]
+    expect_any: [leaflet, openlayers, maplibre-gl]
+  - id: q63
+    query: PostgreSQL 空间数据库扩展
+    intent_tags: [gis, database]
+    expect_any: [postgis]

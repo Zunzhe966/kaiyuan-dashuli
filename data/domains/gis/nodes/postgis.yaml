@@ -1,0 +1,12 @@
+id: postgis
+type: project
+name: PostGIS
+repo: https://github.com/postgis/postgis
+summary: PostgreSQL 的空间数据库扩展。
+tags: [gis, database, sql]
+language: C
+status: active
+use_when: 要在 Postgres 里做空间查询与索引
+avoid_when: 只要文件级 GIS 无数据库
+niche: spatial db
+related_ecosystem: gis

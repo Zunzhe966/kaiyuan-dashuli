@@ -1,0 +1,12 @@
+id: grass-gis
+type: project
+name: GRASS GIS
+repo: https://github.com/OSGeo/grass
+summary: 强大的地理信息系统处理套件。
+tags: [gis, analysis, desktop]
+language: C
+status: active
+use_when: 要科学级栅格/矢量地理处理
+avoid_when: 只要轻量制图 UI
+niche: geo processing
+related_ecosystem: gis

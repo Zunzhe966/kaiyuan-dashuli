@@ -52,6 +52,9 @@ domains:
   gamedev:
     title: 游戏开发
     description: 引擎、框架、物理、内容工具与 Web 游戏
+  gis:
+    title: 地理空间
+    description: GIS 桌面、空间库、Web 地图、瓦片与遥感点云
 
 # 节点类型
 node_types:

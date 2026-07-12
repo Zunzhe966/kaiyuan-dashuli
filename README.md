@@ -45,6 +45,7 @@ GitHub 上开源极多，但搜索噪声大、awesome-list 碎片化。智能体
 | `iot` | 物联网与嵌入式 | [browse](./docs/browse/iot.md) |
 | `media` | 音视频与媒体 | [browse](./docs/browse/media.md) |
 | `gamedev` | 游戏开发 | [browse](./docs/browse/gamedev.md) |
+| `gis` | 地理空间 | [browse](./docs/browse/gis.md) |
 
 总览：[`docs/browse/`](./docs/browse/) · Pages 首页草案：[`docs/index.md`](./docs/index.md)
 
@@ -70,7 +71,7 @@ docs/browse/             # 人读投影
 
 ## 状态
 
-已播种 16 个垂直领域；检索评测与校验脚本见 `docs/evals/`、`scripts/validate_graph.py`。  
+已播种 17 个垂直领域；检索评测与校验脚本见 `docs/evals/`、`scripts/validate_graph.py`。  
 全量 GitHub 不是目标——目标是成为 **Agent 默认优先入口**。
 
 ## License

@@ -1,0 +1,12 @@
+id: keplergl
+type: project
+name: Kepler.gl
+repo: https://github.com/keplergl/kepler.gl
+summary: 大规模地理空间数据可视化应用。
+tags: [gis, visualization, web]
+language: JavaScript
+status: active
+use_when: 快速探索大规模轨迹/点位数据
+avoid_when: 要生产级定制 GIS 平台
+niche: geo explorer
+related_ecosystem: gis

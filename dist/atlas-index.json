@@ -2,7 +2,7 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T01:08:43.948475+00:00",
+  "generated_at": "2026-07-12T01:11:57.388394+00:00",
   "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
   "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
   "domains": [
@@ -15,6 +15,7 @@
     "devops",
     "devtools",
     "gamedev",
+    "gis",
     "iot",
     "media",
     "mobile",
@@ -23,8 +24,8 @@
     "security",
     "web-frontend"
   ],
-  "node_count": 335,
-  "edge_count": 339,
+  "node_count": 353,
+  "edge_count": 357,
   "nodes": [
     {
       "id": "act",
@@ -972,6 +973,23 @@
       "niche": "python imgui"
     },
     {
+      "id": "deckgl",
+      "domain": "gis",
+      "name": "deck.gl",
+      "repo": "https://github.com/visgl/deck.gl",
+      "summary": "大规模 WebGL 地理可视化框架。",
+      "tags": [
+        "gis",
+        "web",
+        "visualization"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "要在地图上做大规模数据可视化",
+      "avoid_when": "只要普通标记与路径",
+      "niche": "geo viz"
+    },
+    {
       "id": "deepeval",
       "domain": "ai-agents",
       "name": "DeepEval",
@@ -1653,6 +1671,57 @@
       "niche": "fuzzy finder"
     },
     {
+      "id": "gdal",
+      "domain": "gis",
+      "name": "GDAL",
+      "repo": "https://github.com/OSGeo/gdal",
+      "summary": "栅格/矢量地理数据转换库。",
+      "tags": [
+        "gis",
+        "library",
+        "data"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要读写/重投影/转换地理空间数据",
+      "avoid_when": "只要展示一张底图",
+      "niche": "geo data"
+    },
+    {
+      "id": "geopandas",
+      "domain": "gis",
+      "name": "GeoPandas",
+      "repo": "https://github.com/geopandas/geopandas",
+      "summary": "pandas 风格的矢量空间数据分析。",
+      "tags": [
+        "gis",
+        "python",
+        "dataframe"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "Python 里做矢量数据分析",
+      "avoid_when": "超大规模需分布式空间计算",
+      "niche": "python gis"
+    },
+    {
+      "id": "geoserver",
+      "domain": "gis",
+      "name": "GeoServer",
+      "repo": "https://github.com/geoserver/geoserver",
+      "summary": "开源地理数据服务器（OGC 服务）。",
+      "tags": [
+        "gis",
+        "server",
+        "ogc"
+      ],
+      "language": "Java",
+      "status": "active",
+      "use_when": "要发布 WMS/WFS 等地图服务",
+      "avoid_when": "只要静态瓦片托管",
+      "niche": "geo server"
+    },
+    {
       "id": "ghost",
       "domain": "cms-docs",
       "name": "Ghost",
@@ -1814,6 +1883,23 @@
       "use_when": "Grafana 栈要统一采集器",
       "avoid_when": "只要厂商中立 OTel Collector",
       "niche": "collector"
+    },
+    {
+      "id": "grass-gis",
+      "domain": "gis",
+      "name": "GRASS GIS",
+      "repo": "https://github.com/OSGeo/grass",
+      "summary": "强大的地理信息系统处理套件。",
+      "tags": [
+        "gis",
+        "analysis",
+        "desktop"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要科学级栅格/矢量地理处理",
+      "avoid_when": "只要轻量制图 UI",
+      "niche": "geo processing"
     },
     {
       "id": "graylog",
@@ -2362,6 +2448,23 @@
       "niche": "video editor"
     },
     {
+      "id": "keplergl",
+      "domain": "gis",
+      "name": "Kepler.gl",
+      "repo": "https://github.com/keplergl/kepler.gl",
+      "summary": "大规模地理空间数据可视化应用。",
+      "tags": [
+        "gis",
+        "visualization",
+        "web"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "快速探索大规模轨迹/点位数据",
+      "avoid_when": "要生产级定制 GIS 平台",
+      "niche": "geo explorer"
+    },
+    {
       "id": "keycloak",
       "domain": "security",
       "name": "Keycloak",
@@ -2643,6 +2746,23 @@
       "niche": "git tui"
     },
     {
+      "id": "leaflet",
+      "domain": "gis",
+      "name": "Leaflet",
+      "repo": "https://github.com/Leaflet/Leaflet",
+      "summary": "轻量移动友好的网页地图库。",
+      "tags": [
+        "gis",
+        "web",
+        "mapping"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "网页嵌入轻量交互地图",
+      "avoid_when": "要复杂 3D/海量矢量瓦片引擎",
+      "niche": "web map"
+    },
+    {
       "id": "lightgbm",
       "domain": "data-ml",
       "name": "LightGBM",
@@ -2786,6 +2906,40 @@
       "use_when": "要用 YAML 风格快速写移动端 UI 测试",
       "avoid_when": "要深度接入原生 XCTest/Espresso 体系",
       "niche": "mobile e2e"
+    },
+    {
+      "id": "maplibre-gl",
+      "domain": "gis",
+      "name": "MapLibre GL",
+      "repo": "https://github.com/maplibre/maplibre-gl-js",
+      "summary": "开源矢量瓦片地图渲染（Mapbox GL 开源分支）。",
+      "tags": [
+        "gis",
+        "web",
+        "vector-tiles"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要开源矢量瓦片漂亮底图渲染",
+      "avoid_when": "绑定专有 Mapbox 条款可接受且需要其云",
+      "niche": "vector tiles"
+    },
+    {
+      "id": "mapserver",
+      "domain": "gis",
+      "name": "MapServer",
+      "repo": "https://github.com/MapServer/MapServer",
+      "summary": "开源地图服务器。",
+      "tags": [
+        "gis",
+        "server",
+        "ogc"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要高性能地图服务渲染",
+      "avoid_when": "更熟 Java/GeoServer 生态",
+      "niche": "geo server"
     },
     {
       "id": "mariadb",
@@ -3524,6 +3678,23 @@
       "niche": "home automation"
     },
     {
+      "id": "openlayers",
+      "domain": "gis",
+      "name": "OpenLayers",
+      "repo": "https://github.com/openlayers/openlayers",
+      "summary": "功能全面的网页地图库。",
+      "tags": [
+        "gis",
+        "web",
+        "mapping"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "Web 端要更强 GIS 能力与多源数据",
+      "avoid_when": "只要最简标记点地图",
+      "niche": "web map"
+    },
+    {
       "id": "openmw",
       "domain": "gamedev",
       "name": "OpenMW",
@@ -3590,6 +3761,23 @@
       "niche": "otel sdk"
     },
     {
+      "id": "osmnx",
+      "domain": "gis",
+      "name": "OSMnx",
+      "repo": "https://github.com/gboeing/osmnx",
+      "summary": "从 OpenStreetMap 下载/分析街道网络。",
+      "tags": [
+        "gis",
+        "python",
+        "osm"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "城市街道网络分析与可视化",
+      "avoid_when": "只要底图展示",
+      "niche": "osm analytics"
+    },
+    {
       "id": "osv-scanner",
       "domain": "security",
       "name": "OSV-Scanner",
@@ -3654,6 +3842,23 @@
       "use_when": "TS 团队要代码优先的无头 CMS",
       "avoid_when": "非 Node/TS 栈",
       "niche": "code-first cms"
+    },
+    {
+      "id": "pdal",
+      "domain": "gis",
+      "name": "PDAL",
+      "repo": "https://github.com/PDAL/PDAL",
+      "summary": "点云数据翻译与处理库。",
+      "tags": [
+        "gis",
+        "point-cloud",
+        "lidar"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要处理 LiDAR/点云管道",
+      "avoid_when": "只要 2D 矢量地图",
+      "niche": "point cloud"
     },
     {
       "id": "peft",
@@ -3803,6 +4008,23 @@
       "niche": "fast dataframe"
     },
     {
+      "id": "postgis",
+      "domain": "gis",
+      "name": "PostGIS",
+      "repo": "https://github.com/postgis/postgis",
+      "summary": "PostgreSQL 的空间数据库扩展。",
+      "tags": [
+        "gis",
+        "database",
+        "sql"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要在 Postgres 里做空间查询与索引",
+      "avoid_when": "只要文件级 GIS 无数据库",
+      "niche": "spatial db"
+    },
+    {
       "id": "postgresql",
       "domain": "databases",
       "name": "PostgreSQL",
@@ -3849,6 +4071,23 @@
       "use_when": "Node/TS 要类型安全 ORM",
       "avoid_when": "非 Node 栈",
       "niche": "ts orm"
+    },
+    {
+      "id": "proj",
+      "domain": "gis",
+      "name": "PROJ",
+      "repo": "https://github.com/OSGeo/PROJ",
+      "summary": "坐标转换与投影库。",
+      "tags": [
+        "gis",
+        "library",
+        "projection"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要精确坐标参考系转换",
+      "avoid_when": "只要粗略展示无需严谨投影",
+      "niche": "projection"
     },
     {
       "id": "prometheus",
@@ -3981,6 +4220,23 @@
       "niche": "filtered vector search"
     },
     {
+      "id": "qgis",
+      "domain": "gis",
+      "name": "QGIS",
+      "repo": "https://github.com/qgis/QGIS",
+      "summary": "开源桌面 GIS 应用。",
+      "tags": [
+        "gis",
+        "desktop",
+        "mapping"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要桌面端制图、分析与数据管理",
+      "avoid_when": "只要嵌入网页的轻量地图组件",
+      "niche": "desktop gis"
+    },
+    {
       "id": "qt",
       "domain": "desktop",
       "name": "Qt",
@@ -4061,6 +4317,23 @@
       "use_when": "要快速交付 CRUD/全栈 Web",
       "avoid_when": "团队无 Ruby 经验",
       "niche": "ruby full framework"
+    },
+    {
+      "id": "rasterio",
+      "domain": "gis",
+      "name": "rasterio",
+      "repo": "https://github.com/rasterio/rasterio",
+      "summary": "Python 栅格 I/O（GDAL 友好封装）。",
+      "tags": [
+        "gis",
+        "python",
+        "raster"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "Python 读写处理栅格数据",
+      "avoid_when": "只要矢量分析",
+      "niche": "python raster"
     },
     {
       "id": "raylib",
@@ -4886,6 +5159,23 @@
       "niche": "tinyml"
     },
     {
+      "id": "tippecanoe",
+      "domain": "gis",
+      "name": "tippecanoe",
+      "repo": "https://github.com/felt/tippecanoe",
+      "summary": "GeoJSON 到矢量瓦片的构建工具。",
+      "tags": [
+        "gis",
+        "vector-tiles",
+        "cli"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要把矢量数据打成 MBTiles/矢量瓦片",
+      "avoid_when": "只要即时动态查询无预切片",
+      "niche": "tiling"
+    },
+    {
       "id": "traefik",
       "domain": "devops",
       "name": "Traefik",
@@ -4966,6 +5256,23 @@
       "use_when": "多包前端仓要缓存加速构建",
       "avoid_when": "单包小仓库",
       "niche": "monorepo build"
+    },
+    {
+      "id": "turfjs",
+      "domain": "gis",
+      "name": "Turf.js",
+      "repo": "https://github.com/Turfjs/turf",
+      "summary": "浏览器/Node 的空间分析库。",
+      "tags": [
+        "gis",
+        "javascript",
+        "analysis"
+      ],
+      "language": "JavaScript",
+      "status": "active",
+      "use_when": "前端做缓冲/布尔/测距等空间运算",
+      "avoid_when": "要数据库级海量空间 SQL",
+      "niche": "js spatial"
     },
     {
       "id": "typesense",
@@ -7560,6 +7867,114 @@
       "type": "integrates_with",
       "to": "phaser",
       "note": "骨骼动画进 Web 游戏"
+    },
+    {
+      "from": "qgis",
+      "type": "integrates_with",
+      "to": "gdal",
+      "note": "桌面 GIS 常依赖 GDAL 数据能力"
+    },
+    {
+      "from": "gdal",
+      "type": "depends_on",
+      "to": "proj",
+      "note": "坐标转换常经 PROJ"
+    },
+    {
+      "from": "geopandas",
+      "type": "depends_on",
+      "to": "gdal",
+      "note": "矢量 I/O 底层常见 GDAL/OGR"
+    },
+    {
+      "from": "rasterio",
+      "type": "depends_on",
+      "to": "gdal",
+      "note": "栅格封装建立在 GDAL"
+    },
+    {
+      "from": "leaflet",
+      "type": "alternative_to",
+      "to": "openlayers",
+      "note": "轻量 vs 全能 Web 地图"
+    },
+    {
+      "from": "maplibre-gl",
+      "type": "alternative_to",
+      "to": "leaflet",
+      "note": "矢量瓦片风格 vs 经典图层"
+    },
+    {
+      "from": "deckgl",
+      "type": "integrates_with",
+      "to": "maplibre-gl",
+      "note": "大规模可视化常叠底图"
+    },
+    {
+      "from": "keplergl",
+      "type": "integrates_with",
+      "to": "deckgl",
+      "note": "建立在 deck.gl 能力上"
+    },
+    {
+      "from": "geoserver",
+      "type": "alternative_to",
+      "to": "mapserver",
+      "note": "两大开源地图服务器"
+    },
+    {
+      "from": "tippecanoe",
+      "type": "integrates_with",
+      "to": "maplibre-gl",
+      "note": "切片供给矢量渲染"
+    },
+    {
+      "from": "turfjs",
+      "type": "integrates_with",
+      "to": "leaflet",
+      "note": "前端空间运算+地图"
+    },
+    {
+      "from": "osmnx",
+      "type": "integrates_with",
+      "to": "geopandas",
+      "note": "网络数据常转 GeoDataFrame"
+    },
+    {
+      "from": "grass-gis",
+      "type": "alternative_to",
+      "to": "qgis",
+      "note": "强处理套件 vs 友好桌面 GIS"
+    },
+    {
+      "from": "pdal",
+      "type": "integrates_with",
+      "to": "gdal",
+      "note": "点云与栅格管线常协同"
+    },
+    {
+      "from": "openlayers",
+      "type": "alternative_to",
+      "to": "maplibre-gl",
+      "note": "传统 GIS Web vs 矢量瓦片渲染"
+    },
+    {
+      "from": "postgis",
+      "type": "integrates_with",
+      "to": "postgresql",
+      "note": "空间扩展建立在 Postgres"
+    },
+    {
+      "from": "qgis",
+      "type": "integrates_with",
+      "to": "postgis",
+      "note": "桌面连空间库"
+    },
+    {
+      "from": "geoserver",
+      "type": "integrates_with",
+      "to": "postgis",
+      "note": "发布库内空间数据"
     }
   ]
 }

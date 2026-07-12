@@ -1,0 +1,12 @@
+id: tippecanoe
+type: project
+name: tippecanoe
+repo: https://github.com/felt/tippecanoe
+summary: GeoJSON 到矢量瓦片的构建工具。
+tags: [gis, vector-tiles, cli]
+language: C++
+status: active
+use_when: 要把矢量数据打成 MBTiles/矢量瓦片
+avoid_when: 只要即时动态查询无预切片
+niche: tiling
+related_ecosystem: gis
