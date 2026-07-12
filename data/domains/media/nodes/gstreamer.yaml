@@ -1,0 +1,12 @@
+id: gstreamer
+type: project
+name: GStreamer
+repo: https://github.com/GStreamer/gstreamer
+summary: 管道式多媒体框架。
+tags: [media, video, audio, framework]
+language: C
+status: active
+use_when: 要可编程音视频管道嵌入应用
+avoid_when: 只要一次性 ffmpeg 命令
+niche: av framework
+related_ecosystem: media

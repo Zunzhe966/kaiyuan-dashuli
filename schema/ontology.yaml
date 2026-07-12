@@ -46,6 +46,9 @@ domains:
   iot:
     title: 物联网与嵌入式
     description: 家庭自动化、MCU 固件、RTOS、MQTT、无线桥接与边缘 ML
+  media:
+    title: 音视频与媒体
+    description: 转码、播放、录播、媒体服务、剪辑与语音视觉
 
 # 节点类型
 node_types:

@@ -1,0 +1,12 @@
+id: piper
+type: project
+name: Piper
+repo: https://github.com/rhasspy/piper
+summary: 快速本地神经网络文本转语音。
+tags: [media, audio, tts]
+language: C++
+status: active
+use_when: 要本地轻量 TTS
+avoid_when: 要超高质量多语种云端配音
+niche: tts
+related_ecosystem: media

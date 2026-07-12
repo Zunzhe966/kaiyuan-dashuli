@@ -1,0 +1,12 @@
+id: mpv
+type: project
+name: mpv
+repo: https://github.com/mpv-player/mpv
+summary: 基于 mplayer/mplayer2 的自由媒体播放器。
+tags: [media, video, player]
+language: C
+status: active
+use_when: 要可脚本化、高可控的本地播放器
+avoid_when: 要媒体库管理与多用户服务
+niche: player
+related_ecosystem: media

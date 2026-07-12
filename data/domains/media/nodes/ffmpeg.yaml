@@ -1,0 +1,12 @@
+id: ffmpeg
+type: project
+name: FFmpeg
+repo: https://github.com/FFmpeg/FFmpeg
+summary: 音视频录制、转换与流处理的事实标准工具集。
+tags: [media, video, audio, cli]
+language: C
+status: active
+use_when: 要转码、剪辑管道或流媒体处理
+avoid_when: 只要图形化剪辑时间线给普通人
+niche: av toolchain
+related_ecosystem: media

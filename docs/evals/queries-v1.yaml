@@ -220,3 +220,15 @@ queries:
     query: 轻量自托管 MQTT broker
     intent_tags: [iot, mqtt]
     expect_any: [mosquitto, emqx]
+  - id: q55
+    query: 命令行音视频转码处理
+    intent_tags: [media, video]
+    expect_any: [ffmpeg, handbrake, gstreamer]
+  - id: q56
+    query: 开源直播推流和录屏
+    intent_tags: [media, streaming]
+    expect_any: [obs-studio]
+  - id: q57
+    query: 自托管影视媒体服务器
+    intent_tags: [media, media-server]
+    expect_any: [jellyfin]

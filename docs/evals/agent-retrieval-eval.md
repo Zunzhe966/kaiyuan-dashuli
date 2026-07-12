@@ -60,8 +60,11 @@
 | q52 | 自托管智能家居家庭自动化中枢 | openhab, home-assistant, nodered | Y | Y |
 | q53 | YAML 配置刷 ESP 传感器固件 | esphome, tasmota, esp-idf | Y | Y |
 | q54 | 轻量自托管 MQTT broker | emqx, mosquitto, zigbee2mqtt | Y | Y |
+| q55 | 命令行音视频转码处理 | handbrake, gstreamer, ffmpeg | Y | Y |
+| q56 | 开源直播推流和录屏 | obs-studio, yt-dlp, whisper-cpp | Y | Y |
+| q57 | 自托管影视媒体服务器 | navidrome, jellyfin, yt-dlp | Y | Y |
 
-**通过率：54/54 = 100%**
+**通过率：57/57 = 100%**
 
 判定阈值：≥80%
 
@@ -859,5 +862,50 @@
   - use_when: 要用 MQTT 统一接入 Zigbee 设备
   - avoid_when: 全屋已是 Z-Wave/Matter 且无 Zigbee
   - repo: https://github.com/Koenkk/zigbee2mqtt
+- result: PASS (hit=True, compliant=True)
+
+### q55 — 命令行音视频转码处理
+- **HandBrake** (`handbrake` / media)
+  - use_when: 要批量视频压片且偏好图形界面
+  - avoid_when: 要完全脚本化复杂滤镜图
+  - repo: https://github.com/HandBrake/HandBrake
+- **GStreamer** (`gstreamer` / media)
+  - use_when: 要可编程音视频管道嵌入应用
+  - avoid_when: 只要一次性 ffmpeg 命令
+  - repo: https://github.com/GStreamer/gstreamer
+- **FFmpeg** (`ffmpeg` / media)
+  - use_when: 要转码、剪辑管道或流媒体处理
+  - avoid_when: 只要图形化剪辑时间线给普通人
+  - repo: https://github.com/FFmpeg/FFmpeg
+- result: PASS (hit=True, compliant=True)
+
+### q56 — 开源直播推流和录屏
+- **OBS Studio** (`obs-studio` / media)
+  - use_when: 要直播推流、录屏与场景切换
+  - avoid_when: 只要命令行一次性转码
+  - repo: https://github.com/obsproject/obs-studio
+- **yt-dlp** (`yt-dlp` / media)
+  - use_when: 要从网站下载音视频并后处理
+  - avoid_when: 要合法仅限官方客户端的内容分发
+  - repo: https://github.com/yt-dlp/yt-dlp
+- **whisper.cpp** (`whisper-cpp` / media)
+  - use_when: 要本地离线语音转文字
+  - avoid_when: 只要云端 ASR API
+  - repo: https://github.com/ggerganov/whisper.cpp
+- result: PASS (hit=True, compliant=True)
+
+### q57 — 自托管影视媒体服务器
+- **Navidrome** (`navidrome` / media)
+  - use_when: 要自托管音乐库流媒体
+  - avoid_when: 要完整影视剧媒体中心
+  - repo: https://github.com/navidrome/navidrome
+- **Jellyfin** (`jellyfin` / media)
+  - use_when: 要自托管影视/音乐库与多端播放
+  - avoid_when: 只要单机播放文件
+  - repo: https://github.com/jellyfin/jellyfin
+- **yt-dlp** (`yt-dlp` / media)
+  - use_when: 要从网站下载音视频并后处理
+  - avoid_when: 要合法仅限官方客户端的内容分发
+  - repo: https://github.com/yt-dlp/yt-dlp
 - result: PASS (hit=True, compliant=True)
 

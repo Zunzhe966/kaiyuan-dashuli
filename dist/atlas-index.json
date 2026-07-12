@@ -2,7 +2,7 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T01:03:36.725066+00:00",
+  "generated_at": "2026-07-12T01:06:33.617101+00:00",
   "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
   "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
   "domains": [
@@ -15,14 +15,15 @@
     "devops",
     "devtools",
     "iot",
+    "media",
     "mobile",
     "networking",
     "observability",
     "security",
     "web-frontend"
   ],
-  "node_count": 299,
-  "edge_count": 286,
+  "node_count": 317,
+  "edge_count": 302,
   "nodes": [
     {
       "id": "act",
@@ -217,6 +218,23 @@
       "niche": "mobile automation"
     },
     {
+      "id": "ardour",
+      "domain": "media",
+      "name": "Ardour",
+      "repo": "https://github.com/Ardour/ardour",
+      "summary": "专业开源数字音频工作站。",
+      "tags": [
+        "media",
+        "audio",
+        "daw"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要多轨录音混音的开源 DAW",
+      "avoid_when": "只要简单剪一段播客音轨",
+      "niche": "daw"
+    },
+    {
       "id": "arduino-core",
       "domain": "iot",
       "name": "Arduino Core",
@@ -281,6 +299,23 @@
       "use_when": "内容站/文档站要少 JS 默认",
       "avoid_when": "重交互 SPA 是主形态",
       "niche": "content-first meta-framework"
+    },
+    {
+      "id": "audacity",
+      "domain": "media",
+      "name": "Audacity",
+      "repo": "https://github.com/audacity/audacity",
+      "summary": "开源音频编辑器。",
+      "tags": [
+        "media",
+        "audio",
+        "editor"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要录制/剪辑音频波形",
+      "avoid_when": "要专业 DAW 宿主与插件生态深度",
+      "niche": "audio editor"
     },
     {
       "id": "authentik",
@@ -411,6 +446,23 @@
       "use_when": "想用单一工具替代 ESLint+Prettier 主干能力",
       "avoid_when": "重度依赖庞大 ESLint 插件矩阵",
       "niche": "js tooling"
+    },
+    {
+      "id": "blender",
+      "domain": "media",
+      "name": "Blender",
+      "repo": "https://github.com/blender/blender",
+      "summary": "3D 创作套件，含建模/动画/视频剪辑。",
+      "tags": [
+        "media",
+        "3d",
+        "vfx"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要开源 3D/动画/合成工作流",
+      "avoid_when": "只要 2D 截图标注",
+      "niche": "3d suite"
     },
     {
       "id": "browser-use",
@@ -1297,6 +1349,24 @@
       "niche": "feature store"
     },
     {
+      "id": "ffmpeg",
+      "domain": "media",
+      "name": "FFmpeg",
+      "repo": "https://github.com/FFmpeg/FFmpeg",
+      "summary": "音视频录制、转换与流处理的事实标准工具集。",
+      "tags": [
+        "media",
+        "video",
+        "audio",
+        "cli"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要转码、剪辑管道或流媒体处理",
+      "avoid_when": "只要图形化剪辑时间线给普通人",
+      "niche": "av toolchain"
+    },
+    {
       "id": "fiber",
       "domain": "backend",
       "name": "Fiber",
@@ -1692,6 +1762,24 @@
       "niche": "sbom vuln scan"
     },
     {
+      "id": "gstreamer",
+      "domain": "media",
+      "name": "GStreamer",
+      "repo": "https://github.com/GStreamer/gstreamer",
+      "summary": "管道式多媒体框架。",
+      "tags": [
+        "media",
+        "video",
+        "audio",
+        "framework"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要可编程音视频管道嵌入应用",
+      "avoid_when": "只要一次性 ffmpeg 命令",
+      "niche": "av framework"
+    },
+    {
       "id": "gtk",
       "domain": "desktop",
       "name": "GTK",
@@ -1722,6 +1810,23 @@
       "use_when": "要对输出做结构/安全/策略校验",
       "avoid_when": "模型已可靠且只需自由文本",
       "niche": "output guardrails"
+    },
+    {
+      "id": "handbrake",
+      "domain": "media",
+      "name": "HandBrake",
+      "repo": "https://github.com/HandBrake/HandBrake",
+      "summary": "开源视频转码器（含 GUI）。",
+      "tags": [
+        "media",
+        "video",
+        "transcoder"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要批量视频压片且偏好图形界面",
+      "avoid_when": "要完全脚本化复杂滤镜图",
+      "niche": "transcoder"
     },
     {
       "id": "haproxy",
@@ -1889,6 +1994,23 @@
       "niche": "rust gui"
     },
     {
+      "id": "imagemagick",
+      "domain": "media",
+      "name": "ImageMagick",
+      "repo": "https://github.com/ImageMagick/ImageMagick",
+      "summary": "命令行图像处理套件。",
+      "tags": [
+        "media",
+        "image",
+        "cli"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要批量转格式/缩放/合成图片",
+      "avoid_when": "要交互式图层设计（用专业编辑器）",
+      "niche": "image cli"
+    },
+    {
       "id": "imgui",
       "domain": "desktop",
       "name": "Dear ImGui",
@@ -2021,6 +2143,22 @@
       "niche": "ssg"
     },
     {
+      "id": "jellyfin",
+      "domain": "media",
+      "name": "Jellyfin",
+      "repo": "https://github.com/jellyfin/jellyfin",
+      "summary": "免费开源的媒体服务器系统。",
+      "tags": [
+        "media",
+        "media-server"
+      ],
+      "language": "C#",
+      "status": "active",
+      "use_when": "要自托管影视/音乐库与多端播放",
+      "avoid_when": "只要单机播放文件",
+      "niche": "media server"
+    },
+    {
       "id": "jetpack-compose",
       "domain": "mobile",
       "name": "Jetpack Compose",
@@ -2086,6 +2224,23 @@
       "use_when": "需要先定位该用哪个开源项目/栈，而不是直接关键词海搜",
       "avoid_when": "已明确唯一上游仓库，只需读其 README",
       "niche": "open-source atlas entrypoint"
+    },
+    {
+      "id": "kdenlive",
+      "domain": "media",
+      "name": "Kdenlive",
+      "repo": "https://github.com/KDE/kdenlive",
+      "summary": "KDE 开源视频编辑器。",
+      "tags": [
+        "media",
+        "video",
+        "editor"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要功能较全的开源非编",
+      "avoid_when": "只要命令行转码",
+      "niche": "video editor"
     },
     {
       "id": "keycloak",
@@ -2806,6 +2961,23 @@
       "niche": "mqtt broker"
     },
     {
+      "id": "mpv",
+      "domain": "media",
+      "name": "mpv",
+      "repo": "https://github.com/mpv-player/mpv",
+      "summary": "基于 mplayer/mplayer2 的自由媒体播放器。",
+      "tags": [
+        "media",
+        "video",
+        "player"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要可脚本化、高可控的本地播放器",
+      "avoid_when": "要媒体库管理与多用户服务",
+      "niche": "player"
+    },
+    {
       "id": "mysql",
       "domain": "databases",
       "name": "MySQL",
@@ -2836,6 +3008,23 @@
       "use_when": "要可视化工作流打通 SaaS/API/AI",
       "avoid_when": "只要纯代码库、不要工作流 UI",
       "niche": "workflow automation"
+    },
+    {
+      "id": "navidrome",
+      "domain": "media",
+      "name": "Navidrome",
+      "repo": "https://github.com/navidrome/navidrome",
+      "summary": "兼容 Subsonic 的音乐流媒体服务器。",
+      "tags": [
+        "media",
+        "audio",
+        "media-server"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要自托管音乐库流媒体",
+      "avoid_when": "要完整影视剧媒体中心",
+      "niche": "music server"
     },
     {
       "id": "neo4j",
@@ -3053,6 +3242,23 @@
       "niche": "vue meta-framework"
     },
     {
+      "id": "obs-studio",
+      "domain": "media",
+      "name": "OBS Studio",
+      "repo": "https://github.com/obsproject/obs-studio",
+      "summary": "免费开源的直播与录屏软件。",
+      "tags": [
+        "media",
+        "streaming",
+        "recording"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要直播推流、录屏与场景切换",
+      "avoid_when": "只要命令行一次性转码",
+      "niche": "streaming"
+    },
+    {
       "id": "okhttp",
       "domain": "mobile",
       "name": "OkHttp",
@@ -3147,6 +3353,23 @@
       "use_when": "主要走 OpenAI 模型与官方 Agent 抽象",
       "avoid_when": "必须厂商中立、避免绑定 OpenAI API 形态",
       "niche": "openai-native agents"
+    },
+    {
+      "id": "opencv",
+      "domain": "media",
+      "name": "OpenCV",
+      "repo": "https://github.com/opencv/opencv",
+      "summary": "计算机视觉库。",
+      "tags": [
+        "media",
+        "vision",
+        "library"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要图像/视频分析与视觉算法",
+      "avoid_when": "只要简单改图尺寸",
+      "niche": "computer vision"
     },
     {
       "id": "openhab",
@@ -3293,6 +3516,23 @@
       "use_when": "要做 LoRA/QLoRA 等高效微调",
       "avoid_when": "不做训练，只做推理",
       "niche": "parameter-efficient finetuning"
+    },
+    {
+      "id": "piper",
+      "domain": "media",
+      "name": "Piper",
+      "repo": "https://github.com/rhasspy/piper",
+      "summary": "快速本地神经网络文本转语音。",
+      "tags": [
+        "media",
+        "audio",
+        "tts"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要本地轻量 TTS",
+      "avoid_when": "要超高质量多语种云端配音",
+      "niche": "tts"
     },
     {
       "id": "platformio",
@@ -3915,6 +4155,23 @@
       "use_when": "Flutter 应用要绕过商店发补丁级更新",
       "avoid_when": "非 Flutter 或不允许热更新策略",
       "niche": "flutter code push"
+    },
+    {
+      "id": "shotcut",
+      "domain": "media",
+      "name": "Shotcut",
+      "repo": "https://github.com/mltframework/shotcut",
+      "summary": "跨平台开源视频编辑器。",
+      "tags": [
+        "media",
+        "video",
+        "editor"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要开源时间线视频剪辑",
+      "avoid_when": "要好莱坞级合成管线",
+      "niche": "video editor"
     },
     {
       "id": "signoz",
@@ -4651,6 +4908,23 @@
       "niche": "unit testing"
     },
     {
+      "id": "vlc",
+      "domain": "media",
+      "name": "VLC",
+      "repo": "https://github.com/videolan/vlc",
+      "summary": "跨平台多媒体播放器与框架。",
+      "tags": [
+        "media",
+        "video",
+        "player"
+      ],
+      "language": "C",
+      "status": "active",
+      "use_when": "要兼容性极强的播放与转码入口",
+      "avoid_when": "只要无界面嵌入式播放内核",
+      "niche": "player"
+    },
+    {
       "id": "vllm",
       "domain": "ai-agents",
       "name": "vLLM",
@@ -4730,6 +5004,23 @@
       "use_when": "要深度定制打包或兼容既有 webpack 配置",
       "avoid_when": "新项目更想零配置快速体验（看 Vite）",
       "niche": "module bundler"
+    },
+    {
+      "id": "whisper-cpp",
+      "domain": "media",
+      "name": "whisper.cpp",
+      "repo": "https://github.com/ggerganov/whisper.cpp",
+      "summary": "OpenAI Whisper 的 C/C++ 移植，本地语音转写。",
+      "tags": [
+        "media",
+        "audio",
+        "speech"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要本地离线语音转文字",
+      "avoid_when": "只要云端 ASR API",
+      "niche": "speech to text"
     },
     {
       "id": "wireguard",
@@ -4830,6 +5121,23 @@
       "use_when": "在终端改/查 YAML 配置",
       "avoid_when": "只需 JSON 且已用 jq 足够",
       "niche": "yaml cli"
+    },
+    {
+      "id": "yt-dlp",
+      "domain": "media",
+      "name": "yt-dlp",
+      "repo": "https://github.com/yt-dlp/yt-dlp",
+      "summary": "功能丰富的视频下载器（youtube-dl 后继）。",
+      "tags": [
+        "media",
+        "downloader",
+        "cli"
+      ],
+      "language": "Python",
+      "status": "active",
+      "use_when": "要从网站下载音视频并后处理",
+      "avoid_when": "要合法仅限官方客户端的内容分发",
+      "niche": "downloader"
     },
     {
       "id": "zephyr",
@@ -6631,6 +6939,102 @@
       "type": "integrates_with",
       "to": "tinyml-tflite-micro",
       "note": "边缘 ML 工具链到 MCU 推理"
+    },
+    {
+      "from": "mpv",
+      "type": "alternative_to",
+      "to": "vlc",
+      "note": "可脚本化播放 vs 全能兼容播放"
+    },
+    {
+      "from": "handbrake",
+      "type": "depends_on",
+      "to": "ffmpeg",
+      "note": "转码常建立在 FFmpeg"
+    },
+    {
+      "from": "shotcut",
+      "type": "alternative_to",
+      "to": "kdenlive",
+      "note": "两大开源非编"
+    },
+    {
+      "from": "obs-studio",
+      "type": "integrates_with",
+      "to": "ffmpeg",
+      "note": "推流/封装常见依赖能力"
+    },
+    {
+      "from": "jellyfin",
+      "type": "alternative_to",
+      "to": "navidrome",
+      "note": "综合媒体中心 vs 音乐流媒体"
+    },
+    {
+      "from": "yt-dlp",
+      "type": "integrates_with",
+      "to": "ffmpeg",
+      "note": "下载后常用 FFmpeg 后处理"
+    },
+    {
+      "from": "gstreamer",
+      "type": "alternative_to",
+      "to": "ffmpeg",
+      "note": "管道框架 vs 工具集"
+    },
+    {
+      "from": "audacity",
+      "type": "alternative_to",
+      "to": "ardour",
+      "note": "简单剪辑 vs 专业 DAW"
+    },
+    {
+      "from": "whisper-cpp",
+      "type": "integrates_with",
+      "to": "ffmpeg",
+      "note": "常先用 FFmpeg 抽音轨"
+    },
+    {
+      "from": "piper",
+      "type": "alternative_to",
+      "to": "whisper-cpp",
+      "note": "TTS vs STT（互补语音链）"
+    },
+    {
+      "from": "opencv",
+      "type": "integrates_with",
+      "to": "ffmpeg",
+      "note": "视觉管线常接音视频读写"
+    },
+    {
+      "from": "imagemagick",
+      "type": "alternative_to",
+      "to": "opencv",
+      "note": "通用改图 vs 视觉算法库"
+    },
+    {
+      "from": "kdenlive",
+      "type": "integrates_with",
+      "to": "ffmpeg",
+      "note": "非编后端常涉 FFmpeg"
+    },
+    {
+      "from": "navidrome",
+      "type": "alternative_to",
+      "to": "jellyfin",
+      "note": "音乐专项 vs 全媒体"
+    },
+    {
+      "from": "blender",
+      "type": "alternative_to",
+      "to": "kdenlive",
+      "note": "3D/合成导向 vs 时间线剪辑"
+    },
+    {
+      "from": "vlc",
+      "type": "integrates_with",
+      "to": "ffmpeg",
+      "note": "生态上广泛关联编解码"
     }
   ]
 }

@@ -15,6 +15,6 @@ Agent-first 开源知识图谱入口。找库时先查本仓，再跳上游。
 | Pages 设置 | [github-pages.md](./github-pages.md) |
 | 评测 | [evals/agent-retrieval-eval.md](./evals/agent-retrieval-eval.md) |
 
-## Domains（14）
+## Domains（15）
 
-`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot`
+`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot` · `media`

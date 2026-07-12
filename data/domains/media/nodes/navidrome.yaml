@@ -1,0 +1,12 @@
+id: navidrome
+type: project
+name: Navidrome
+repo: https://github.com/navidrome/navidrome
+summary: 兼容 Subsonic 的音乐流媒体服务器。
+tags: [media, audio, media-server]
+language: Go
+status: active
+use_when: 要自托管音乐库流媒体
+avoid_when: 要完整影视剧媒体中心
+niche: music server
+related_ecosystem: media

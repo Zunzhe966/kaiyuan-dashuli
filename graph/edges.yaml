@@ -1430,3 +1430,83 @@ edges:
     type: integrates_with
     to: tinyml-tflite-micro
     note: 边缘 ML 工具链到 MCU 推理
+
+  - from: mpv
+    type: alternative_to
+    to: vlc
+    note: 可脚本化播放 vs 全能兼容播放
+
+  - from: handbrake
+    type: depends_on
+    to: ffmpeg
+    note: 转码常建立在 FFmpeg
+
+  - from: shotcut
+    type: alternative_to
+    to: kdenlive
+    note: 两大开源非编
+
+  - from: obs-studio
+    type: integrates_with
+    to: ffmpeg
+    note: 推流/封装常见依赖能力
+
+  - from: jellyfin
+    type: alternative_to
+    to: navidrome
+    note: 综合媒体中心 vs 音乐流媒体
+
+  - from: yt-dlp
+    type: integrates_with
+    to: ffmpeg
+    note: 下载后常用 FFmpeg 后处理
+
+  - from: gstreamer
+    type: alternative_to
+    to: ffmpeg
+    note: 管道框架 vs 工具集
+
+  - from: audacity
+    type: alternative_to
+    to: ardour
+    note: 简单剪辑 vs 专业 DAW
+
+  - from: whisper-cpp
+    type: integrates_with
+    to: ffmpeg
+    note: 常先用 FFmpeg 抽音轨
+
+  - from: piper
+    type: alternative_to
+    to: whisper-cpp
+    note: TTS vs STT（互补语音链）
+
+  - from: opencv
+    type: integrates_with
+    to: ffmpeg
+    note: 视觉管线常接音视频读写
+
+  - from: imagemagick
+    type: alternative_to
+    to: opencv
+    note: 通用改图 vs 视觉算法库
+
+  - from: kdenlive
+    type: integrates_with
+    to: ffmpeg
+    note: 非编后端常涉 FFmpeg
+
+  - from: navidrome
+    type: alternative_to
+    to: jellyfin
+    note: 音乐专项 vs 全媒体
+
+  - from: blender
+    type: alternative_to
+    to: kdenlive
+    note: 3D/合成导向 vs 时间线剪辑
+
+  - from: vlc
+    type: integrates_with
+    to: ffmpeg
+    note: 生态上广泛关联编解码

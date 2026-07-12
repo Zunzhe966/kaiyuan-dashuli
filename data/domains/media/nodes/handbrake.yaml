@@ -1,0 +1,12 @@
+id: handbrake
+type: project
+name: HandBrake
+repo: https://github.com/HandBrake/HandBrake
+summary: 开源视频转码器（含 GUI）。
+tags: [media, video, transcoder]
+language: C
+status: active
+use_when: 要批量视频压片且偏好图形界面
+avoid_when: 要完全脚本化复杂滤镜图
+niche: transcoder
+related_ecosystem: media

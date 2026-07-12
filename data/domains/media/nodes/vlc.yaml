@@ -1,0 +1,12 @@
+id: vlc
+type: project
+name: VLC
+repo: https://github.com/videolan/vlc
+summary: 跨平台多媒体播放器与框架。
+tags: [media, video, player]
+language: C
+status: active
+use_when: 要兼容性极强的播放与转码入口
+avoid_when: 只要无界面嵌入式播放内核
+niche: player
+related_ecosystem: media

@@ -1,0 +1,12 @@
+id: audacity
+type: project
+name: Audacity
+repo: https://github.com/audacity/audacity
+summary: 开源音频编辑器。
+tags: [media, audio, editor]
+language: C++
+status: active
+use_when: 要录制/剪辑音频波形
+avoid_when: 要专业 DAW 宿主与插件生态深度
+niche: audio editor
+related_ecosystem: media

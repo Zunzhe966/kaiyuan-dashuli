@@ -210,6 +210,14 @@ def _score(query: str, intent_tags: set[str], nid: str, n: dict[str, str]) -> fl
         if nid in ("esphome", "esp-idf", "tasmota"): s += 3
     if "MQTT" in query and ("broker" in query.lower() or "消息总线" in query):
         if nid in ("mosquitto", "emqx"): s += 3
+    if "视频转码" in query or "音视频处理" in query:
+        if nid in ("ffmpeg", "handbrake", "gstreamer"): s += 3
+    if "直播" in query or "录屏" in query:
+        if nid == "obs-studio": s += 3
+    if "自托管" in query and ("影视" in query or "媒体库" in query or "媒体服务器" in query):
+        if nid in ("jellyfin", "navidrome"): s += 3
+    if "语音转文字" in query or "本地语音识别" in query:
+        if nid in ("whisper-cpp", "faster-whisper"): s += 3
     return s
 
 

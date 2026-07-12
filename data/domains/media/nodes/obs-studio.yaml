@@ -1,0 +1,12 @@
+id: obs-studio
+type: project
+name: OBS Studio
+repo: https://github.com/obsproject/obs-studio
+summary: 免费开源的直播与录屏软件。
+tags: [media, streaming, recording]
+language: C++
+status: active
+use_when: 要直播推流、录屏与场景切换
+avoid_when: 只要命令行一次性转码
+niche: streaming
+related_ecosystem: media

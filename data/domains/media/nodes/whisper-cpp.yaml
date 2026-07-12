@@ -1,0 +1,12 @@
+id: whisper-cpp
+type: project
+name: whisper.cpp
+repo: https://github.com/ggerganov/whisper.cpp
+summary: OpenAI Whisper 的 C/C++ 移植，本地语音转写。
+tags: [media, audio, speech]
+language: C++
+status: active
+use_when: 要本地离线语音转文字
+avoid_when: 只要云端 ASR API
+niche: speech to text
+related_ecosystem: media

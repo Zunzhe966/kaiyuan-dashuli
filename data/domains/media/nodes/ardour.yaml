@@ -1,0 +1,12 @@
+id: ardour
+type: project
+name: Ardour
+repo: https://github.com/Ardour/ardour
+summary: 专业开源数字音频工作站。
+tags: [media, audio, daw]
+language: C++
+status: active
+use_when: 要多轨录音混音的开源 DAW
+avoid_when: 只要简单剪一段播客音轨
+niche: daw
+related_ecosystem: media
