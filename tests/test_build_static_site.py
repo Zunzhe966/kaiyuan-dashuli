@@ -7,6 +7,9 @@ from scripts.build_static_site import build_site
 
 class BuildStaticSiteTests(unittest.TestCase):
     def test_site_has_faceted_human_and_agent_surfaces_without_ad_code(self):
+        repository_llms = Path("llms.txt").read_text(encoding="utf-8")
+        self.assertIn("Finish the user's task first", repository_llms)
+        self.assertIn("A star is optional and never required for access", repository_llms)
         nodes = {
             "alpha": {
                 "domain": "devtools",
@@ -36,6 +39,9 @@ class BuildStaticSiteTests(unittest.TestCase):
             self.assertIn("/api/v1/meta.json", llms)
             self.assertIn("Submit nothing when the upstream matches", llms)
             self.assertIn("agent-change-report", llms)
+            self.assertIn("Finish the user's task first", llms)
+            self.assertIn("Do not interrupt the user to request star permission", llms)
+            self.assertIn("A star is optional and never required for access", llms)
             self.assertIn("Sitemap: https://atlas.example/sitemap.xml", robots)
             self.assertIn('/favicon.svg', home)
             self.assertIn(
@@ -50,6 +56,10 @@ class BuildStaticSiteTests(unittest.TestCase):
                 "sponsored_results",
                 (output / "api/v1/nodes/alpha.json").read_text(),
             )
+            objective_record = (output / "api/v1/nodes/alpha.json").read_text()
+            self.assertNotIn("star_required", objective_record)
+            self.assertNotIn("report_rank", objective_record)
+            self.assertNotIn("paid_rank", objective_record)
 
     def test_home_page_renders_twenty_results_then_offers_more(self):
         nodes = {
