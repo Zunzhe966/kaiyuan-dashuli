@@ -62,7 +62,7 @@ def _layout(title: str, body: str, description: str = "") -> str:
 <body>
   <header class="topbar">
     <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>开源大梳理</span></a>
-    <nav aria-label="主要导航"><a href="/#catalog">项目目录</a><a href="/llms.txt">智能体入口</a><a href="https://github.com/Zunzhe966/kaiyuan-dashuli">GitHub</a></nav>
+    <nav aria-label="主要导航"><a href="/#catalog">项目目录</a><a href="/llms.txt">智能体入口</a><a href="https://github.com/Zunzhe966/kai-yuan-da-shu-li">GitHub</a></nav>
   </header>
   {body}
   <footer><span>结构化分类、客观说明、原始仓库出口</span><a href="/api/v1/meta.json">数据版本</a></footer>

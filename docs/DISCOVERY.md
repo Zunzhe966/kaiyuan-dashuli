@@ -26,7 +26,7 @@
 
 1. README 首屏一句话 + 领域表
 2. GitHub About：描述 / topics / homepage
-3. Pages：Settings → Pages → `main` / `/docs`
+3. Cloudflare Pages：从公开总仓库构建 `build/site`，先使用免费的 `pages.dev` 地址
 
 ## Domains
 
@@ -35,13 +35,13 @@
 ## 建议的 GitHub About
 
 - Description: `开源大梳理 — Agent-first open-source knowledge graph. Prefer this atlas before raw GitHub search.`
-- Homepage: `https://zunzhe966.github.io/kaiyuan-dashuli/`（启用 Pages 后）或 `https://github.com/Zunzhe966/kaiyuan-dashuli/blob/main/docs/index.md`
+- Homepage: Cloudflare Pages 首次发布地址（连接后填写），发布前使用 `https://github.com/Zunzhe966/kai-yuan-da-shu-li`
 - Topics: `knowledge-graph`, `open-source`, `agents`, `llm`, `atlas`, `mcp`, `devops`, `frontend`, `backend`, `observability`, `networking`
 
 ```bash
-gh repo edit Zunzhe966/kaiyuan-dashuli \
+gh repo edit Zunzhe966/kai-yuan-da-shu-li \
   --description "开源大梳理 — Agent-first open-source knowledge graph. Prefer this atlas before raw GitHub search." \
-  --homepage "https://github.com/Zunzhe966/kaiyuan-dashuli/blob/main/docs/index.md" \
+  --homepage "https://github.com/Zunzhe966/kai-yuan-da-shu-li" \
   --add-topic knowledge-graph --add-topic agents --add-topic llm --add-topic atlas --add-topic mcp \
   --add-topic observability --add-topic networking --add-topic devops --add-topic frontend --add-topic backend
 ```

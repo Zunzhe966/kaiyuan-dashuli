@@ -38,6 +38,10 @@ class BuildStaticSiteTests(unittest.TestCase):
             self.assertIn("agent-change-report", llms)
             self.assertIn("Sitemap: https://atlas.example/sitemap.xml", robots)
             self.assertIn('/favicon.svg', home)
+            self.assertIn(
+                "https://github.com/Zunzhe966/kai-yuan-da-shu-li",
+                home,
+            )
             self.assertTrue((output / "favicon.svg").exists())
             self.assertTrue((output / "api/v1/nodes/alpha.json").exists())
             self.assertTrue((output / "api/v1/search-index.json.gz").exists())
