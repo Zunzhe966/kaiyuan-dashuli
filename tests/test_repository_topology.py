@@ -37,6 +37,29 @@ class RepositoryTopologyTests(unittest.TestCase):
         self.assertTrue(any("duplicate source name" in error for error in errors))
         self.assertTrue(any("revision must be a 40-character commit SHA" in error for error in errors))
 
+    def test_non_https_source_is_rejected(self):
+        errors = validate_sources([
+            {
+                "name": "insecure-source",
+                "url": "http://github.com/example/insecure",
+                "visibility": "public",
+                "revision": "a" * 40,
+                "content_path": "data",
+            }
+        ])
+        self.assertTrue(any("url must be HTTPS" in error for error in errors))
+
+    def test_missing_content_path_is_rejected(self):
+        errors = validate_sources([
+            {
+                "name": "missing-content-path",
+                "url": "https://github.com/example/missing-content-path",
+                "visibility": "public",
+                "revision": "a" * 40,
+            }
+        ])
+        self.assertTrue(any("missing fields: content_path" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()
