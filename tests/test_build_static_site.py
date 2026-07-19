@@ -77,6 +77,9 @@ class BuildStaticSiteTests(unittest.TestCase):
                 (output / "api/v1/nodes/alpha.json").read_text(),
             )
             objective_record = (output / "api/v1/nodes/alpha.json").read_text()
+            site_script = (output / "assets/site.js").read_text()
+            self.assertIn('cache: "no-cache"', site_script)
+            self.assertNotIn('cache: "force-cache"', site_script)
             self.assertNotIn("star_required", objective_record)
             self.assertNotIn("report_rank", objective_record)
             self.assertNotIn("paid_rank", objective_record)
