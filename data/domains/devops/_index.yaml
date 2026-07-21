@@ -7,7 +7,7 @@ notes: |
 categories:
   - id: containers
     title: 容器运行时
-    node_ids: [docker, kubernetes, traefik, podman, nomad, containerd, harbor]
+    node_ids: [docker, kubernetes, traefik, podman, nomad, containerd, harbor, minio, seaweedfs]
   - id: orchestration
     title: 编排
     node_ids: [kubernetes, helm, argo-cd, nomad, istio, flux2, crossplane, k3s]

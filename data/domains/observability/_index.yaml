@@ -13,7 +13,7 @@ categories:
     node_ids: [jaeger, zipkin, tempo]
   - id: metrics
     title: 指标存储
-    node_ids: [mimir, thanos, victoriametrics, netdata]
+    node_ids: [mimir, thanos, victoriametrics, netdata, zabbix]
   - id: logging
     title: 日志
     node_ids: [loki, opensearch, graylog, openobserve]

@@ -31,6 +31,6 @@ categories:
     node_ids: [grpc-go, connect-go]
   - id: queue
     title: 队列与流
-    node_ids: [celery, bullmq, apache-kafka, rabbitmq-server, temporal]
+    node_ids: [celery, bullmq, apache-kafka, rabbitmq-server, temporal, flower]
 
 nodes_dir: nodes
