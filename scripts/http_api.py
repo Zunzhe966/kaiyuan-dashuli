@@ -59,7 +59,7 @@ class Handler(BaseHTTPRequestHandler):
                     "name": "kaiyuan-dashuli",
                     "title": "开源大梳理",
                     "domains": list_domains(),
-                    "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
+                    "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kai-yuan-da-shu-li/main/dist/atlas-index.json",
                     "endpoints": [
                         "/health",
                         "/v1/meta",

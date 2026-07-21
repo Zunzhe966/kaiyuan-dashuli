@@ -105,6 +105,48 @@ class BuildStaticSiteTests(unittest.TestCase):
             self.assertIn('id="load-more"', home)
             self.assertIn('data-page-size="20"', home)
 
+    def test_blockchain_domain_uses_its_chinese_label(self):
+        nodes = {
+            "foundry": {
+                "domain": "blockchain",
+                "name": "Foundry",
+                "repo": "https://github.com/foundry-rs/foundry",
+                "summary": "Smart contract tooling.",
+                "tag_list": ["blockchain"],
+                "status": "active",
+            }
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "site"
+            build_site(output, nodes, [], "https://atlas.example")
+            home = (output / "index.html").read_text()
+            domain = (output / "domains/blockchain/index.html").read_text()
+            self.assertIn("区块链与 Web3", home)
+            self.assertIn("区块链与 Web3", domain)
+
+    def test_site_includes_public_operating_pages_without_ad_code(self):
+        node = {
+            "domain": "devtools",
+            "name": "Alpha",
+            "repo": "https://github.com/example/alpha",
+            "summary": "A test project.",
+            "tag_list": ["test"],
+            "status": "active",
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "site"
+            build_site(output, {"alpha": node}, [], "https://atlas.example")
+            home = (output / "index.html").read_text()
+            self.assertIn('href="/about/"', home)
+            self.assertIn('href="/contact/"', home)
+            for route in ("about", "contact", "privacy", "cookies", "advertising", "methodology"):
+                page = (output / route / "index.html").read_text()
+                self.assertIn("开源大梳理", page)
+                self.assertNotIn("adsbygoogle", page)
+            sitemap = (output / "sitemap.xml").read_text()
+            self.assertIn("https://atlas.example/about/", sitemap)
+            self.assertIn("https://atlas.example/methodology/", sitemap)
+
     def test_rebuild_removes_stale_project_pages(self):
         def node(name):
             return {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://kaiyuan-dashuli.example/schema/published-project-v1.schema.json",
+  "$id": "https://kai-yuan-da-shu-li.example/schema/published-project-v1.schema.json",
   "title": "Published project record v1",
   "type": "object",
   "additionalProperties": false,

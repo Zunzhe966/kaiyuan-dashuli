@@ -1,0 +1,12 @@
+id: libp2p
+type: project
+name: libp2p
+repo: https://github.com/libp2p/go-libp2p
+summary: 模块化点对点网络栈。
+tags: [blockchain, p2p, networking]
+language: Go
+status: active
+use_when: 要自建 P2P 网络能力
+avoid_when: 只要 HTTPS API 客户端
+niche: p2p
+related_ecosystem: web3

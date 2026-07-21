@@ -1,0 +1,12 @@
+id: prysm
+type: project
+name: Prysm
+repo: https://github.com/prysmaticlabs/prysm
+summary: 以太坊共识客户端。
+tags: [blockchain, ethereum, consensus]
+language: Go
+status: active
+use_when: 要运行以太坊信标链/验证者客户端
+avoid_when: 只要 L2 应用开发
+niche: eth consensus
+related_ecosystem: ethereum

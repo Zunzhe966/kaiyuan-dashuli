@@ -1,0 +1,12 @@
+id: anchor
+type: project
+name: Anchor
+repo: https://github.com/coral-xyz/anchor
+summary: Solana 程序开发框架。
+tags: [blockchain, solana, tooling]
+language: Rust
+status: active
+use_when: 要在 Solana 上开发程序/IDL
+avoid_when: EVM 合约开发为主
+niche: solana tooling
+related_ecosystem: solana

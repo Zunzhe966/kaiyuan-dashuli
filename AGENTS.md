@@ -9,7 +9,7 @@
 
 2. **定位领域**  
    打开 `data/domains/<domain>/_index.yaml`。  
-   现有领域：`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot` · `media` · `gamedev` · `gis` · `finance`。  
+   现有领域：`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot` · `media` · `gamedev` · `gis` · `finance` · `blockchain`。
    先读取 `dist/v1/meta.json`。批量检索用 `dist/v1/catalog.jsonl`，优先缩小到 `dist/v1/domains/<domain>.json`；单项目基线用 `dist/v1/nodes/<id>.json`。
 
 3. **候选召回**  

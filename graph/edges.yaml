@@ -1955,3 +1955,78 @@ edges:
     type: depends_on
     to: numpy
     note: 向量化依赖 NumPy
+
+  - from: foundry
+    type: alternative_to
+    to: hardhat
+    note: Rust 高速工具链 vs JS 插件生态
+
+  - from: viem
+    type: alternative_to
+    to: ethersjs
+    note: 现代 TS 客户端 vs 经典 ethers
+
+  - from: wagmi
+    type: depends_on
+    to: viem
+    note: React hooks 常建在 viem
+
+  - from: openzeppelin-contracts
+    type: depends_on
+    to: solidity
+    note: 合约库用 Solidity
+
+  - from: hardhat
+    type: integrates_with
+    to: ethersjs
+    note: Hardhat 生态常配 ethers
+
+  - from: foundry
+    type: integrates_with
+    to: openzeppelin-contracts
+    note: 合约开发常用 OZ
+
+  - from: prysm
+    type: integrates_with
+    to: go-ethereum
+    note: 共识+执行客户端组合
+
+  - from: lnd
+    type: integrates_with
+    to: bitcoin-core
+    note: 闪电网络建在比特币之上
+
+  - from: anchor
+    type: integrates_with
+    to: solana
+    note: Solana 程序框架
+
+  - from: ipfs
+    type: integrates_with
+    to: libp2p
+    note: IPFS 网络层常用 libp2p
+
+  - from: thegraph
+    type: integrates_with
+    to: go-ethereum
+    note: 常索引 EVM 链数据
+
+  - from: substrate
+    type: alternative_to
+    to: cosmos-sdk
+    note: 两大应用链框架
+
+  - from: wagmi
+    type: integrates_with
+    to: react
+    note: React 前端
+
+  - from: ccxt
+    type: alternative_to
+    to: go-ethereum
+    note: 中心化交易所 API vs 链上节点（场景对比）
+
+  - from: freqtrade
+    type: integrates_with
+    to: ccxt
+    note: 已有则可能存在

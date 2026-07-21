@@ -1,0 +1,12 @@
+id: hardhat
+type: project
+name: Hardhat
+repo: https://github.com/NomicFoundation/hardhat
+summary: 以太坊开发环境（JS/TS）。
+tags: [blockchain, ethereum, tooling]
+language: TypeScript
+status: active
+use_when: 要用 JS/TS 插件生态做合约开发测试
+avoid_when: 只要纯 Rust/Foundry 工作流
+niche: smart contract tooling
+related_ecosystem: ethereum

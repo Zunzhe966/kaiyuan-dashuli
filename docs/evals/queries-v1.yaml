@@ -268,3 +268,7 @@ queries:
     query: 自托管个人记账和预算
     intent_tags: [finance, personal-finance]
     expect_any: [firefly-iii, actual-budget, gnucash, hledger, ledger-cli]
+  - id: q67
+    query: Solidity 合约需要高速本地测试和脚本化部署
+    intent_tags: [blockchain, ethereum, tooling]
+    expect_any: [foundry, hardhat]

@@ -20,6 +20,7 @@ from published_catalog import build_public_record, stable_generated_at  # noqa: 
 DOMAIN_LABELS = {
     "ai-agents": "人工智能与智能体",
     "backend": "后端与 API",
+    "blockchain": "区块链与 Web3",
     "cms-docs": "内容与文档",
     "data-ml": "数据与机器学习",
     "databases": "数据库与搜索",
@@ -36,6 +37,52 @@ DOMAIN_LABELS = {
     "observability": "监控与可观测性",
     "security": "安全与供应链",
     "web-frontend": "网站与前端",
+}
+
+PUBLIC_PAGES = {
+    "about": {
+        "title": "关于本站",
+        "description": "开源大梳理的目标、范围与使用边界。",
+        "body": """
+<p>开源大梳理是面向智能体优先、也供人类使用的开源项目决策目录。它整理项目的领域、用途、限制、替代关系和配套关系，帮助使用者缩小候选并理解取舍。</p>
+<p>本站不镜像 GitHub 代码，不按 star 机械排序，不提供托管、账号或付费推荐服务。每个项目页面都保留到上游仓库的出口，使用前请以项目官方说明和许可证为准。</p>""",
+    },
+    "contact": {
+        "title": "联系与反馈",
+        "description": "提交开源项目资料更正或建议。",
+        "body": """
+<p>发现项目资料、链接或关系存在重大不一致时，请通过公开仓库的 Issue 提交可复核证据。上游仓库与已记录基线一致时，无需提交报告。</p>
+<p><a class="primary-link" href="https://github.com/Zunzhe966/kai-yuan-da-shu-li/issues" rel="noopener noreferrer">前往 GitHub Issues</a></p>
+<p>请勿在公开 Issue 中提交身份证明、银行卡号、合同、密钥或其他敏感信息。</p>""",
+    },
+    "privacy": {
+        "title": "隐私说明",
+        "description": "本站当前的数据处理和隐私边界。",
+        "body": """
+<p>本站目前是静态目录，不提供注册、登录、评论、支付或主动收集个人资料的表单。浏览器和网络服务商仍可能按照其自身规则处理访问日志、IP 地址、请求头和必要的安全数据。</p>
+<p>当前发布包不加载广告脚本、行为追踪脚本或第三方统计脚本。若未来启用统计或真人广告，会先在本站更新本页、Cookie 说明和相关同意机制，再实际加载对应脚本。</p>""",
+    },
+    "cookies": {
+        "title": "Cookie 说明",
+        "description": "本站当前 Cookie 和本地存储使用情况。",
+        "body": """
+<p>本站当前不设置用于广告定向、登录识别或跨站追踪的第一方 Cookie，也不使用本地存储保存个人资料。</p>
+<p>Cloudflare、浏览器和网络服务商可能因安全、缓存或连接维护设置其自身技术性 Cookie 或处理相应数据。未来若引入分析或广告服务，将在启用前明确列出服务、用途、保存期限和选择机制。</p>""",
+    },
+    "advertising": {
+        "title": "广告与赞助披露",
+        "description": "自然目录与未来商业展示的隔离规则。",
+        "body": """
+<p>当前网站没有真人广告、智能体赞助、付费排名或广告账户。自然项目的领域、摘要、适用条件、图关系和检索排序不接受付费修改。</p>
+<p>如未来启用真人广告，只会在 HTML 页面中清楚标注；JSON、JSONL、MCP、API 和 <code>llms.txt</code> 不加载真人广告脚本。智能体赞助如启用，将以单独、显著标记的 <code>sponsored_results</code> 返回，不混入自然结果，也不改变自然排名。</p>""",
+    },
+    "methodology": {
+        "title": "数据来源与方法",
+        "description": "目录数据的整理、核验和更新方法。",
+        "body": """
+<p>项目记录来自其公开上游仓库及可核验的公开资料。每条记录使用领域、标签、摘要、适用条件、不适用条件和关系描述表达取舍，不以单一 star 数或商业合作作为推荐依据。</p>
+<p>数据变更先经过字段、索引和关系端点校验，再生成可机读 JSON/JSONL 和静态页面。发现重大上游差异时，应附公开证据提交反馈；反馈不会自动改变正式记录或自然排序。</p>""",
+    },
 }
 
 
@@ -61,10 +108,10 @@ def _layout(title: str, body: str, description: str = "") -> str:
 <body>
   <header class="topbar">
     <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>开源大梳理</span></a>
-    <nav aria-label="主要导航"><a href="/#catalog">项目目录</a><a href="/llms.txt">智能体入口</a><a href="https://github.com/Zunzhe966/kai-yuan-da-shu-li">GitHub</a></nav>
+    <nav aria-label="主要导航"><a href="/#catalog">项目目录</a><a href="/about/">关于</a><a href="/contact/">联系</a><a href="/llms.txt">智能体入口</a><a href="https://github.com/Zunzhe966/kai-yuan-da-shu-li">GitHub</a></nav>
   </header>
   {body}
-  <footer><span>结构化分类、客观说明、原始仓库出口</span><a href="/api/v1/meta.json">数据版本</a></footer>
+  <footer><span>结构化分类、客观说明、原始仓库出口</span><span><a href="/methodology/">方法</a> · <a href="/advertising/">广告披露</a> · <a href="/privacy/">隐私</a> · <a href="/cookies/">Cookie</a> · <a href="/api/v1/meta.json">数据版本</a></span></footer>
   <script src="/assets/site.js" defer></script>
 </body>
 </html>
@@ -137,6 +184,11 @@ def render_domain(domain: str, records: list[dict[str, Any]]) -> str:
     return _layout(_label(domain), body, f"{_label(domain)}开源项目分类目录")
 
 
+def render_public_page(page: dict[str, str]) -> str:
+    body = f"""<main><article class=\"project-page\"><header><p class=\"eyebrow\">开源大梳理</p><h1>{_e(page['title'])}</h1></header><section class=\"public-copy\">{page['body']}</section></article></main>"""
+    return _layout(page["title"], body, page["description"])
+
+
 def render_project(record: dict[str, Any]) -> str:
     tags = "".join(f"<span>{_e(tag)}</span>" for tag in record.get("tags", []))
     relations = "".join(
@@ -191,6 +243,7 @@ def write_discovery_files(output: Path, records: list[dict[str, Any]], base_url:
         encoding="utf-8",
     )
     urls = [base + "/"]
+    urls.extend(f"{base}/{route}/" for route in sorted(PUBLIC_PAGES))
     urls.extend(f"{base}/domains/{domain}/" for domain in sorted({r["domain"] for r in records}))
     urls.extend(f"{base}/projects/{record['id']}/" for record in records)
     entries = "".join(f"<url><loc>{_e(url)}</loc></url>" for url in urls)
@@ -260,6 +313,10 @@ def build_site(
         path = output / "domains" / domain / "index.html"
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(render_domain(domain, selected), encoding="utf-8")
+    for route, page in PUBLIC_PAGES.items():
+        path = output / route / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(render_public_page(page), encoding="utf-8")
     relations = _relation_map(records, edges)
     for record in records:
         page_record = dict(record, relations=relations[record["id"]])

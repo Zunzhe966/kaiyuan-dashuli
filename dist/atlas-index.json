@@ -2,12 +2,13 @@
   "name": "kaiyuan-dashuli",
   "title": "开源大梳理",
   "version": "0.2.0",
-  "generated_at": "2026-07-12T01:18:04.751738+00:00",
-  "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
-  "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json",
+  "generated_at": "2026-07-21T05:40:32.093473+00:00",
+  "repo": "https://github.com/Zunzhe966/kai-yuan-da-shu-li",
+  "raw_index_url": "https://raw.githubusercontent.com/Zunzhe966/kai-yuan-da-shu-li/main/dist/atlas-index.json",
   "domains": [
     "ai-agents",
     "backend",
+    "blockchain",
     "cms-docs",
     "data-ml",
     "databases",
@@ -25,8 +26,8 @@
     "security",
     "web-frontend"
   ],
-  "node_count": 371,
-  "edge_count": 391,
+  "node_count": 389,
+  "edge_count": 406,
   "nodes": [
     {
       "id": "act",
@@ -156,6 +157,23 @@
       "use_when": "iOS 要好用的网络层",
       "avoid_when": "非 Apple 平台",
       "niche": "ios networking"
+    },
+    {
+      "id": "anchor",
+      "domain": "blockchain",
+      "name": "Anchor",
+      "repo": "https://github.com/coral-xyz/anchor",
+      "summary": "Solana 程序开发框架。",
+      "tags": [
+        "blockchain",
+        "solana",
+        "tooling"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "要在 Solana 上开发程序/IDL",
+      "avoid_when": "EVM 合约开发为主",
+      "niche": "solana tooling"
     },
     {
       "id": "ansible",
@@ -552,6 +570,23 @@
       "niche": "js tooling"
     },
     {
+      "id": "bitcoin-core",
+      "domain": "blockchain",
+      "name": "Bitcoin Core",
+      "repo": "https://github.com/bitcoin/bitcoin",
+      "summary": "比特币参考客户端。",
+      "tags": [
+        "blockchain",
+        "bitcoin",
+        "client"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "要运行比特币全节点/参考实现",
+      "avoid_when": "只要中心化交易所账户 API",
+      "niche": "btc client"
+    },
+    {
       "id": "blender",
       "domain": "media",
       "name": "Blender",
@@ -925,6 +960,23 @@
       "use_when": "要给镜像/制品签名并验证",
       "avoid_when": "无供应链签名合规需求",
       "niche": "artifact signing"
+    },
+    {
+      "id": "cosmos-sdk",
+      "domain": "blockchain",
+      "name": "Cosmos SDK",
+      "repo": "https://github.com/cosmos/cosmos-sdk",
+      "summary": "构建应用特定区块链的框架。",
+      "tags": [
+        "blockchain",
+        "framework",
+        "cosmos"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要 Cosmos 生态应用链",
+      "avoid_when": "只要 EVM 合约 dApp",
+      "niche": "chain framework"
     },
     {
       "id": "crawl4ai",
@@ -1375,6 +1427,23 @@
       "niche": "esp firmware"
     },
     {
+      "id": "ethersjs",
+      "domain": "blockchain",
+      "name": "ethers.js",
+      "repo": "https://github.com/ethers-io/ethers.js",
+      "summary": "完整的以太坊 JS 库。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "library"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "前端/Node 与以太坊交互",
+      "avoid_when": "非 EVM 链为主",
+      "niche": "web3 js"
+    },
+    {
       "id": "expo",
       "domain": "mobile",
       "name": "Expo",
@@ -1689,6 +1758,23 @@
       "niche": "gitops toolkit"
     },
     {
+      "id": "foundry",
+      "domain": "blockchain",
+      "name": "Foundry",
+      "repo": "https://github.com/foundry-rs/foundry",
+      "summary": "快速的 Solidity 开发工具链（forge/cast/anvil）。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "tooling"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "要高速本地测试与脚本化合约开发",
+      "avoid_when": "团队已深度绑定 Hardhat JS 生态且无迁移窗口",
+      "niche": "smart contract tooling"
+    },
+    {
       "id": "freertos",
       "domain": "iot",
       "name": "FreeRTOS",
@@ -1922,6 +2008,23 @@
       "niche": "accounting"
     },
     {
+      "id": "go-ethereum",
+      "domain": "blockchain",
+      "name": "go-ethereum (geth)",
+      "repo": "https://github.com/ethereum/go-ethereum",
+      "summary": "Go 实现的以太坊执行客户端。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "client"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要运行/对接以太坊执行层节点",
+      "avoid_when": "只要应用层合约开发不跑节点",
+      "niche": "eth client"
+    },
+    {
       "id": "godot",
       "domain": "gamedev",
       "name": "Godot Engine",
@@ -2151,6 +2254,23 @@
       "use_when": "要成熟四/七层负载均衡与高可用",
       "avoid_when": "只要开发机临时端口转发",
       "niche": "load balancer"
+    },
+    {
+      "id": "hardhat",
+      "domain": "blockchain",
+      "name": "Hardhat",
+      "repo": "https://github.com/NomicFoundation/hardhat",
+      "summary": "以太坊开发环境（JS/TS）。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "tooling"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要用 JS/TS 插件生态做合约开发测试",
+      "avoid_when": "只要纯 Rust/Foundry 工作流",
+      "niche": "smart contract tooling"
     },
     {
       "id": "haystack",
@@ -2417,6 +2537,23 @@
       "niche": "bandwidth test"
     },
     {
+      "id": "ipfs",
+      "domain": "blockchain",
+      "name": "IPFS Kubo",
+      "repo": "https://github.com/ipfs/kubo",
+      "summary": "分布式内容寻址存储协议实现。",
+      "tags": [
+        "blockchain",
+        "storage",
+        "p2p"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要内容寻址的分布式文件存储",
+      "avoid_when": "只要中心化对象存储",
+      "niche": "p2p storage"
+    },
+    {
       "id": "istio",
       "domain": "devops",
       "name": "Istio",
@@ -2553,7 +2690,7 @@
       "id": "kaiyuan-dashuli",
       "domain": "ai-agents",
       "name": "开源大梳理",
-      "repo": "https://github.com/Zunzhe966/kaiyuan-dashuli",
+      "repo": "https://github.com/Zunzhe966/kai-yuan-da-shu-li",
       "summary": "Agent-first 开源知识图谱入口（本仓库）；分类、关系与可机读检索，减少盲搜 GitHub。",
       "tags": [
         "agent-framework",
@@ -2950,6 +3087,23 @@
       "niche": "plaintext accounting"
     },
     {
+      "id": "libp2p",
+      "domain": "blockchain",
+      "name": "libp2p",
+      "repo": "https://github.com/libp2p/go-libp2p",
+      "summary": "模块化点对点网络栈。",
+      "tags": [
+        "blockchain",
+        "p2p",
+        "networking"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要自建 P2P 网络能力",
+      "avoid_when": "只要 HTTPS API 客户端",
+      "niche": "p2p"
+    },
+    {
       "id": "lightgbm",
       "domain": "data-ml",
       "name": "LightGBM",
@@ -3059,6 +3213,23 @@
       "use_when": "要标准化评测基座模型能力",
       "avoid_when": "只评业务 RAG 流水线（看 ragas）",
       "niche": "foundation model eval"
+    },
+    {
+      "id": "lnd",
+      "domain": "blockchain",
+      "name": "LND",
+      "repo": "https://github.com/lightningnetwork/lnd",
+      "summary": "Lightning Network Daemon。",
+      "tags": [
+        "blockchain",
+        "bitcoin",
+        "lightning"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要比特币闪电网络节点与支付通道",
+      "avoid_when": "非比特币支付场景",
+      "niche": "lightning"
     },
     {
       "id": "loki",
@@ -3965,6 +4136,23 @@
       "niche": "otel sdk"
     },
     {
+      "id": "openzeppelin-contracts",
+      "domain": "blockchain",
+      "name": "OpenZeppelin Contracts",
+      "repo": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+      "summary": "安全的智能合约库标准实现。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "contracts"
+      ],
+      "language": "Solidity",
+      "status": "active",
+      "use_when": "要审计友好的代币/权限等合约组件",
+      "avoid_when": "非 EVM 合约平台",
+      "niche": "contract libs"
+    },
+    {
       "id": "osmnx",
       "domain": "gis",
       "name": "OSMnx",
@@ -4325,6 +4513,23 @@
       "use_when": "需要时间序列指标与告警规则",
       "avoid_when": "只要日志检索、不要指标系统",
       "niche": "metrics monitoring"
+    },
+    {
+      "id": "prysm",
+      "domain": "blockchain",
+      "name": "Prysm",
+      "repo": "https://github.com/prysmaticlabs/prysm",
+      "summary": "以太坊共识客户端。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "consensus"
+      ],
+      "language": "Go",
+      "status": "active",
+      "use_when": "要运行以太坊信标链/验证者客户端",
+      "avoid_when": "只要 L2 应用开发",
+      "niche": "eth consensus"
     },
     {
       "id": "pulumi",
@@ -4936,6 +5141,40 @@
       "niche": "lightweight HF agents"
     },
     {
+      "id": "solana",
+      "domain": "blockchain",
+      "name": "Solana",
+      "repo": "https://github.com/solana-labs/solana",
+      "summary": "高性能 L1 区块链（实验室参考实现演进中）。",
+      "tags": [
+        "blockchain",
+        "solana",
+        "l1"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "要了解/运行 Solana 验证相关组件",
+      "avoid_when": "只要 EVM",
+      "niche": "l1"
+    },
+    {
+      "id": "solidity",
+      "domain": "blockchain",
+      "name": "Solidity",
+      "repo": "https://github.com/ethereum/solidity",
+      "summary": "以太坊智能合约语言与编译器。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "language"
+      ],
+      "language": "C++",
+      "status": "active",
+      "use_when": "写 EVM 智能合约",
+      "avoid_when": "非 EVM 目标链",
+      "niche": "language"
+    },
+    {
       "id": "soloud",
       "domain": "gamedev",
       "name": "SoLoud",
@@ -5099,6 +5338,23 @@
       "use_when": "本地测试支付集成不打真实 Stripe",
       "avoid_when": "要开源支付网关本体",
       "niche": "payments test"
+    },
+    {
+      "id": "substrate",
+      "domain": "blockchain",
+      "name": "Substrate",
+      "repo": "https://github.com/paritytech/polkadot-sdk",
+      "summary": "可定制区块链开发框架（Polkadot SDK）。",
+      "tags": [
+        "blockchain",
+        "framework",
+        "substrate"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "要构建自定义链/平行链",
+      "avoid_when": "只要在现有 EVM 上部署合约",
+      "niche": "chain framework"
     },
     {
       "id": "supabase",
@@ -5344,6 +5600,22 @@
       "use_when": "多集群 Prometheus 要全局查询与对象存储",
       "avoid_when": "只要单机短周期指标",
       "niche": "metrics"
+    },
+    {
+      "id": "thegraph",
+      "domain": "blockchain",
+      "name": "The Graph",
+      "repo": "https://github.com/graphprotocol/graph-node",
+      "summary": "区块链数据索引协议实现。",
+      "tags": [
+        "blockchain",
+        "indexing"
+      ],
+      "language": "Rust",
+      "status": "active",
+      "use_when": "要索引链上事件供 dApp 查询",
+      "avoid_when": "只要直接 RPC 读少量状态",
+      "niche": "indexing"
     },
     {
       "id": "threejs",
@@ -5723,6 +5995,23 @@
       "niche": "metrics"
     },
     {
+      "id": "viem",
+      "domain": "blockchain",
+      "name": "viem",
+      "repo": "https://github.com/wevm/viem",
+      "summary": "TypeScript 接口的以太坊库。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "library"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "要类型友好的现代 EVM 客户端库",
+      "avoid_when": "维护旧 ethers v5 大项目且无重写",
+      "niche": "web3 js"
+    },
+    {
       "id": "vite",
       "domain": "web-frontend",
       "name": "Vite",
@@ -5819,6 +6108,23 @@
       "use_when": "要渐进增强或更易上手的组件框架",
       "avoid_when": "团队标准已是 React 生态且迁移成本高",
       "niche": "progressive framework"
+    },
+    {
+      "id": "wagmi",
+      "domain": "blockchain",
+      "name": "wagmi",
+      "repo": "https://github.com/wevm/wagmi",
+      "summary": "React Hooks for Ethereum。",
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "react"
+      ],
+      "language": "TypeScript",
+      "status": "active",
+      "use_when": "React 应用要钱包连接与链上读写",
+      "avoid_when": "非 React 前端",
+      "niche": "web3 react"
     },
     {
       "id": "wails",
@@ -8484,6 +8790,96 @@
       "type": "depends_on",
       "to": "numpy",
       "note": "向量化依赖 NumPy"
+    },
+    {
+      "from": "foundry",
+      "type": "alternative_to",
+      "to": "hardhat",
+      "note": "Rust 高速工具链 vs JS 插件生态"
+    },
+    {
+      "from": "viem",
+      "type": "alternative_to",
+      "to": "ethersjs",
+      "note": "现代 TS 客户端 vs 经典 ethers"
+    },
+    {
+      "from": "wagmi",
+      "type": "depends_on",
+      "to": "viem",
+      "note": "React hooks 常建在 viem"
+    },
+    {
+      "from": "openzeppelin-contracts",
+      "type": "depends_on",
+      "to": "solidity",
+      "note": "合约库用 Solidity"
+    },
+    {
+      "from": "hardhat",
+      "type": "integrates_with",
+      "to": "ethersjs",
+      "note": "Hardhat 生态常配 ethers"
+    },
+    {
+      "from": "foundry",
+      "type": "integrates_with",
+      "to": "openzeppelin-contracts",
+      "note": "合约开发常用 OZ"
+    },
+    {
+      "from": "prysm",
+      "type": "integrates_with",
+      "to": "go-ethereum",
+      "note": "共识+执行客户端组合"
+    },
+    {
+      "from": "lnd",
+      "type": "integrates_with",
+      "to": "bitcoin-core",
+      "note": "闪电网络建在比特币之上"
+    },
+    {
+      "from": "anchor",
+      "type": "integrates_with",
+      "to": "solana",
+      "note": "Solana 程序框架"
+    },
+    {
+      "from": "ipfs",
+      "type": "integrates_with",
+      "to": "libp2p",
+      "note": "IPFS 网络层常用 libp2p"
+    },
+    {
+      "from": "thegraph",
+      "type": "integrates_with",
+      "to": "go-ethereum",
+      "note": "常索引 EVM 链数据"
+    },
+    {
+      "from": "substrate",
+      "type": "alternative_to",
+      "to": "cosmos-sdk",
+      "note": "两大应用链框架"
+    },
+    {
+      "from": "wagmi",
+      "type": "integrates_with",
+      "to": "react",
+      "note": "React 前端"
+    },
+    {
+      "from": "ccxt",
+      "type": "alternative_to",
+      "to": "go-ethereum",
+      "note": "中心化交易所 API vs 链上节点（场景对比）"
+    },
+    {
+      "from": "freqtrade",
+      "type": "integrates_with",
+      "to": "ccxt",
+      "note": "已有则可能存在"
     }
   ]
 }

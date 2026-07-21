@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT))
 from scripts.feedback_lib import aggregate_reports, parse_issue, validate_report  # noqa: E402
 
 
-REPOSITORY = "Zunzhe966/kaiyuan-dashuli"
+REPOSITORY = "Zunzhe966/kai-yuan-da-shu-li"
 
 
 def _atomic_json(path: Path, payload: dict) -> None:

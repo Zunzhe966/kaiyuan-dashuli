@@ -12,7 +12,7 @@ Agent 不一定要 clone 本仓。两种远程用法：
 
 公开 URL（随 main 更新）：
 
-https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json
+https://raw.githubusercontent.com/Zunzhe966/kai-yuan-da-shu-li/main/dist/atlas-index.json
 
 Agent 可下载后本地过滤；字段含 `use_when` / `avoid_when` / `edges`。
 

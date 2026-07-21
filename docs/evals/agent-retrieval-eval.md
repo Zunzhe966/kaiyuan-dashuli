@@ -72,8 +72,9 @@
 | q64 | 开源加密货币交易机器人 | freqtrade, ccxt, zipline-reloaded | Y | Y |
 | q65 | Python 量化策略回测框架 | backtrader, zipline-reloaded, vectorbt | Y | Y |
 | q66 | 自托管个人记账和预算 | firefly-iii, actual-budget, zipline-reloaded | Y | Y |
+| q67 | Solidity 合约需要高速本地测试和脚本化部署 | foundry, hardhat, solidity | Y | Y |
 
-**通过率：66/66 = 100%**
+**通过率：67/67 = 100%**
 
 判定阈值：≥80%
 
@@ -181,7 +182,7 @@
 - **开源大梳理** (`kaiyuan-dashuli` / ai-agents)
   - use_when: 需要先定位该用哪个开源项目/栈，而不是直接关键词海搜
   - avoid_when: 已明确唯一上游仓库，只需读其 README
-  - repo: https://github.com/Zunzhe966/kaiyuan-dashuli
+  - repo: https://github.com/Zunzhe966/kai-yuan-da-shu-li
 - result: PASS (hit=True, compliant=True)
 
 ### q8 — 追踪生产环境 LLM 调用和提示版本
@@ -1055,5 +1056,20 @@
   - use_when: 要事件驱动的股票策略回测
   - avoid_when: 只要简单向量化回测脚本
   - repo: https://github.com/stefan-jansen/zipline-reloaded
+- result: PASS (hit=True, compliant=True)
+
+### q67 — Solidity 合约需要高速本地测试和脚本化部署
+- **Foundry** (`foundry` / blockchain)
+  - use_when: 要高速本地测试与脚本化合约开发
+  - avoid_when: 团队已深度绑定 Hardhat JS 生态且无迁移窗口
+  - repo: https://github.com/foundry-rs/foundry
+- **Hardhat** (`hardhat` / blockchain)
+  - use_when: 要用 JS/TS 插件生态做合约开发测试
+  - avoid_when: 只要纯 Rust/Foundry 工作流
+  - repo: https://github.com/NomicFoundation/hardhat
+- **Solidity** (`solidity` / blockchain)
+  - use_when: 写 EVM 智能合约
+  - avoid_when: 非 EVM 目标链
+  - repo: https://github.com/ethereum/solidity
 - result: PASS (hit=True, compliant=True)
 

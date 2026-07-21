@@ -1,0 +1,12 @@
+id: solidity
+type: project
+name: Solidity
+repo: https://github.com/ethereum/solidity
+summary: 以太坊智能合约语言与编译器。
+tags: [blockchain, ethereum, language]
+language: C++
+status: active
+use_when: 写 EVM 智能合约
+avoid_when: 非 EVM 目标链
+niche: language
+related_ecosystem: ethereum

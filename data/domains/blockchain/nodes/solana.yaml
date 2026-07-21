@@ -1,0 +1,12 @@
+id: solana
+type: project
+name: Solana
+repo: https://github.com/solana-labs/solana
+summary: 高性能 L1 区块链（实验室参考实现演进中）。
+tags: [blockchain, solana, l1]
+language: Rust
+status: active
+use_when: 要了解/运行 Solana 验证相关组件
+avoid_when: 只要 EVM
+niche: l1
+related_ecosystem: solana

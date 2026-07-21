@@ -1,23 +1,14 @@
-# GitHub Pages 部署说明（人读入口）
+# 网站部署说明
 
-目标：让人类/爬虫打开 Pages 就能看到浏览索引，并指向远程机器索引。
+当前公开网站由 Cloudflare Pages 提供：<https://kai-yuan-da-shu-li.pages.dev/>。GitHub Pages 不是当前发布渠道；本文件保留旧名称仅为兼容既有链接。
 
-## 推荐最小方案（无构建）
+## 当前部署
 
-1. 仓库 Settings → Pages → Source: **Deploy from a branch**
-2. Branch: `main` / folder: `/docs`
-3. 打开站点后访问：
-   - `/browse/`（若用 docs 下的 browse 软链）或本仓路径说明
-   - 机器索引：https://raw.githubusercontent.com/Zunzhe966/kaiyuan-dashuli/main/dist/atlas-index.json
+- 发布来源：本机生成的 `build/site` 静态站。
+- 线上项目：Cloudflare Pages `kai-yuan-da-shu-li`。
+- 当前方式：手动直传，GitHub `main` 更新不会自动上线。
+- 正式机器索引：<https://raw.githubusercontent.com/Zunzhe966/kai-yuan-da-shu-li/main/dist/atlas-index.json>。
 
-本仓已在 `docs/browse/` 提供各域人读页；`docs/index.md` 作为 Pages 首页入口。
+完整的构建、发布、回滚和后续 GitHub 自动部署流程见 [static-release.md](./operations/static-release.md) 与 [cloudflare-pages-connection.md](./operations/cloudflare-pages-connection.md)。
 
-## 可选：HTTP API
-
-Pages **不能**跑 `scripts/http_api.py`。API 需另外部署（任意 VPS/容器）：
-
-```bash
-.venv/bin/python scripts/http_api.py --host 0.0.0.0 --port 8787
-```
-
-详见 `docs/remote-api.md`。
+`scripts/http_api.py` 仅保留作本地兼容工具，不作为公网网站服务，也不运行在 Cloudflare Pages。

@@ -1,0 +1,12 @@
+id: thegraph
+type: project
+name: The Graph
+repo: https://github.com/graphprotocol/graph-node
+summary: 区块链数据索引协议实现。
+tags: [blockchain, indexing]
+language: Rust
+status: active
+use_when: 要索引链上事件供 dApp 查询
+avoid_when: 只要直接 RPC 读少量状态
+niche: indexing
+related_ecosystem: web3

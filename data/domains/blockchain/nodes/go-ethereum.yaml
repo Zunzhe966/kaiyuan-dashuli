@@ -1,0 +1,12 @@
+id: go-ethereum
+type: project
+name: go-ethereum (geth)
+repo: https://github.com/ethereum/go-ethereum
+summary: Go 实现的以太坊执行客户端。
+tags: [blockchain, ethereum, client]
+language: Go
+status: active
+use_when: 要运行/对接以太坊执行层节点
+avoid_when: 只要应用层合约开发不跑节点
+niche: eth client
+related_ecosystem: ethereum

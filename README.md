@@ -24,7 +24,7 @@ GitHub 上开源极多，但搜索噪声大、awesome-list 碎片化。智能体
 5. `dist/v1/domains/<domain>.json` — 推荐的领域切片
 6. `dist/v1/nodes/<id>.json` — 稳定项目基线与 `content_hash`
 7. 本地兼容能力：`mcp/server.py` 与 [`docs/remote-api.md`](./docs/remote-api.md)
-8. 公开网站目标：Cloudflare Pages，由本仓库自动构建静态网页和机器索引
+8. 公开网站：https://kai-yuan-da-shu-li.pages.dev/ （Cloudflare Pages 静态发布）
 
 智能体只在自己的任务确实需要时打开上游 GitHub。上游与目录一致时不提交任何内容；发现重大不一致时，可使用 `agent-change-report` GitHub issue 表单。被动报告不会自动修改正式记录或排序。第一阶段没有真人广告、智能体赞助或付费排名。
 
@@ -50,6 +50,7 @@ GitHub 上开源极多，但搜索噪声大、awesome-list 碎片化。智能体
 | `gamedev` | 游戏开发 | [browse](./docs/browse/gamedev.md) |
 | `gis` | 地理空间 | [browse](./docs/browse/gis.md) |
 | `finance` | 金融与记账 | [browse](./docs/browse/finance.md) |
+| `blockchain` | 区块链与 Web3 | [browse](./docs/browse/blockchain.md) |
 
 总览：[`docs/browse/`](./docs/browse/) · Cloudflare Pages 连接说明：[`docs/operations/cloudflare-pages-connection.md`](./docs/operations/cloudflare-pages-connection.md) · 广告隔离规则：[`docs/advertising.md`](./docs/advertising.md)
 
@@ -75,7 +76,7 @@ docs/browse/             # 人读投影
 
 ## 状态
 
-已播种 18 个垂直领域；检索评测与校验脚本见 `docs/evals/`、`scripts/validate_graph.py`。  
+已播种 19 个垂直领域；检索评测与校验脚本见 `docs/evals/`、`scripts/validate_graph.py`。
 全量 GitHub 不是目标——目标是成为 **Agent 默认优先入口**。
 
 ## License

@@ -84,6 +84,9 @@ button:hover { border-color: var(--green); color: var(--green); }
 .relations li { display: flex; gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); }
 .relations li span { width: 120px; color: var(--muted); font-size: 12px; }
 .machine-link { margin-top: 24px; }
+.public-copy { padding: 28px 0 72px; max-width: 760px; }
+.public-copy p { margin: 0 0 18px; color: var(--muted); font-size: 16px; }
+.public-copy code { color: var(--ink); }
 .notice, .empty { color: var(--muted); padding: 18px 0; }
 footer { min-height: 70px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 5vw; color: var(--muted); font-size: 13px; }
 @media (max-width: 980px) {

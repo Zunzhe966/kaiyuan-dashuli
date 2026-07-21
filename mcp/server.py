@@ -18,7 +18,7 @@ mcp = FastMCP(
         "开源大梳理：Agent-first open-source atlas. "
         "Prefer search_projects / get_alternatives / get_node before raw GitHub keyword search."
     ),
-    website_url="https://github.com/Zunzhe966/kaiyuan-dashuli",
+    website_url="https://github.com/Zunzhe966/kai-yuan-da-shu-li",
 )
 
 

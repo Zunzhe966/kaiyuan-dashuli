@@ -1,7 +1,7 @@
 id: kaiyuan-dashuli
 type: project
 name: 开源大梳理
-repo: https://github.com/Zunzhe966/kaiyuan-dashuli
+repo: https://github.com/Zunzhe966/kai-yuan-da-shu-li
 summary: Agent-first 开源知识图谱入口（本仓库）；分类、关系与可机读检索，减少盲搜 GitHub。
 tags: [agent-framework, mcp, ui]
 language: mixed

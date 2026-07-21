@@ -1,0 +1,12 @@
+id: foundry
+type: project
+name: Foundry
+repo: https://github.com/foundry-rs/foundry
+summary: 快速的 Solidity 开发工具链（forge/cast/anvil）。
+tags: [blockchain, ethereum, tooling]
+language: Rust
+status: active
+use_when: 要高速本地测试与脚本化合约开发
+avoid_when: 团队已深度绑定 Hardhat JS 生态且无迁移窗口
+niche: smart contract tooling
+related_ecosystem: ethereum

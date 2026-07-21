@@ -1,6 +1,6 @@
 # Cloudflare Pages 连接 GitHub
 
-这一步只在本地网站通过全部验收后执行。用户需要在已经登录 Cloudflare 的浏览器里确认一次 GitHub 授权，密码和验证码不交给智能体。
+这一步用于消除当前“本机/GitHub 已更新但 Pages 仍旧版”的手动发布漂移。它只在本地网站通过全部验收后执行。用户需要在已经登录 Cloudflare 的浏览器里确认一次 GitHub 授权，密码和验证码不交给智能体。
 
 ## 浏览器操作
 
@@ -22,7 +22,7 @@
 根目录：/
 ```
 
-保存后等待第一次构建。成功后先使用固定的免费地址 `https://kai-yuan-da-shu-li.pages.dev`。预览部署会有临时地址，但不得将临时地址写入 sitemap、robots 或 `llms.txt`。
+保存后等待第一次构建。成功后继续使用固定的免费地址 `https://kai-yuan-da-shu-li.pages.dev`，直到自有域名购买、绑定并重新构建。预览部署会有临时地址，但不得将临时地址写入 sitemap、robots 或 `llms.txt`。
 
 ## 第一次验收
 

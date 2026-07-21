@@ -58,6 +58,9 @@ domains:
   finance:
     title: 金融与记账
     description: 交易回测、行情指标、个人财务与订阅计费
+  blockchain:
+    title: 区块链与 Web3
+    description: 客户端、合约工具链、L1 框架、P2P 存储与索引
 
 # 节点类型
 node_types:

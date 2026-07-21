@@ -49,7 +49,7 @@
 
 ## MCP / 工具协议
 
-- [开源大梳理](https://github.com/Zunzhe966/kaiyuan-dashuli) — Agent-first 开源知识图谱入口（本仓库）；分类、关系与可机读检索，减少盲搜 GitHub。
+- [开源大梳理](https://github.com/Zunzhe966/kai-yuan-da-shu-li) — Agent-first 开源知识图谱入口（本仓库）；分类、关系与可机读检索，减少盲搜 GitHub。
 - [Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers) — 官方/参考 MCP server 集合，给 Agent 接工具与数据源。
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) — Model Context Protocol 官方 Python SDK。
 
@@ -103,4 +103,3 @@
 - [Continue](https://github.com/continuedev/continue) — 开源 IDE 编码助手扩展，可接多模型。
 - [Flowise](https://github.com/FlowiseAI/Flowise) — 可视化 LLM 编排 UI，偏 LangChain 生态。
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI) — 节点式生成式工作流 UI（图像等）。
-

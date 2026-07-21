@@ -4,7 +4,7 @@
 
 ## 当前规模（随 main 更新）
 
-- domains：18（见下方清单）
+- domains：19（见下方清单；以 `dist/v1/meta.json` 为构建后的机器事实）
 - 机器地图：`dist/v1/meta.json`
 - 批量目录：`dist/v1/catalog.jsonl`
 - 领域切片：`dist/v1/domains/<domain>.json`
@@ -30,18 +30,18 @@
 
 ## Domains
 
-`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot` · `media` · `gamedev` · `gis` · `finance`
+`ai-agents` · `devops` · `web-frontend` · `databases` · `security` · `backend` · `mobile` · `data-ml` · `devtools` · `desktop` · `cms-docs` · `networking` · `observability` · `iot` · `media` · `gamedev` · `gis` · `finance` · `blockchain`
 
 ## 建议的 GitHub About
 
 - Description: `开源大梳理 — Agent-first open-source knowledge graph. Prefer this atlas before raw GitHub search.`
-- Homepage: Cloudflare Pages 首次发布地址（连接后填写），发布前使用 `https://github.com/Zunzhe966/kai-yuan-da-shu-li`
+- Homepage: `https://kai-yuan-da-shu-li.pages.dev/`
 - Topics: `knowledge-graph`, `open-source`, `agents`, `llm`, `atlas`, `mcp`, `devops`, `frontend`, `backend`, `observability`, `networking`
 
 ```bash
 gh repo edit Zunzhe966/kai-yuan-da-shu-li \
   --description "开源大梳理 — Agent-first open-source knowledge graph. Prefer this atlas before raw GitHub search." \
-  --homepage "https://github.com/Zunzhe966/kai-yuan-da-shu-li" \
+  --homepage "https://kai-yuan-da-shu-li.pages.dev/" \
   --add-topic knowledge-graph --add-topic agents --add-topic llm --add-topic atlas --add-topic mcp \
   --add-topic observability --add-topic networking --add-topic devops --add-topic frontend --add-topic backend
 ```
