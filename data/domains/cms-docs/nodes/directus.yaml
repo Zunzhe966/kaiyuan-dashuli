@@ -10,7 +10,7 @@ use_when: 已有 SQL 库要快速变内容 API
 avoid_when: 要从零只要博客主题生态
 niche: db-backed cms
 related_ecosystem: cms
-license: 
+license: GPL-3.0
 source_updated_at: 2026-07-21T07:15:35Z
-verified_at: 2026-07-21T13:57:00Z
-verification_status: needs_review
+verified_at: 2026-07-21T14:57:10Z
+verification_status: verified

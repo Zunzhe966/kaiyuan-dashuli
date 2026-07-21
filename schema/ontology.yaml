@@ -71,6 +71,13 @@ node_types:
   ecosystem:
     description: 生态位（如 LangChain 生态、Hugging Face 生态）
 
+# 维护状态（project.status）
+# 规则（可复述）：
+# - archived：上游 GitHub archived=true，或官方声明停更
+# - maintenance：近 24 个月无推送（source_updated_at），但仍可用；或维护者模式
+# - active：默认；近 24 个月有推送且未归档
+status_values: [active, maintenance, archived]
+
 # 项目节点必填/选填字段
 project_fields:
   required: [id, name, repo, summary, tags, status]

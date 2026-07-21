@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOMAINS = ROOT / "data/domains"
 EDGES = ROOT / "graph/edges.yaml"
 REQUIRED = ("id", "name", "repo", "summary", "tags", "status", "use_when", "avoid_when")
+ALLOWED_STATUS = frozenset({"active", "maintenance", "archived"})
 
 
 def parse_simple_yaml_fields(text: str) -> dict[str, str]:
@@ -40,6 +41,11 @@ def validate_domain(domain_dir: Path, errors: list[str]) -> set[str]:
         for key in REQUIRED:
             if key not in fields or not fields[key]:
                 errors.append(f"{domain_dir.name}/{path.name}: missing '{key}'")
+        status = fields.get("status", "")
+        if status and status not in ALLOWED_STATUS:
+            errors.append(
+                f"{domain_dir.name}/{path.name}: status '{status}' not in {sorted(ALLOWED_STATUS)}"
+            )
         if "repo" in fields and not fields["repo"].startswith("http"):
             errors.append(f"{domain_dir.name}/{path.name}: repo must be http(s)")
         ids.add(path.stem)

@@ -11,6 +11,6 @@ avoid_when: 只要简单链式 LLM 调用，不想引入图运行时
 niche: graph-based agent orchestration
 related_ecosystem: langchain
 license: MIT
-source_updated_at: 2026-07-20T20:57:26Z
+source_updated_at: 2026-07-21T14:52:15Z
 verified_at: 2026-07-21T13:49:42Z
 verification_status: verified
