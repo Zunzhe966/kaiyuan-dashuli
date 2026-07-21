@@ -10,7 +10,8 @@ use_when: 游戏要简单音频混音播放
 avoid_when: 要完整 DAW
 niche: game audio
 related_ecosystem: gamedev
-license: 
+license: Zlib
 source_updated_at: 2024-08-13T04:10:58Z
-verified_at: 2026-07-21T13:57:00Z
-verification_status: needs_review
+verified_at: 2026-07-21T15:05:45Z
+verification_status: verified
+quality_notes: license-review:unrecognized

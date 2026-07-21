@@ -239,10 +239,10 @@
   - use_when: Next.js/Web 流式聊天与工具调用
   - avoid_when: 后端批处理/非 TS 栈
   - repo: https://github.com/vercel/ai
-- **SwiftUI Lab examples mirror note** (`swiftui-notes` / mobile)
+- **Hacking with Swift** (`swiftui-notes` / mobile)
   - use_when: 学/做 SwiftUI 界面
   - avoid_when: 非 Apple UI
-  - repo: https://github.com/twostraws/SwiftUI
+  - repo: https://github.com/twostraws/HackingWithSwift
 - result: PASS (hit=True, compliant=True)
 
 ### q12 — 统一多个模型供应商的 API 路由
@@ -646,7 +646,7 @@
 - **PySide (Qt for Python)** (`pyside` / desktop)
   - use_when: Python + Qt 且偏好官方绑定许可路径
   - avoid_when: 只要极简脚本弹窗
-  - repo: https://github.com/qtproject/pyside-setup
+  - repo: https://github.com/pyside/pyside-setup
 - **Dear PyGui** (`dearpygui` / desktop)
   - use_when: Python 工具/可视化要高刷新 UI
   - avoid_when: 要原生系统控件与标准桌面观感

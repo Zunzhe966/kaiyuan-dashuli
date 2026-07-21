@@ -11,6 +11,6 @@ avoid_when: 只要偶发本地 pprof 一次采样
 niche: profiling
 related_ecosystem: observability
 license: AGPL-3.0
-source_updated_at: 2026-07-21T13:09:58Z
+source_updated_at: 2026-07-21T14:58:34Z
 verified_at: 2026-07-21T13:52:28Z
 verification_status: verified

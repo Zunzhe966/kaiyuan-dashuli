@@ -10,7 +10,7 @@ use_when: 要编辑 tilemap 关卡
 avoid_when: 纯 3D 关卡管线
 niche: level editor
 related_ecosystem: gamedev
-license: 
+license: BSD-3-Clause OR BSD-2-Clause
 source_updated_at: 2026-07-19T21:03:18Z
-verified_at: 2026-07-21T13:57:00Z
-verification_status: needs_review
+verified_at: 2026-07-21T14:57:10Z
+verification_status: verified
