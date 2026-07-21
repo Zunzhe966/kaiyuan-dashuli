@@ -10,7 +10,7 @@ categories:
     node_ids: [postgresql, mysql, sqlite, mariadb, cockroachdb, tidb, supabase]
   - id: document
     title: 文档型
-    node_ids: [mongodb]
+    node_ids: [mongodb, surrealdb]
   - id: kv
     title: KV / 缓存
     node_ids: [redis, keydb, valkey]

@@ -2497,3 +2497,49 @@ edges:
     type: integrates_with
     to: ledger-cli
     note: batch5 edge density
+
+# batch6 2026-07-22
+  - from: surrealdb
+    type: alternative_to
+    to: mongodb
+    note: batch6 long-tail
+  - from: surrealdb
+    type: alternative_to
+    to: neo4j
+    note: batch6 long-tail
+  - from: zabbix
+    type: alternative_to
+    to: netdata
+    note: batch6 long-tail
+  - from: zabbix
+    type: alternative_to
+    to: victoriametrics
+    note: batch6 long-tail
+  - from: zabbix
+    type: alternative_to
+    to: prometheus
+    note: batch6 long-tail
+  - from: minio
+    type: alternative_to
+    to: seaweedfs
+    note: batch6 long-tail
+  - from: minio
+    type: integrates_with
+    to: kubernetes
+    note: batch6 long-tail
+  - from: seaweedfs
+    type: alternative_to
+    to: minio
+    note: batch6 long-tail
+  - from: seaweedfs
+    type: integrates_with
+    to: kubernetes
+    note: batch6 long-tail
+  - from: flower
+    type: integrates_with
+    to: celery
+    note: batch6 long-tail
+  - from: flower
+    type: depends_on
+    to: celery
+    note: batch6 long-tail
