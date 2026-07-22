@@ -1,5 +1,7 @@
 # Snapshot and Release Provenance Implementation Plan
 
+> **Owner:** GPT-5.6 reviewer/publisher. This plan must not be executed by the DeepSeek data worker.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Make every tracked machine snapshot reproducible from the formal graph and make every production deployment prove both its catalog content and source commit.
