@@ -54,7 +54,7 @@ GitHub 上开源极多，但搜索噪声大、awesome-list 碎片化。智能体
 | `finance` | 金融与记账 | [browse](./docs/browse/finance.md) |
 | `blockchain` | 区块链与 Web3 | [browse](./docs/browse/blockchain.md) |
 
-总览：[`docs/browse/`](./docs/browse/) · Cloudflare Pages 连接说明：[`docs/operations/cloudflare-pages-connection.md`](./docs/operations/cloudflare-pages-connection.md) · 运营状态台账：[`docs/operations/operations-status.md`](./docs/operations/operations-status.md) · 广告隔离规则：[`docs/advertising.md`](./docs/advertising.md)
+总览：[`docs/browse/`](./docs/browse/) · [V2 产品与数据设计](./docs/superpowers/specs/2026-07-22-global-bilingual-atlas-v2-design.md) · [长期目标模式手册](./docs/operations/long-running-goal-mode.md) · [目标模式启动文本](./docs/operations/goal-mode-bootstrap.md) · Cloudflare Pages 连接说明：[`docs/operations/cloudflare-pages-connection.md`](./docs/operations/cloudflare-pages-connection.md) · 运营状态台账：[`docs/operations/operations-status.md`](./docs/operations/operations-status.md) · 广告隔离规则：[`docs/advertising.md`](./docs/advertising.md)
 
 ## 给人类
 

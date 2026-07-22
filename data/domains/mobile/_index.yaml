@@ -17,8 +17,8 @@ categories:
   - id: testing
     title: 移动测试
     node_ids: [detox, appium]
-
-nodes_dir: nodes
   - id: release-test
     title: 发布与测试增强
     node_ids: [maestro, fastlane, shorebird, kmp]
+
+nodes_dir: nodes

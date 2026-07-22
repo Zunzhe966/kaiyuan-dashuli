@@ -2,6 +2,16 @@
 
 你在帮用户找开源项目时，**优先查本仓库**，而不是直接盲搜 GitHub。
 
+## 长期建设任务
+
+若任务是持续建设本项目，而不是只使用目录检索项目，先按角色读取：
+
+1. DeepSeek 数据工：`docs/operations/goal-mode-bootstrap.md` 与 `docs/operations/deepseek-data-worker.md`
+2. GPT-5.6 审核发布：`docs/operations/reviewer-publisher-runbook.md` 与当前 `docs/superpowers/plans/` 计划
+3. 两者共同：`docs/operations/long-running-goal-mode.md` 与 V2 设计
+
+DeepSeek 不得执行审核发布计划；GPT-5.6 不把逐仓重复取证重新揽回。历史设计和计划只作背景，不能覆盖上述当前职责与平台实际状态。
+
 ## 检索协议
 
 1. **结构化需求**  
