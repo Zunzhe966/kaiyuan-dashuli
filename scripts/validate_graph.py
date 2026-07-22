@@ -6,6 +6,8 @@ import re
 import sys
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[1]
 DOMAINS = ROOT / "data/domains"
 EDGES = ROOT / "graph/edges.yaml"
@@ -54,12 +56,31 @@ def validate_domain(domain_dir: Path, errors: list[str]) -> set[str]:
         errors.append(f"{domain_dir.name}: missing _index.yaml")
         return ids
 
+    try:
+        index_payload = yaml.safe_load(index.read_text(encoding="utf-8"))
+    except yaml.YAMLError as exc:
+        errors.append(f"{domain_dir.name}/_index.yaml: invalid YAML: {exc}")
+        return ids
+    if not isinstance(index_payload, dict) or not isinstance(
+        index_payload.get("categories"), list
+    ):
+        errors.append(f"{domain_dir.name}/_index.yaml: categories must be a list")
+        return ids
+
     flat: set[str] = set()
-    for block in re.findall(r"node_ids:\s*\[([^\]]+)\]", index.read_text(encoding="utf-8")):
-        for part in block.split(","):
-            part = part.strip()
-            if part:
-                flat.add(part)
+    for position, category in enumerate(index_payload["categories"], start=1):
+        if not isinstance(category, dict) or not isinstance(category.get("node_ids"), list):
+            errors.append(
+                f"{domain_dir.name}/_index.yaml: category {position} node_ids must be a list"
+            )
+            continue
+        for node_id in category["node_ids"]:
+            if not isinstance(node_id, str) or not node_id:
+                errors.append(
+                    f"{domain_dir.name}/_index.yaml: category {position} has invalid node id"
+                )
+                continue
+            flat.add(node_id)
     for i in flat:
         if i not in ids:
             errors.append(f"{domain_dir.name}/_index.yaml missing node '{i}'")
